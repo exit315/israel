@@ -1,10 +1,11 @@
 {
   "name": "israel",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Личный проект «Израиль» от HTML Academy",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp css",
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,22 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gulp-template": "^5.0.0"
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "editorconfig": "^0.15.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-template": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "posthtml-include": "^1.3.3"
   }
 }
