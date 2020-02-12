@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/firasans-regular-webfont.woff2") format("woff2"),
+    url("../fonts/firasans-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/firasans-medium-webfont.woff2") format("woff2"),
+    url("../fonts/firasans-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/firasans-bold-webfont.woff2") format("woff2"),
+    url("../fonts/firasans-bold-webfont.woff") format("woff");
+}
