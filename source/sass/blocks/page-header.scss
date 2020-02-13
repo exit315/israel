@@ -1,0 +1,33 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 110px;
+  padding: 30px 0 0;
+
+  font-family: $font-main;
+  font-weight: $font-weight-medium;
+  font-size: 15px;
+  line-height: 18px;
+
+  a {
+    margin: 0;
+    padding: 0;
+
+    color: $black;
+    text-decoration: none;
+  }
+
+  button {
+@include btn;
+    
+  }
+}
+
+.page-header__call-order {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  
+  border-bottom: 1px dashed $black;
+}
+

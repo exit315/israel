@@ -34,6 +34,10 @@
   font-weight: 900;
   src: url("../fonts/raleway-black-webfont.woff2") format("woff2"), url("../fonts/raleway-black-webfont.woff") format("woff"); }
 
+body {
+  width: 1366px;
+  margin: 0 auto; }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -46,5 +50,61 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 110px;
+  padding: 30px 0 0;
+  font-family: "Fira Sans";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px; }
+  .page-header a {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    text-decoration: none; }
+  .page-header button {
+    background-image: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%); }
+    .page-header button:active {
+      background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%); }
+
+.page-header__call-order {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  border-bottom: 1px dashed #484848; }
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 110px;
+  padding: 24px 0; }
+
+.page-footer__copyright {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #484848;
+  opacity: 0.5; }
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.general-info__header {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
+  color: #1FC0FC;
+  line-height: 49px; }
 
 /*# sourceMappingURL=style.css.map */

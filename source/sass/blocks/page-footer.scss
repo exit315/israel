@@ -1,0 +1,17 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 110px;
+  padding: 24px 0;
+}
+
+.page-footer__copyright {
+  font-family: $font-main;
+  font-weight: $font-weight-text;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: $black;
+  opacity: 0.5;
+}

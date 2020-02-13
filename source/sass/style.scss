@@ -1,3 +1,9 @@
-@import "source/sass/general.scss";
 @import "source/sass/fonts.scss";
+@import "source/sass/variables.scss";
+@import "source/sass/mixins.scss";
+@import "source/sass/general.scss";
 @import "source/sass/blocks/visually-hidden.scss";
+@import "source/sass/blocks/page-header.scss";
+@import "source/sass/blocks/page-footer.scss";
+@import "source/sass/blocks/social.scss";
+@import "source/sass/blocks/general-info.scss";
