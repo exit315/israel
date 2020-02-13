@@ -4,7 +4,7 @@
   "description": "Личный проект «Израиль» от HTML Academy",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp start"
   },
   "repository": {
@@ -17,7 +17,9 @@
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "editorconfig": "^0.15.3",
+    "eslint-config-htmlacademy": "^0.5.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-csso": "^4.0.1",
@@ -31,6 +33,7 @@
     "lodash.template": "^4.5.0",
     "node-sass": "^4.13.1",
     "posthtml-include": "^1.3.3",
-    "stylelint": "^13.1.0"
+    "stylelint": "^13.1.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
   }
 }
