@@ -21,21 +21,21 @@
 
     <main class="page-main">
 
-        <form class="page-header__call-form call-form hidden">
-          <button class="call-form__btn-close" id="call-form-close" type="reset"><span class="visually-hidden">Закрыть окно</span></button>
+        <form class="page-header__call-form call-form-modal hidden">
+          <button class="call-form-modal__btn-close" id="call-form-close" type="reset"><span class="visually-hidden">Закрыть окно</span></button>
 
-          <h2 class="call-form__header">Заказать звонок</h2>
-          <p class="call-form__lead-in">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
+          <h2 class="call-form-modal__header">Заказать звонок</h2>
+          <p class="call-form-modal__lead-in">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
           
-          <div class="call-form__user-info">
-            <input class="call-form__input-name" type="text" name="user-name" placeholder="имя" required>
-            <input class="call-form__input-tel" type="tel" name="user-phone" placeholder="телефон" required>
+          <div class="call-form-modal__user-info">
+            <input class="call-form-modal__input-name" type="text" name="user-name" placeholder="имя" required>
+            <input class="call-form-modal__input-tel" type="tel" name="user-phone" placeholder="телефон" required>
           </div>
-          <div class="call-form__btn-wrapper">
-            <button class="call-form__order-call-btn" type="submit">перезвоните мне</button>
-            <label class="call-form__agreement-label" for="agreement">
+          <div class="call-form-modal__btn-wrapper">
+            <button class="call-form-modal__order-call-btn" type="submit">перезвоните мне</button>
+            <label class="call-form-modal__agreement-label" for="agreement">
               <input class="visually-hidden" id="agreement" type="checkbox" name="agreement-check" required>
-              <span class="call-form__agreement-check"></span>
+              <span class="call-form-modal__agreement-check"></span>
               Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
           </div>
         </form>
