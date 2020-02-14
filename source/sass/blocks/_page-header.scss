@@ -20,34 +20,46 @@
 }
 
 .page-header__call-order {
-  font-variant: small-caps;
-  text-transform: lowercase;
+  text-transform: uppercase;
   
   border-bottom: 1px dashed $black;
 }
+
+
 
 @media (max-width: 767px) {
   .page-header {
     flex-wrap: wrap;
     flex-direction: column;
+
+    padding: 20px 8% 0;
+
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .page-header__contact-tel {
-    order: 1;
     margin-left: auto;
+    margin-bottom: 12px;
+
+    order: 1;
   }
 
   .page-header__call-order {
-    order: 2;
     margin-left: auto;
+
+    order: 2;
   }
 
   .page-header__logo-wrapper {
-    margin-right: auto;
     position: relative;
+    margin-right: auto;
   }
 
   .page-header__logo {
     position: absolute;
+
+    width: 120px;
+    height: 42px;
   }
 }

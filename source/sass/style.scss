@@ -1,9 +1,11 @@
-@import "source/sass/fonts.scss";
-@import "source/sass/variables.scss";
-@import "source/sass/mixins.scss";
-@import "source/sass/general.scss";
-@import "source/sass/blocks/visually-hidden.scss";
-@import "source/sass/blocks/page-header.scss";
-@import "source/sass/blocks/page-footer.scss";
-@import "source/sass/blocks/social.scss";
-@import "source/sass/blocks/general-info.scss";
+@import 'source/sass/fonts';
+@import 'source/sass/variables';
+@import 'source/sass/mixins';
+@import 'source/sass/general';
+
+@import 'source/sass/blocks/visually-hidden';
+@import 'source/sass/blocks/page-header';
+@import 'source/sass/blocks/page-footer'; 
+@import 'source/sass/blocks/social';
+@import 'source/sass/blocks/general-info';
+@import 'source/sass/blocks/call-form';

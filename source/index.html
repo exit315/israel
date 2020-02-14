@@ -11,8 +11,8 @@
       <div class="page-header__contact-tel">
         <a href="#">+ (972) 2 – 621 – 6581</a>
       </div>
-      <div class="page-header__logo">
-        <img src="../img/logo/logo-cf.svg" width="137" height="48" alt="Masa-Israel">
+      <div class="page-header__logo-wrapper">
+        <img class="page-header__logo" src="../img/logo/logo-cf.svg" width="137" height="48" alt="Masa-Israel">
       </div>
       <div class="page-header__call-order">
         <a href="#">Заказать звонок</a>
@@ -20,6 +20,26 @@
     </header>
 
     <main class="page-main">
+
+        <form class="page-header__call-form call-form hidden">
+          <button class="call-form__btn-close" id="call-form-close" type="reset"><span class="visually-hidden">Закрыть окно</span></button>
+
+          <h2 class="call-form__header">Заказать звонок</h2>
+          <p class="call-form__lead-in">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
+          
+          <div class="call-form__user-info">
+            <input class="call-form__input-name" type="text" name="user-name" placeholder="имя" required>
+            <input class="call-form__input-tel" type="tel" name="user-phone" placeholder="телефон" required>
+          </div>
+          <div class="call-form__btn-wrapper">
+            <button class="call-form__order-call-btn" type="submit">перезвоните мне</button>
+            <label class="call-form__agreement-label" for="agreement">
+              <input class="visually-hidden" id="agreement" type="checkbox" name="agreement-check" required>
+              <span class="call-form__agreement-check"></span>
+              Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
+          </div>
+        </form>
+
       <h1 class="visually-hidden">Masa-Israel - сайт о программах учёбы и стажировки в Израиле</h1>
 
       <div class="page-main__lead-in-wrapper">
@@ -173,12 +193,10 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <img src="../img/logo/logo-bw.svg" width="85" height="27" alt="Masa-Israel">
+      <div class="page-footer__logo-wrapper">
+        <img class="page-footer__logo" src="../img/logo/logo-bw.svg" width="85" height="27" alt="Masa-Israel">
       </div>
-      <div class="page-footer__copyright">
-        <p>Copyright someDesignCompany ©2019</p>
-      </div>
+      <p class="page-footer__copyright">Copyright someDesignCompany ©2019</p>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">

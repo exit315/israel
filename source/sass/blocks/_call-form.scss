@@ -1,0 +1,116 @@
+.call-form {
+  position: relative;
+  width: 480px;
+  height: 521px;
+  margin: 0 auto;
+  padding: 56px 72px 40px 48px;
+
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.call-form__btn-close {
+  @include form-close(32px, 32px);
+}
+
+.call-form__header {
+  margin: 0;
+  margin-bottom: 16px;
+
+  @include modal-header;
+}
+
+.call-form__lead-in {
+  margin: 0;
+  margin-bottom: 32px;
+
+  @include text-regular;
+  opacity: 0.87;
+}
+
+.call-form__user-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.call-form__input-name, 
+.call-form__input-tel {
+  padding: 19px 40px 20px;
+
+  border: 2px solid $border-grey;
+  box-sizing: border-box;
+  border-radius: 80px;
+
+  @include form-input-text;
+
+  &::placeholder {
+    @include form-placeholder;
+  }
+}
+
+.call-form__input-name {
+  margin-bottom: 8px;
+}
+
+.call-form__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 36px 0 50px;
+}
+
+.call-form__order-call-btn {
+  @include btn;
+  @include call-btn;
+  margin-bottom: 16px;
+
+  box-sizing: border-box;
+}
+
+.call-form__agreement-label {
+  position: relative;
+  margin: 0;
+  padding-left: 30px;
+  @include text-small;
+
+  opacity: 0.74;
+}
+
+.call-form__agreement-check {
+  @include agreement-check;
+}
+/// чтобы было видно, что чекбокс работает, переделаю
+.call-form__agreement-label [type="checkbox"]:checked + .call-form__agreement-check {
+  @include agreement-check-on;
+}
+
+@media (max-width: 767px) {
+  .call-form {
+    width: 320px;
+    height: 768px;
+    padding: 169px 16px;
+  }
+
+  .call-form__btn-close {
+    @include form-close(24px, 24px);
+  }
+
+  .call-form__header, 
+  .call-form__lead-in {
+    text-align: center;
+  }
+
+  .call-form__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+  
+    padding: 0 12px;
+  }
+
+  .call-form__agreement-label {
+    padding-left: 23px;
+  }
+}
