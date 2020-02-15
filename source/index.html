@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Masa-Israel: Учёба, путешествие и карьера для еврейской молодёжи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__contact-tel">
         <a href="#">+ (972) 2 – 621 – 6581</a>
@@ -28,13 +32,13 @@
           <p class="call-form-modal__lead-in">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
           
           <div class="call-form-modal__user-info">
-            <input class="call-form-modal__input-name" type="text" name="user-name" placeholder="имя" required>
-            <input class="call-form-modal__input-tel" type="tel" name="user-phone" placeholder="телефон" required>
+            <input class="call-form-modal__input-name" type="text" name="user-name" placeholder="имя" required="">
+            <input class="call-form-modal__input-tel" type="tel" name="user-phone" placeholder="телефон" required="">
           </div>
           <div class="call-form-modal__btn-wrapper">
             <button class="call-form-modal__order-call-btn" type="submit">перезвоните мне</button>
             <label class="call-form-modal__agreement-label" for="agreement">
-              <input class="visually-hidden" id="agreement" type="checkbox" name="agreement-check" required>
+              <input class="visually-hidden" id="agreement" type="checkbox" name="agreement-check" required="">
               <span class="call-form-modal__agreement-check"></span>
               Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
           </div>
@@ -49,8 +53,8 @@
       <section class="page-main__general-info general-info">
         <h2 class="general-info__header">О программе</h2>
 
-        <p class="general-info__description">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.</br>
-          Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.</br>
+        <p class="general-info__description">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.<br>
+          Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.<br>
           В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
 
         <div class="general-info__video-wrapper">
@@ -70,7 +74,7 @@
         <p class="want-to-go__description">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
         <form class="want-to-go__form call-form" action="call-form.php" method="POST">
           <div class="call-form__wrapper">
-            <label><input class="call-form__input" type="tel" placeholder="Телефон" required></label>
+            <label><input class="call-form__input" type="tel" placeholder="Телефон" required=""></label>
             <button class="call-form__btn" type="submit">Перезвоните мне</button>
           </div>
         </form>
@@ -156,8 +160,7 @@
             <ul class="curator__contacts-list">
               <li class="curator__contacts-item">
                 <a class="curator__contacts-link curator__contacts-link--fb" href="#">
-                  <span class="visually-hidden">Связаться с куратором в Facebook</span
-                    ></a>
+                  <span class="visually-hidden">Связаться с куратором в Facebook</span></a>
               </li>
               <li class="curator__contacts-item">
                 <a class="curator__contacts-link curator__contacts-link--whatsapp" href="#">
@@ -184,8 +187,8 @@
             <p class="contact-us__user-data-notice">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
           </div>
           <form class="contact-us__form" action="call-form.php" method="POST">
-            <label><input class="contact-us__form-input" type="text" placeholder="Имя" required></label>
-            <label><input class="contact-us__form-input" type="tel" placeholder="+7 (923) 41" required></label>
+            <label><input class="contact-us__form-input" type="text" placeholder="Имя" required=""></label>
+            <label><input class="contact-us__form-input" type="tel" placeholder="+7 (923) 41" required=""></label>
             <button class="contact-us__form-btn" type="submit">Перезвоните мне</button>
           </form>
         </div>
@@ -202,19 +205,19 @@
           <li class="social__item">
             <a class="social__link social__link--fb" href="#">
               <span class="visually-hidden">Masa Israel в Facebook</span>
-              <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+              <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twit" href="#">
               <span class="visually-hidden">Masa Israel в Twitter</span>
-              <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#twitter"></use></svg>
+              <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#">
               <span class="visually-hidden">Masa Israel в Instagram</span>
-              <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#instagram"></use></svg>
+              <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
             </a>
           </li>
         </ul>
