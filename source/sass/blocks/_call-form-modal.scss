@@ -5,9 +5,8 @@
   margin: 0 auto;
   padding: 56px 72px 40px 48px;
 
-  border: 1px solid transparent;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  @include modal-border-shadow;
+  
   box-sizing: border-box;
 }
 
@@ -88,7 +87,7 @@
 //}
 
 @media (max-width: 767px) {
-  .call-modal-form {
+  .call-form-modal {
     width: 320px;
     height: 768px;
     padding: 169px 16px;
@@ -101,6 +100,10 @@
   .call-form-modal__header, 
   .call-form-modal__lead-in {
     text-align: center;
+  }
+
+  .call-form-modal__lead-in {
+    @include text-regular-mobile;
   }
 
   .call-form-modal__btn-wrapper {

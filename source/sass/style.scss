@@ -1,11 +1,13 @@
-@import 'source/sass/fonts';
-@import 'source/sass/variables';
-@import 'source/sass/mixins';
-@import 'source/sass/general';
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'general';
 
-@import 'source/sass/blocks/visually-hidden';
-@import 'source/sass/blocks/page-header';
-@import 'source/sass/blocks/page-footer'; 
-@import 'source/sass/blocks/social';
-@import 'source/sass/blocks/general-info';
-@import 'source/sass/blocks/call-form-modal';
+@import 'blocks/call-form-modal';
+@import 'blocks/call-ok-popup';
+@import 'blocks/page-footer';
+@import 'blocks/page-header';
+@import 'blocks/program-info';
+@import 'blocks/program-types';
+@import 'blocks/social';
+@import 'blocks/visually-hidden';
