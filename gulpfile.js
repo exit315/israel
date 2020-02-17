@@ -16,8 +16,8 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-
-//var sassGlob = require('gulp-sass-glob');
+var sassGlob = require('gulp-sass-glob');
+var wait = require('gulp-wait');
 
 gulp.task("clean", function () {
   return del("build");
@@ -37,6 +37,8 @@ gulp.task("copy", function () {
 
 gulp.task("css", function() {
   return gulp.src("source/sass/style.scss")
+    .pipe(wait(500))
+    .pipe(sassGlob())
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
