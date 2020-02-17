@@ -1,9 +1,20 @@
-@mixin main-header {
+@mixin section-header-desktop {
   font-family: $font-headers;
   font-weight: $font-weight-bold;
-  font-size: $font-size-header;
+  font-size: $font-size-header-desktop;
   color: $blue;
   line-height: 49px;
+  text-transform: uppercase;
+}
+
+@mixin section-header-mobile {
+  font-family: $font-headers;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-header-mobile;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 @mixin modal-header {
@@ -23,6 +34,13 @@
   line-height: 170%;
 }
 
+@mixin text-regular-mobile {
+  font-family: $font-main;
+  font-weight: $font-weight-text;
+  font-size: 14px;
+  line-height: 160%;
+}
+
 @mixin text-small {
   font-family: $font-main;
   font-weight: $font-weight-text;
@@ -30,6 +48,48 @@
   color: $black;
   line-height: 150%;
 }
+
+@mixin tab-title {
+  font-family: $font-main;
+  font-weight: $font-weight-text;
+  font-size: 15px;
+  line-height: 18px;
+  color: $black;
+  opacity: 0.87;
+}
+
+@mixin program-tab-icon($src, $size) {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 20px;
+
+  width: 36px;
+  height: 36px;
+
+  background-image: $src;
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: center;
+}
+
+
+/*
+@mixin tab-header-active {
+  font-family: $font-main;
+  font-weight: $font-weight-medium;
+  font-size: 16px;
+  line-height: 19px;
+  font-variant: small-caps;
+
+  color: #FFFFFF;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+
+  background: linear-gradient(138.15deg, #FFC341 20.46%, #FFD701 65.31%);
+}
+*/
+
 
 @mixin input-focus {
   border-color: $yellow-gradient;
@@ -44,6 +104,7 @@
 }
 
 @mixin call-btn {
+  width: 264px;
   padding: 19px 61px 20px;
 
   font-family: $font-main;
@@ -124,11 +185,24 @@
   cursor: pointer;
 }
 
-//@mixin agreement-check-on {
-//  background-image: url("../img/icons/btn-close.svg");
-//  background-position: center;
-//  background-repeat: no-repeat;
-//  background-size: contain;
-//
-//  cursor: pointer;
-//}
+@mixin modal-border-shadow {
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+@mixin agreement-check-on {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: transparent;
+  background-image: url("../img/icons/checkbox-checked.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

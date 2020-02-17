@@ -4,6 +4,7 @@ $yellow: #FFC341;
 $yellow-gradient: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
 $red: #FF0000;
 $border-grey: #E3E3E3;
+$overlay-grey: rgba(235,235,235,0.95);
 
 $font-headers: 'Montserrat';
 $font-main: 'Fira Sans';
@@ -15,4 +16,6 @@ $font-weight-bold: 700;
 $font-weight-sub-title: 800;
 $font-weight-logo: 900;
 
-$font-size-header: 40px;
+$font-size-header-desktop: 40px;
+$font-size-header-mobile: 32px;
+

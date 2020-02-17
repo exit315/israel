@@ -80,11 +80,13 @@
 
 .call-form-modal__agreement-check {
   @include agreement-check;
+  
+  cursor: pointer;
 }
 
-//.call-form-modal__agreement-label [type="checkbox"]:checked + .call-form-modal__agreement-check {
-//  @include agreement-check-on;
-//}
+.call-form-modal__agreement-label [type="checkbox"]:checked + .call-form-modal__agreement-check::before {
+  @include agreement-check-on;
+}
 
 @media (max-width: 767px) {
   .call-form-modal {
