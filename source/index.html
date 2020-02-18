@@ -24,15 +24,15 @@
     </header>
 
     <main class="page-main">
-      <form class="call-form-modal hidden">
+      <form class="call-form-modal">
         <button class="call-form-modal__btn-close" id="call-form-close" type="reset"><span class="visually-hidden">Закрыть окно</span></button>
 
         <h2 class="call-form-modal__header">Заказать звонок</h2>
         <p class="call-form-modal__lead-in">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
           
         <div class="call-form-modal__user-info">
-          <input class="call-form-modal__input-name" type="text" name="user-name" placeholder="имя" required="">
-          <input class="call-form-modal__input-tel" type="tel" name="user-phone" placeholder="телефон" required="">
+          <input class="call-form-modal__input-name" type="text" name="user-name" placeholder="имя" required>
+          <input class="call-form-modal__input-tel" type="tel" name="user-phone" placeholder="телефон" required>
         </div>
         <div class="call-form-modal__btn-wrapper">
           <button class="call-form-modal__order-call-btn" type="submit">перезвоните мне</button>
@@ -77,45 +77,42 @@
         <h2 class="program-types__header">Программы</h2>
 
         <div class="program-types__tabs program-tabs">
-          <ul class="program-tabs__header-list">
-            <li class="program-tabs__header-item program-tabs__header-item--culture">
-              <h3 class="program-tabs__title">Общие</h3>
-            </li>
-            <li class="program-tabs__header-item program-tabs__header-item--study">
-              <h3 class="program-tabs__title">Академические</h3>
-            </li>
-            <li class="program-tabs__header-item program-tabs__header-item--business">
-              <h3 class="program-tabs__title">Стажировки</h3>
-            </li>
-            <li class="program-tabs__header-item program-tabs__header-item--volonteur">
-              <h3 class="program-tabs__title">Волонтёрство</h3>
-            </li>
-            <li class="program-tabs__header-item program-tabs__header-item--religion">
-              <h3 class="program-tabs__title">Религиозные</h3>
-            </li>
-          </ul>
-          <ul class="program-types__content-list"> 
-            <li class="program-types__content-item">
+          <input class="program-tabs__tab-input program-tabs__tab-input--culture visually-hidden" id="culture" type="radio" name="tab-head">
+          <input class="program-tabs__tab-input program-tabs__tab-input--study visually-hidden" id="study" type="radio" name="tab-head" checked>
+          <input class="program-tabs__tab-input program-tabs__tab-input--business visually-hidden" id="business" type="radio" name="tab-head">
+          <input class="program-tabs__tab-input program-tabs__tab-input--volonteur visually-hidden" id="volonteur" type="radio" name="tab-head">
+          <input class="program-tabs__tab-input program-tabs__tab-input--religion visually-hidden" id="religion" type="radio" name="tab-head">
+
+          <div class="program-tabs__tab-list">
+            <label class="program-tabs__tab-label program-tabs__tab-label--culture" for="culture">Общие</label>
+            <label class="program-tabs__tab-label program-tabs__tab-label--study" for="study">Академические</label>
+            <label class="program-tabs__tab-label program-tabs__tab-label--business" for="business">Стажировки</label>
+            <label class="program-tabs__tab-label program-tabs__tab-label--volonteur" for="volonteur">Волонтёрство</label>
+            <label class="program-tabs__tab-label program-tabs__tab-label--religion" for="religion">Религиозные</label>
+          </div>
+
+          <ul class="program-tabs__content-list"> 
+            <li class="program-tabs__content-item program-tabs__content-item--culture">
               <h3 class="program-tabs__content-header">Общие</h3>
               <p class="program-tabs__content-description">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования. </p>
               <p class="program-tabs__content-description">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
             </li>
-            <li class="program-types__content-item">
+            <li class="program-tabs__content-item program-tabs__content-item--study">
               <h3 class="program-tabs__content-header">Академические</h3>
               <p class="program-tabs__content-description">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования. </p>
               <p class="program-tabs__content-description">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
             </li>
-            <li class="program-types__content-item">
+            <li class="program-tabs__content-item program-tabs__content-item--business">
               <h3 class="program-tabs__content-header">Стажировки</h3>
               <p class="program-tabs__content-description">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования. </p>
               <p class="program-tabs__content-description">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
             </li>
-            <li class="program-types__content-item">
+            <li class="program-tabs__content-item program-tabs__content-item--volonteur">
               <h3 class="program-tabs__content-header">Волонтёрство</h3>
               <p class="program-tabs__content-description">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования. </p>
               <p class="program-tabs__content-description">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
             </li>
-            <li class="program-types__content-item">
+            <li class="program-tabs__content-item program-tabs__content-item--religion">
               <h3 class="program-tabs__content-header">Религиозные</h3>
               <p class="program-tabs__content-description">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования. </p>
               <p class="program-tabs__content-description">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
@@ -280,5 +277,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="js/utils.js"></script>
   </body>
 </html>

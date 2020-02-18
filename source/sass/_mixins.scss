@@ -34,6 +34,15 @@
   line-height: 170%;
 }
 
+@mixin text-big {
+  font-family: $font-main;
+  font-weight: $font-weight-text;
+  font-size: 17px;
+  color: $black;
+  line-height: 170%;
+  opacity: 0.87;
+}
+
 @mixin text-regular-mobile {
   font-family: $font-main;
   font-weight: $font-weight-text;
@@ -49,13 +58,48 @@
   line-height: 150%;
 }
 
-@mixin tab-title {
+@mixin tab-label {
   font-family: $font-main;
   font-weight: $font-weight-text;
   font-size: 15px;
   line-height: 18px;
   color: $black;
   opacity: 0.87;
+}
+
+
+@mixin tab-header-active {
+  font-family: $font-main;
+  font-weight: $font-weight-medium;
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-transform: lowercase;
+  font-variant: small-caps;
+
+  background-image: url("../img/icons/tab-active.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 228px 66px;
+}
+
+@mixin tab-header-active-mobile {
+  font-family: $font-main;
+  font-weight: $font-weight-medium;
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-transform: lowercase;
+  font-variant: small-caps;
+
+  background-image: $yellow-gradient;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 181px 48px;
+  border: 1px solid transparent;
+  border-radius: 54px;
 }
 
 @mixin program-tab-icon($src, $size) {
@@ -74,21 +118,21 @@
   background-position: center;
 }
 
+@mixin program-tab-icon-mobile($src, $size) {
+  content: "";
 
-/*
-@mixin tab-header-active {
-  font-family: $font-main;
-  font-weight: $font-weight-medium;
-  font-size: 16px;
-  line-height: 19px;
-  font-variant: small-caps;
+  position: absolute;
+  top: 16px;
+  left: 20px;
 
-  color: #FFFFFF;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  width: 32px;
+  height: 32px;
 
-  background: linear-gradient(138.15deg, #FFC341 20.46%, #FFD701 65.31%);
+  background-image: $src;
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: center;
 }
-*/
 
 
 @mixin input-focus {
