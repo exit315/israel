@@ -1,0 +1,65 @@
+.call-ok-popup {
+  position: relative;
+  width: 480px;
+  height: 521px;
+  margin: 0 auto;
+  padding: 216px 60px 112px;
+  
+  @include modal-border-shadow;
+  
+  background-image: url("../img/icons/ok.svg");
+  background-repeat: no-repeat;
+  background-size: 71px 64px;
+  background-position: 206px 120px;
+  box-sizing: border-box;
+}
+
+.call-ok-popup__btn-close {
+  @include form-close(32px, 32px);
+}
+
+.call-ok-popup__header {
+  margin-bottom: 16px;
+
+  @include modal-header;
+  text-align: center;
+}
+
+.call-ok-popup__note {
+  margin: 0;
+  margin-bottom: 32px;
+
+  @include text-regular;
+  opacity: 0.87;
+  text-align: center;
+}
+
+.call-ok-popup__btn-wrapper {
+  width: 264px;
+  margin: 0 auto;
+}
+
+.call-ok-popup__popup-close {
+  @include btn;
+  @include call-btn;
+
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .call-ok-popup {
+    width: 320px;
+    height: 768px;
+    padding: 296px 16px 292px;
+
+    background-position: 127px 200px;
+  }
+
+  .call-ok-popup__note {
+    @include text-regular-mobile;
+  }
+
+  .call-ok-popup__btn-close {
+    @include form-close(24px, 24px);
+  }
+}

@@ -1,0 +1,33 @@
+.program-types {
+  padding: 48px 22.26% 0 15.37%;
+  margin-bottom: 31px;
+
+  background-image: url("../img/bg/bg-sketch-programs.png");
+  background-repeat: no-repeat;
+  background-size: 680px 426px;
+  background-position: right top;
+}
+
+.program-types__header {
+  margin: 0;
+  margin-bottom: 67px;
+  
+  @include section-header-desktop;
+}
+
+@media (max-width: 767px) {
+  .program-types {
+    margin-bottom: 80px;
+    padding: 0;
+
+    background-size: 320px 201px;
+    background-position: right center;
+  }
+
+  .program-types__header {
+    margin-bottom: 16px;
+    padding: 0 16px;
+    
+    @include section-header-mobile;
+  }
+}

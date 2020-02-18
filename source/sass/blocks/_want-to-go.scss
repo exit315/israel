@@ -1,0 +1,42 @@
+.want-to-go {
+  position: relative;
+  margin: 0;
+  padding: 209px 46.7% 131px 15.37%;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -14.51px;
+
+    width: 167px;
+    height: 226px;
+
+    background-image: url("../img/bg/backpack.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  background-image: url("../img/bg/bg-girl-flag-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 818px 594px;
+  background-position: right bottom;
+}
+
+.want-to-go__header {
+  margin: 0;
+  margin-bottom: 24px;
+
+  @include section-header-desktop;
+}
+
+.want-to-go__description {
+  margin: 0;
+  margin-bottom: 64px;
+  padding-right: 80px;
+
+  @include text-big;
+}
+
+

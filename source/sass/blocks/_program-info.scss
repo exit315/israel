@@ -1,0 +1,65 @@
+.program-info {
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0 18.16% 96px;
+
+  background-image: url("../img/bg/bg-watercolor-video.png");
+  background-repeat: no-repeat;
+  background-size: 1366px 604px;
+  background-position: center center;
+}
+
+.program-info__header {
+  margin-bottom: 24px;
+
+  text-align: center;
+  @include section-header-desktop;
+}
+
+.program-info__description {
+  margin: 0;
+  margin-bottom: 48px;
+
+  @include text-regular;
+  text-align: center;
+  opacity: 0.87;
+}
+
+.program-info__video-wrapper {
+  width: 870px;
+  height: 460px;
+  margin: 0 auto;
+
+//  background-image: url("../img/bg/bg-video-desktop.jpg");
+//  background-repeat: no-repeat;
+//  background-size: 870px 460px;
+//  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .program-info {
+    padding: 0;
+    margin-bottom: 80px;
+    
+    background-image: none;
+  }
+
+  .program-info__header {
+    @include section-header-mobile;
+  }
+  
+  .program-info__description {
+    padding: 0 5%;
+    text-align: left;
+  }
+
+  .program-info__video-wrapper {
+    width: 320px;
+    height: 224px;
+
+//    background-image: url("../img/bg/bg-video-mobile.jpg");
+//    background-repeat: no-repeat;
+//    background-size: 320px 224px;
+//    background-position: center;
+  }
+}

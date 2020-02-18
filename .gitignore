@@ -8,5 +8,4 @@
 *.sublime*
 node_modules/
 npm-debug.*
-source/
 Thumbs.db
