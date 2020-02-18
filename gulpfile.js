@@ -18,6 +18,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var sassGlob = require('gulp-sass-glob');
 var wait = require('gulp-wait');
+var IMask = require("imask");
 
 gulp.task("clean", function () {
   return del("build");
@@ -97,6 +98,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icons/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/**/*.js", gulp.series("refresh"));
 });
 
 gulp.task("refresh", function (done) {
