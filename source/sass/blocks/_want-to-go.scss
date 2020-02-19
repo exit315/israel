@@ -1,6 +1,7 @@
 .want-to-go {
   position: relative;
   margin: 0;
+  margin-bottom: 10px;
   padding: 209px 46.7% 131px 15.37%;
 
   &::before {
@@ -39,4 +40,37 @@
   @include text-big;
 }
 
+@media (max-width: 767px) {
+  .want-to-go {
+    margin: 0;
+    padding: 0 16px 308px;
+
+  &::before {
+    top: 0;
+
+    width: 120px;
+    height: 162px;
+  }
+
+    background-image: url("../img/bg/bg-girl-flag-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px 308px;
+    background-position: center bottom;
+  }
+
+  .want-to-go__header {
+    margin: 0 0 24px;
+  
+    @include section-header-mobile;
+  }
+
+  .want-to-go__description {
+    margin: 0;
+    margin-bottom: 24px;
+    padding-right: 0;
+  
+    @include text-big-mobile;
+  }
+
+}
 
