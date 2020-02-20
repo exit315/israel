@@ -6,3 +6,8 @@ body {
 .hidden {
   display: none;
 }
+
+.body-lock {
+  overflow-y: scroll;
+  position: fixed;
+}

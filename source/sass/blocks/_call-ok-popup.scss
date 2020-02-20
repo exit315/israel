@@ -1,5 +1,7 @@
 .call-ok-popup {
   position: relative;
+  top: -650px;
+  z-index: 2;
   width: 480px;
   height: 521px;
   margin: 0 auto;
@@ -7,6 +9,7 @@
   
   @include modal-border-shadow;
   
+  background-color: $white;
   background-image: url("../img/icons/ok.svg");
   background-repeat: no-repeat;
   background-size: 71px 64px;

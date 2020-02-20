@@ -1,4 +1,14 @@
 .page-header {
+  position: relative;
+  padding-bottom: 135px;
+
+  background-image: url("../img/bg/bg-town-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 1366px 879px;
+  background-position: top;
+}
+
+.page-header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,14 +29,29 @@
   }
 }
 
-.page-header__call-order {
+.page-header__call-order-open-btn {
   text-transform: uppercase;
   
   border-bottom: 1px dashed $black;
 }
 
+.page-header__lead-in-wrapper {
+  margin: 0 auto; 
+  padding: 458px 0 172px;
+
+  background-image: url("../img/bg/bg-girl-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 381px 609px;
+  background-position: center bottom;
+}
+
+.page-header__lead-in {
+  margin: 0;
+  @include text-promo;
+}
+
 @media (max-width: 767px) {
-  .page-header {
+  .page-header__nav {
     flex-wrap: wrap;
     flex-direction: column;
 
@@ -43,7 +68,7 @@
     order: 1;
   }
 
-  .page-header__call-order {
+  .page-header__call-order-open-btn {
     margin-left: auto;
 
     order: 2;

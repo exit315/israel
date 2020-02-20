@@ -4,6 +4,7 @@
   font-size: $font-size-header-desktop;
   color: $blue;
   line-height: 49px;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
@@ -15,6 +16,17 @@
   text-align: center;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+}
+
+@mixin text-promo {
+  font-family: $font-main;
+  font-weight: $font-weight-bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $white;
+
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 @mixin modal-header {
@@ -43,6 +55,15 @@
   opacity: 0.87;
 }
 
+@mixin text-big-mobile {
+  font-family: $font-main;
+  font-weight: $font-weight-text;
+  font-size: 16px;
+  color: $black;
+  line-height: 160%;
+  opacity: 0.87;
+}
+
 @mixin text-regular-mobile {
   font-family: $font-main;
   font-weight: $font-weight-text;
@@ -66,7 +87,6 @@
   color: $black;
   opacity: 0.87;
 }
-
 
 @mixin tab-header-active {
   font-family: $font-main;
@@ -97,7 +117,7 @@
   background-image: $yellow-gradient;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 181px 48px;
+  background-size: 181px 50px;
   border: 1px solid transparent;
   border-radius: 54px;
 }
@@ -118,19 +138,19 @@
   background-position: center;
 }
 
-@mixin program-tab-icon-mobile($src, $size) {
+@mixin program-tab-icon-mobile($src) {
   content: "";
 
   position: absolute;
-  top: 16px;
-  left: 20px;
+  top: 8px;
+  left: 12px;
 
   width: 32px;
   height: 32px;
 
   background-image: $src;
   background-repeat: no-repeat;
-  background-size: $size;
+  background-size: 80%;
   background-position: center;
 }
 
@@ -157,9 +177,10 @@
   color: #FFFFFF;
   line-height: 20px;
   text-align: center;
+  text-transform: lowercase;
   font-variant: small-caps;
   
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 80px;
 }
 
@@ -195,10 +216,10 @@
   font-weight: $font-weight-medium;
   font-size: 17px;
   line-height: 20px;
+  text-transform: lowercase;
   font-variant: small-caps;
 
   color: $black;
-  opacity: 0.5;
 }
 
 @mixin form-input-text {

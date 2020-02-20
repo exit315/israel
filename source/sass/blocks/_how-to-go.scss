@@ -1,0 +1,77 @@
+.how-to-go {
+  padding-top: 180px;
+  padding-left: 51.17%;
+  padding-right: 9.6%;
+  padding-bottom: 160px;
+
+  background-image: url("../img/bg/bg-watercolor-how-to-go.png");
+  background-repeat:  no-repeat;
+  background-size: 1366px 1208px;
+  background-position: left center;
+}
+
+.how-to-go__header {
+  margin: 0;
+  margin-bottom: 24px;
+  
+  @include section-header-desktop;
+}
+
+.how-to-go__intro {
+  margin: 0;
+  margin-bottom: 32px;
+
+  @include text-regular;
+}
+
+.how-to-go__conditions-lead-in {
+  margin: 0;
+  margin-bottom: 24px;
+
+  @include text-big;
+  font-weight: $font-weight-medium;
+  opacity: 1;
+}
+
+.how-to-go__conditions-list {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+
+  background-image: url("../img/icons/border-dashed.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  
+  list-style: none;
+}
+
+.how-to-go__conditions-item {
+  margin-bottom: 40px;
+  padding-left: 48px;
+
+  @include text-regular;
+  line-height: 140%;
+  opacity: 0.87;
+}
+
+.how-to-go__conditions-exeption {
+  position: relative;
+  padding-left: 15px;
+
+  @include text-regular;
+  line-height: 140%;
+  opacity: 0.5;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 2px;
+    height: 42px;
+
+    background-image: $yellow-gradient;
+  }
+}
