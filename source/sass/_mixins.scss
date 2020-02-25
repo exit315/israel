@@ -79,6 +79,19 @@
   line-height: 150%;
 }
 
+@mixin logo-title {
+  font-family: $font-logo;
+  font-weight: $font-weight-logo;
+  font-size: 200px;
+  line-height: 170%;
+
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+
+  color: #000000;
+
+}
+
 @mixin tab-label {
   font-family: $font-main;
   font-weight: $font-weight-text;

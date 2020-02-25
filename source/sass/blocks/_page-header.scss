@@ -36,7 +36,7 @@
 }
 
 .page-header__lead-in-wrapper {
-  margin: 0 auto; 
+  position: relative;
   padding: 458px 0 172px;
 
   background-image: url("../img/bg/bg-girl-desktop.png");
@@ -46,8 +46,50 @@
 }
 
 .page-header__lead-in {
-  margin: 0;
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
   @include text-promo;
+}
+/*
+.page-header__logo-title {
+  position: absolute;
+  top: 100px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  
+  background-image: url("../img/bg/bg-israel-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  span {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+
+    @include logo-title;
+    background: $white;
+    mix-blend-mode: lighten;
+  }
+}
+*/
+.page-header__anchor::before {
+  content: "";
+
+  position: absolute;
+  bottom: -163px;
+  left: 134px;
+
+  width: 76px;
+  height: 132px;
+  
+  background-image: url("../img/icons/scroll.svg");
+  background-repeat: no-repeat;
+  background-size: 76px 132px;
+  background-position: center;
+  background-color: transparent;
 }
 
 @media (max-width: 767px) {
