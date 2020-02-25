@@ -2,7 +2,7 @@
   margin: 0;
   margin-bottom: 56px;
 
-  background-image: url("../img/bg/bg-watercolor-video.png");
+  background-image: url("../img/bg/bg-watercolor-video-desktop.png");
   background-repeat: no-repeat;
   background-size: 1366px 604px;
   background-position: center center;
@@ -79,10 +79,12 @@
 
 @media (max-width: 767px) {
   .program-info {
-    padding: 0;
     margin-bottom: 80px;
     
-    background-image: none;
+    background-image: url("../img/bg/bg-watercolor-video-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 420px 186px;
+    background-position: center 200px;
   }
 
   .program-info__header {
@@ -91,6 +93,7 @@
   
   .program-info__description {
     padding: 0 5%;
+    margin-bottom: 48px;
 
     @include text-big-mobile;
     text-align: left;
