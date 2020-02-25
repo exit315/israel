@@ -80,12 +80,6 @@ var onModalEscPress = function (evt) {
   }
 };
 
-var onInputEscPress = function (evt) {
-  if (evt.keyCode === ESC_BUTTON) {
-    evt.stopPropagation();
-  }
-};
-
 var onModalOverlayClick = function (evt) {
   if (evt.target == modalOverlay) {
     modalOverlay.classList.add('hidden');
@@ -97,8 +91,6 @@ var onModalOverlayClick = function (evt) {
 
 openModalBtn.addEventListener('click', openModalCallForm);
 closeModalBtn.addEventListener('click', closeModalCallForm);
-userPhoneModal.addEventListener('keydown', onInputEscPress);
-userNameModal.addEventListener('keydown', onInputEscPress);
 
 // Отправка формы и показ попапа
 
@@ -140,6 +132,9 @@ var modalSubmitClose = function (evt) {
 
 modal.addEventListener('submit', function (evt) {
   evt.preventDefault();
+  localStorage.setItem('userPhoneModal', userPhoneModal.value);
+  localStorage.setItem('userNameModal', userNameModal.value);
+
   modal.classList.add('hidden');
   modalSubmit.classList.remove('hidden');
   modal.reset();
@@ -149,4 +144,8 @@ modal.addEventListener('submit', function (evt) {
 });
 
 modalSubmitIconClose.addEventListener('click', modalSubmitClose);
-modalSubmitBtnClose.addEventListener('click', modalSubmitClose);  
+modalSubmitBtnClose.addEventListener('click', modalSubmitClose);
+
+localStorage.getItem('userPhoneModal');
+localStorage.getItem('userNameModal');
+// Хранение введенных данных в LocalStorage
