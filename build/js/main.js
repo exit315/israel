@@ -42,7 +42,7 @@ function getBodyScrollTop() {
 
 var openModalCallForm = function () {
   event.preventDefault();
-  body.dataset.scrollY = getBodyScrollTop(); // сохраним значение скролла
+  body.dataset.scrollY = getBodyScrollTop();
 
   modalOverlay.classList.remove('hidden');
   modal.classList.remove('hidden');
