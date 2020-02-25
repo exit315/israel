@@ -1,7 +1,6 @@
 .program-info {
   margin: 0;
   margin-bottom: 56px;
-  padding: 0 18.16% 96px;
 
   background-image: url("../img/bg/bg-watercolor-video.png");
   background-repeat: no-repeat;
@@ -49,9 +48,32 @@
 
 @media (max-width: 1023px) {
   .program-info {
-    margin: 0;
-    margin-bottom: 56px;
-    padding: 0 5.56% 96px;
+    margin: 0 auto 56px;
+  }
+
+  .program-info__video-wrapper {
+    position: relative;
+    width: 320px;
+    height: 224px;
+    margin: 0 auto;
+  }
+
+  .program-info__video-desktop {
+    display: none;
+  }
+  
+  .program-info__video-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .program-info__video-icon-play {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -72,28 +94,5 @@
 
     @include text-big-mobile;
     text-align: left;
-  }
-
-  .program-info__video-wrapper {
-    width: 320px;
-    height: 224px;
-  }
-
-  .program-info__video-desktop {
-    display: none;
-  }
-  
-  .program-info__video-mobile {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .program-info__video-icon-play {
-    position: absolute;
-    top: 80px;
-    left: 120px;
-
-    width: 80px;
-    height: 80px;
   }
 }
