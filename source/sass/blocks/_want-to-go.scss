@@ -40,6 +40,13 @@
   @include text-big;
 }
 
+@media (max-width: 1023px) {
+  .want-to-go {
+    padding-top: 90px;
+    padding-bottom: 240px;
+  }
+}
+
 @media (max-width: 767px) {
   .want-to-go {
     margin: 0;
@@ -60,17 +67,12 @@
 
   .want-to-go__header {
     margin: 0 0 24px;
-  
-    @include section-header-mobile;
   }
 
   .want-to-go__description {
     margin: 0;
     margin-bottom: 24px;
     padding-right: 0;
-  
-    @include text-big-mobile;
   }
-
 }
 
