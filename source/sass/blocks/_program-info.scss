@@ -1,6 +1,7 @@
 .program-info {
   margin: 0;
   margin-bottom: 56px;
+  padding-bottom: 96px;
 
   background-image: url("../img/bg/bg-watercolor-video-desktop.png");
   background-repeat: no-repeat;
@@ -80,6 +81,7 @@
 @media (max-width: 767px) {
   .program-info {
     margin-bottom: 80px;
+    padding-bottom: 0;
     
     background-image: url("../img/bg/bg-watercolor-video-mobile.png");
     background-repeat: no-repeat;
