@@ -1,0 +1,87 @@
+.features__header {
+  margin: 0;
+  margin-bottom: 24px;
+
+  @include section-header-desktop;
+  text-align: center;
+}
+
+.features__lead-in {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 24.1% 0 22.8%;
+
+  @include text-big;
+  text-align: center;
+}
+
+.features__list {
+  position: relative;
+
+  margin: 0;
+  padding: 0 7.6%;
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+
+
+  span {
+    position: absolute;
+    bottom: 0;
+
+    @include feature-description;
+    z-index: 2;
+  }
+}
+
+.features__item.features__item--excursion {
+  width: 482px;
+  height: 732px;
+  z-index: 1;
+
+  &::before {
+    @include feature-item-img(url("../../img/bg/img-excursion-desktop.png"), 482px, 732px, -25px, 0);
+  }
+}
+
+.features__item--study-lang {
+  width: 211px;
+  height: 318px;
+  z-index: 1;
+
+  &::before {
+    @include feature-item-img(url("../../img/bg/img-study-lang-desktop.png"), 211px, 318px, 40px, 0);
+  }  
+}
+
+.features__item--study {
+  width: 411px;
+  height: 318px;
+  z-index: 1;
+
+  &::before {
+    @include feature-item-img(url("../../img/bg/img-study-desktop.png"), 411px, 318px, 40px, 0);
+  }
+}
+
+.features__item--projects {
+  width: 411px;
+  height: 318px;
+  z-index: 1;
+
+  &::before {
+    @include feature-item-img(url("../../img/bg/img-projects-desktop.png"), 411px, 318px, 0, 0);
+  }
+}
+
+.features__item--leadership {
+  width: 214px;
+  height: 318px;
+  z-index: 1;
+
+  &::before {
+    @include feature-item-img(url("../../img/bg/img-leadership-desktop.png"), 214px, 318px, 0, 0);
+  }
+}
