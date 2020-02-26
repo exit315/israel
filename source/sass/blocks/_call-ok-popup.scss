@@ -43,7 +43,6 @@
 }
 
 .call-ok-popup__popup-close {
-  @include btn;
   @include call-btn;
 
   box-sizing: border-box;

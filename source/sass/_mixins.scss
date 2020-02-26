@@ -89,7 +89,6 @@
   text-transform: uppercase;
 
   color: #000000;
-
 }
 
 @mixin tab-label {
@@ -197,15 +196,7 @@
 }
 
 @mixin input-focus {
-  border-color: $yellow-gradient;
-}
-
-@mixin input-error {
-  border-color: $red;
-}
-
-@mixin input-correct {
-  border-color: $black;
+  border-color: $yellow;
 }
 
 @mixin call-btn {
