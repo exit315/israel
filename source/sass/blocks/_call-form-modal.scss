@@ -3,7 +3,7 @@
   top: -650px;
   z-index: 2;
   width: 480px;
-  height: 521px;
+  min-height: 521px;
   margin: 0 auto;
   padding: 56px 72px 40px 48px;
 
@@ -129,7 +129,7 @@
     top: -805px;
     
     width: 320px;
-    height: 768px;
+    min-height: 768px;
     margin: 0 auto;
     padding: 169px 16px;
     border-radius: 0;
