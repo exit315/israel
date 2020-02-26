@@ -1,80 +1,89 @@
 .program-info {
   margin: 0;
   margin-bottom: 56px;
+  padding-top: 35px;
   padding-bottom: 96px;
 
   background-image: url("../img/bg/bg-watercolor-video-desktop.png");
   background-repeat: no-repeat;
   background-size: 1366px 604px;
   background-position: center center;
-}
 
-.program-info__header {
-  margin: 0;
-  margin-bottom: 24px;
+  &__header {
+    margin: 0;
+    margin-bottom: 24px;
+  
+    text-align: center;
+    @include section-header-desktop;
+  }
 
-  text-align: center;
-  @include section-header-desktop;
-}
+  &__description {
+    margin: 0;
+    margin-bottom: 48px;
+  
+    @include text-big;
+    text-align: center;
+    opacity: 0.87;
+  }
 
-.program-info__description {
-  margin: 0;
-  margin-bottom: 48px;
+  &__video-wrapper {
+    position: relative;
+    width: 870px;
+    height: 460px;
+    margin: 0 auto;
+  }
 
-  @include text-big;
-  text-align: center;
-  opacity: 0.87;
-}
+  &__video-desktop {
+    margin: 0 auto;
+  }
 
-.program-info__video-wrapper {
-  position: relative;
-  width: 870px;
-  height: 460px;
-  margin: 0 auto;
-}
+  &__video-mobile {
+    display: none;
+  }
 
-.program-info__video-desktop {
-  margin: 0 auto;
-}
+  &__video-icon-play {
+    position: absolute;
+    top: 179px;
+    left: 387px;
+    width: 96px;
+    height: 96px;
+    z-index: 2;
 
-.program-info__video-mobile {
-  display: none;
-}
+    cursor: pointer;
+    outline: none;
 
-.program-info__video-icon-play {
-  position: absolute;
-  top: 179px;
-  left: 387px;
+    @include play-btn;
+  }
 }
 
 @media (max-width: 1023px) {
   .program-info {
     margin: 0 auto 56px;
-  }
 
-  .program-info__video-wrapper {
-    position: relative;
-    width: 320px;
-    height: 224px;
-    margin: 0 auto;
-  }
+    &__video-wrapper {
+      position: relative;
+      width: 320px;
+      height: 224px;
+      margin: 0 auto;
+    }
 
-  .program-info__video-desktop {
-    display: none;
-  }
+    &__video-desktop {
+      display: none;
+    }
   
-  .program-info__video-mobile {
-    display: block;
-    margin: 0 auto;
-  }
+    &__video-mobile {
+      display: block;
+      margin: 0 auto;
+    }
 
-  .program-info__video-icon-play {
-    position: absolute;
-    top: 80px;
-    left: 120px;
-
-    width: 80px;
-    height: 80px;
+    &__video-icon-play {
+      position: absolute;
+      top: 80px;
+      left: 120px;
+  
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -87,17 +96,17 @@
     background-repeat: no-repeat;
     background-size: 420px 186px;
     background-position: center 200px;
-  }
 
-  .program-info__header {
-    @include section-header-mobile;
-  }
+    &__header {
+      @include section-header-mobile;
+    }
+
+    &__description {
+      padding: 0 5%;
+      margin-bottom: 48px;
   
-  .program-info__description {
-    padding: 0 5%;
-    margin-bottom: 48px;
-
-    @include text-big-mobile;
-    text-align: left;
+      @include text-big-mobile;
+      text-align: left;
+    }
   }
 }

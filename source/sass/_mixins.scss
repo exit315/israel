@@ -177,6 +177,24 @@
   background-position: center;
 }
 
+@mixin play-btn {
+  background-color: transparent;
+  background-image: url("../img/icons/play-btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &:hover, 
+  &:focus {
+  background-image: url("../img/icons/play-btn-hover.svg");
+  }
+
+  &:active {
+  background-image: url("../img/icons/play-btn-active.svg");
+  }
+
+  border: none;
+}
 
 @mixin input-focus {
   border-color: $yellow-gradient;
@@ -205,13 +223,15 @@
   
   border: 2px solid transparent;
   border-radius: 80px;
-}
-
-@mixin btn {
   background-image: $yellow-gradient;
 
+  &:hover, 
+  &:focus {
+    background: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+  }
+
   &:active {
-    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), $yellow-gradient;
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
   }
 }
 
@@ -232,6 +252,12 @@
   background-repeat: no-repeat;
 
   cursor: pointer;
+}
+
+@mixin modal-border-shadow {
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 @mixin form-placeholder {
@@ -273,11 +299,6 @@
   cursor: pointer;
 }
 
-@mixin modal-border-shadow {
-  border: 1px solid transparent;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
 
 @mixin agreement-check-on {
   content: "";
