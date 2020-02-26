@@ -95,38 +95,40 @@
 */
 
 @media (max-width: 767px) {
-  .page-header__nav {
-    flex-wrap: wrap;
-    flex-direction: column;
+  .page-header {
+    &__nav {
+      flex-wrap: wrap;
+      flex-direction: column;
+  
+      padding: 20px 8% 0;
+  
+      font-size: 14px;
+      line-height: 17px;
+    }
 
-    padding: 20px 8% 0;
+    &__contact-tel {
+      margin-left: auto;
+      margin-bottom: 12px;
+  
+      order: 1;
+    }
 
-    font-size: 14px;
-    line-height: 17px;
-  }
+    &__call-order-open-btn {
+      margin-left: auto;
+  
+      order: 2;
+    }
 
-  .page-header__contact-tel {
-    margin-left: auto;
-    margin-bottom: 12px;
+    &__logo-wrapper {
+      position: relative;
+      margin-right: auto;
+    }
 
-    order: 1;
-  }
-
-  .page-header__call-order-open-btn {
-    margin-left: auto;
-
-    order: 2;
-  }
-
-  .page-header__logo-wrapper {
-    position: relative;
-    margin-right: auto;
-  }
-
-  .page-header__logo {
-    position: absolute;
-
-    width: 120px;
-    height: 42px;
+    &__logo {
+      position: absolute;
+  
+      width: 120px;
+      height: 42px;
+    }
   }
 }

@@ -55,11 +55,13 @@
 
 @media (max-width: 767px) {
   .call-ok-popup {
+    top: -805px;
     width: 320px;
     height: 768px;
     padding: 296px 16px 292px;
 
     background-position: 127px 200px;
+    border-radius: 0;
 
     &__note {
       @include text-regular-mobile;

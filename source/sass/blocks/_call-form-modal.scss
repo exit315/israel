@@ -126,10 +126,14 @@
 
 @media (max-width: 767px) {
   .call-form-modal {
+    position: relative;
+    top: -805px;
+    
     width: 320px;
     height: 768px;
     margin: 0 auto;
     padding: 169px 16px;
+    border-radius: 0;
 
     button[type='reset'] {
       @include form-close(24px, 24px);
