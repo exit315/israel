@@ -42,7 +42,7 @@
   z-index: 1;
 
   &::before {
-    @include feature-item-img(url("../../img/bg/img-excursion-desktop.png"), 482px, 732px, -25px, 0);
+    @include feature-item-img(url("../../img/img-excursion-desktop.png"), 482px, 732px, -25px, 0);
   }
 }
 
@@ -52,7 +52,7 @@
   z-index: 1;
 
   &::before {
-    @include feature-item-img(url("../../img/bg/img-study-lang-desktop.png"), 211px, 318px, 40px, 0);
+    @include feature-item-img(url("../../img/img-study-lang-desktop.png"), 211px, 318px, 40px, 0);
   }  
 }
 
@@ -62,7 +62,7 @@
   z-index: 1;
 
   &::before {
-    @include feature-item-img(url("../../img/bg/img-study-desktop.png"), 411px, 318px, 40px, 0);
+    @include feature-item-img(url("../../img/img-study-desktop.png"), 411px, 318px, 40px, 0);
   }
 }
 
@@ -72,7 +72,7 @@
   z-index: 1;
 
   &::before {
-    @include feature-item-img(url("../../img/bg/img-projects-desktop.png"), 411px, 318px, 0, 0);
+    @include feature-item-img(url("../../img/img-projects-desktop.png"), 411px, 318px, 0, 0);
   }
 }
 
@@ -82,6 +82,6 @@
   z-index: 1;
 
   &::before {
-    @include feature-item-img(url("../../img/bg/img-leadership-desktop.png"), 214px, 318px, 0, 0);
+    @include feature-item-img(url("../../img/img-leadership-desktop.png"), 214px, 318px, 0, 0);
   }
 }

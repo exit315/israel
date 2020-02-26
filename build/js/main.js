@@ -132,6 +132,7 @@ var modalSubmitClose = function (evt) {
 
 modal.addEventListener('submit', function (evt) {
   evt.preventDefault();
+  
   localStorage.setItem('userPhoneModal', userPhoneModal.value);
   localStorage.setItem('userNameModal', userNameModal.value);
 
@@ -148,4 +149,3 @@ modalSubmitBtnClose.addEventListener('click', modalSubmitClose);
 
 localStorage.getItem('userPhoneModal');
 localStorage.getItem('userNameModal');
-// Хранение введенных данных в LocalStorage

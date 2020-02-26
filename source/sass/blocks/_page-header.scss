@@ -1,56 +1,74 @@
 .page-header {
   position: relative;
-  padding-bottom: 135px;
+  padding-bottom: 100px;
 
   background-image: url("../img/bg/bg-town-desktop.jpg");
   background-repeat: no-repeat;
   background-size: 1366px 879px;
   background-position: top;
-}
 
-.page-header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 30px 8% 0;
   
-  padding: 30px 8% 0;
+    font-family: $font-main;
+    font-weight: $font-weight-medium;
+    font-size: 15px;
+    line-height: 18px;
+  
+    a {
+      margin: 0;
+      padding: 0;
+  
+      color: $black;
+      text-decoration: none;
+    }
+  }
 
-  font-family: $font-main;
-  font-weight: $font-weight-medium;
-  font-size: 15px;
-  line-height: 18px;
+  &__call-order-open-btn {
+    text-transform: uppercase;
+    
+    border-bottom: 1px dashed $black;
+  }
 
-  a {
-    margin: 0;
-    padding: 0;
+  &__lead-in-wrapper {
+    position: relative;
+    padding: 430px 0 200px;
+  
+    background-image: url("../img/bg/bg-girl-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 1366px 906px;
+    background-position: center;
+  }
 
-    color: $black;
-    text-decoration: none;
+  &__lead-in {
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    @include text-promo;
+  }
+
+  &__anchor::before {
+    content: "";
+  
+    position: absolute;
+    bottom: -163px;
+    left: 134px;
+  
+    width: 76px;
+    height: 132px;
+    
+    background-image: url("../img/icons/scroll.svg");
+    background-repeat: no-repeat;
+    background-size: 76px 132px;
+    background-position: center;
+    background-color: transparent;
   }
 }
 
-.page-header__call-order-open-btn {
-  text-transform: uppercase;
-  
-  border-bottom: 1px dashed $black;
-}
-
-.page-header__lead-in-wrapper {
-  position: relative;
-  padding: 458px 0 172px;
-
-  background-image: url("../img/bg/bg-girl-desktop.png");
-  background-repeat: no-repeat;
-  background-size: 381px 609px;
-  background-position: center bottom;
-}
-
-.page-header__lead-in {
-  position: relative;
-  width: 350px;
-  margin: 0 auto;
-  @include text-promo;
-}
 /*
 .page-header__logo-title {
   position: absolute;
@@ -75,22 +93,6 @@
   }
 }
 */
-.page-header__anchor::before {
-  content: "";
-
-  position: absolute;
-  bottom: -163px;
-  left: 134px;
-
-  width: 76px;
-  height: 132px;
-  
-  background-image: url("../img/icons/scroll.svg");
-  background-repeat: no-repeat;
-  background-size: 76px 132px;
-  background-position: center;
-  background-color: transparent;
-}
 
 @media (max-width: 767px) {
   .page-header__nav {

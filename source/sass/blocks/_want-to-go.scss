@@ -19,25 +19,25 @@
     background-position: center;
   }
 
-  background-image: url("../img/bg/bg-girl-flag-desktop.jpg");
+  background-image: url("../img/bg/bg-girl-flag-desktop.png");
   background-repeat: no-repeat;
   background-size: 818px 594px;
   background-position: right bottom;
-}
 
-.want-to-go__header {
-  margin: 0;
-  margin-bottom: 24px;
+  &__header {
+    margin: 0;
+    margin-bottom: 24px;
+  
+    @include section-header-desktop;
+  }
 
-  @include section-header-desktop;
-}
-
-.want-to-go__description {
-  margin: 0;
-  margin-bottom: 64px;
-  padding-right: 80px;
-
-  @include text-big;
+  &__description {
+    margin: 0;
+    margin-bottom: 64px;
+    padding-right: 80px;
+  
+    @include text-big;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -59,20 +59,22 @@
     height: 162px;
   }
 
-    background-image: url("../img/bg/bg-girl-flag-mobile.jpg");
+    background-image: url("../img/bg/bg-girl-flag-mobile.png");
     background-repeat: no-repeat;
     background-size: 320px 308px;
     background-position: center bottom;
-  }
 
-  .want-to-go__header {
-    margin: 0 0 24px;
-  }
+    &__header {
+      margin: 0 0 24px;
+      @include section-header-mobile;
+    }
 
-  .want-to-go__description {
-    margin: 0;
-    margin-bottom: 24px;
-    padding-right: 0;
+    &__description {
+      margin: 0;
+      margin-bottom: 24px;
+      padding-right: 0;
+
+      @include text-big-mobile;
+    }
   }
 }
-
