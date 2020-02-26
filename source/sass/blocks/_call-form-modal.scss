@@ -28,8 +28,13 @@
     background-color: rgba(235,235,235,0.95);
   }
 
-  &__btn-close {
+  button[type='reset'] {
     @include form-close(32px, 32px);
+
+    &:hover, 
+    &:focus {
+      opacity: 0.6;
+    }
   }
 
   &__header {
@@ -53,8 +58,8 @@
     margin-bottom: 24px;
   }
 
-  &__input-name, 
-  &__input-tel {
+  input[type='text'], 
+  input[type='tel'] {
     padding: 19px 40px 20px;
 
     border: 2px solid $border-grey;
@@ -73,10 +78,9 @@
     }
 
     outline: transparent;
-    cursor: pointer;
   }
 
-  &__input-name {
+  input[type='text'] {
     margin-bottom: 8px;
   }
 
@@ -87,7 +91,7 @@
     padding: 0 36px 0 50px;
   }
 
-  &__order-call-btn {
+  button[type='submit'] {
     @include call-btn;
     margin-bottom: 16px;
   
@@ -102,6 +106,7 @@
     @include text-small;
   
     opacity: 0.74;
+    cursor: pointer;
   }
 
   &__agreement-check {
@@ -113,6 +118,10 @@
   &__agreement-label [type="checkbox"]:checked + .call-form-modal__agreement-check::before {
     @include agreement-check-on;
   }
+
+  input[type="checkbox"]:hover ~ .call-form-modal__agreement-check {
+    background: $yellow-gradient;
+  }
 }
 
 @media (max-width: 767px) {
@@ -122,8 +131,13 @@
     margin: 0 auto;
     padding: 169px 16px;
 
-    &__btn-close {
+    button[type='reset'] {
       @include form-close(24px, 24px);
+
+      &:hover, 
+      &:focus {
+        opacity: 0.6;
+      }
     }
 
     &__header, 
