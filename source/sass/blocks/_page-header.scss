@@ -119,6 +119,13 @@
       order: 2;
     }
 
+    &__lead-in {
+      position: relative;
+      width: 350px;
+      margin: 0 auto;
+      @include text-promo-mobile;
+    }
+
     &__logo-wrapper {
       position: relative;
       margin-right: auto;
