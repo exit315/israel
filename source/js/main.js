@@ -1,21 +1,31 @@
 'use strict';
 
 var ESC_BUTTON = 27;
-var userPhoneModal = document.querySelector('.call-form-modal__input-tel');
-var userNameModal = document.querySelector('.call-form-modal__input-name');
-var userPhoneInpit = document.querySelector('.call-form__input-tel');
-var contactPhoneInput = document.querySelector('.contact-us__form-input-tel');
-var contactNameInput = document.querySelector('.contact-us__form-input-name');
+
 var body = document.querySelector('body');
+
+var openModalBtn = document.querySelector('.page-header__call-order-open-btn');
+
 var modal = document.querySelector('.call-form-modal');
 var modalOverlay = document.querySelector('.call-form-modal__overlay');
-var openModalBtn = document.querySelector('.page-header__call-order-open-btn');
+var userPhoneModal = document.querySelector('.call-form-modal__input-tel');
+var userNameModal = document.querySelector('.call-form-modal__input-name');
 var closeModalBtn = document.querySelector('.call-form-modal__btn-close');
-var modalSubmit = document.querySelector('.call-ok-popup');
-var maskOptions = {mask: '+{7}(000)000-00-00'};
+
 var modalSubmit = document.querySelector('.call-ok-popup');
 var modalSubmitIconClose = document.querySelector('.call-ok-popup__btn-close');
 var modalSubmitBtnClose = document.querySelector('.call-ok-popup__popup-close');
+
+var callForm = document.querySelector('.call-form');
+var userPhoneInpit = document.querySelector('.call-form__input-tel');
+var callFormBtn = document.querySelector('.call-form__btn');
+
+var contactUsForm = document.querySelector('.contact-us__form');
+var contactPhoneInput = document.querySelector('.contact-us__form-input-tel');
+var contactNameInput = document.querySelector('.contact-us__form-input-name');
+
+var maskOptions = {mask: '+{7}(000)000-00-00'};
+
 
 // Открытие и закрытие модального окна, запрет скролла 
 
@@ -152,7 +162,7 @@ contactPhoneInput.addEventListener('input', function () {
   contactPhoneInput.setCustomValidity('');
 });
 
-// Отправка формы и показ попапа
+// Отправка главной формы и показ попапа
 
 var onPopupOverlayClick = function (evt) {
   if (evt.target == modalOverlay) {
@@ -210,6 +220,23 @@ modal.addEventListener('submit', function (evt) {
 
 modalSubmitIconClose.addEventListener('click', modalSubmitClose);
 modalSubmitBtnClose.addEventListener('click', modalSubmitClose);
+
+// Отправка формы из блока "Хочу поехать"
+
+callForm.addEventListener('submit', function (evt) {
+  evt.preventDefault();
+  
+  localStorage.setItem('userPhoneInpit', userPhoneInpit.value);
+});
+
+// Отправка формы из блока "Узнать подробности"
+
+contactUsForm.addEventListener('submit', function (evt) {
+  evt.preventDefault();
+  
+  localStorage.setItem('contactPhoneInput', contactPhoneInput.value);
+  localStorage.setItem('contactNameInput', contactNameInput.value);
+});
 
 // Плавный скролл от шапки к первому блоку "О программе"
 
