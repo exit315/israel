@@ -204,11 +204,26 @@ modal.addEventListener('submit', function (evt) {
   userPhoneInpit.style = ("border-color: #FFC341");
   contactPhoneInput.style = ("border-color: #FFC341");
 
-  
-
   document.addEventListener('click', onPopupOverlayClick);
   document.addEventListener('keydown', onPopupEscPress);
 });
 
 modalSubmitIconClose.addEventListener('click', modalSubmitClose);
 modalSubmitBtnClose.addEventListener('click', modalSubmitClose);
+
+// Плавный скролл от шапки к первому блоку "О программе"
+
+var anchor = document.querySelector('.page-header__anchor');
+
+var scrollToBlockHandler = function (evt) {
+  evt.preventDefault();
+  
+  var block = anchor.getAttribute('href').substr(1);
+  
+  document.getElementById(block).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+};
+
+anchor.addEventListener('click', scrollToBlockHandler);
