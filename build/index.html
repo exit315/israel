@@ -8,7 +8,9 @@
   </head>
   <body>
     <div style="display: none;">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-facebook" viewBox="0 0 24 24">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-border-dashed" viewBox="0 0 2 241">
+<path opacity="0.2" d="M1 0L0.999989 241" stroke="#484848" stroke-dasharray="4 4"></path>
+</symbol><symbol id="icon-facebook" viewBox="0 0 24 24">
 <path fill-opacity="0.16" d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.20001V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="black"></path>
 </symbol><symbol id="icon-instagram" viewBox="0 0 24 24">
 <path fill-opacity="0.16" d="M12 8.3999C10.0149 8.3999 8.40002 10.0148 8.40002 11.9999C8.40002 13.985 10.0149 15.5999 12 15.5999C13.9852 15.5999 15.6 13.985 15.6 11.9999C15.6 10.0148 13.9852 8.3999 12 8.3999Z" fill="black"></path>
@@ -83,10 +85,7 @@
       <section class="page-main__program-info program-info" id="program-info">
         <h2 class="program-info__header">О программе</h2>
 
-        <p class="program-info__description">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.<br>
-          Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.<br>
-          В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
-
+        <p class="program-info__description">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.<br>В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
         <div class="program-info__video-wrapper">
           <button class="program-info__video-icon-play" type="button"><span class="visually-hidden">Запустить видеоролик</span></button>
           <video class="program-info__video-desktop" width="870" height="460" poster="img/bg/bg-video-desktop.png">
@@ -163,33 +162,52 @@
         <p class="how-to-go__header">Как поехать</p>
         <p class="how-to-go__intro">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
         <div class="how-to-go__description">
+
           <p class="how-to-go__conditions-lead-in">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
+          <div class="how-to-go__border-icon-wrapper">
+            <svg class="how-to-go__border-icon" width="2" height="241"><use xlink:href="img/sprite.svg#icon-border-dashed"></use></svg>
+          </div>
+
           <ul class="how-to-go__conditions-list">
+
             <li class="how-to-go__conditions-item">
-              <label>
-                <input class="visually-hidden">
-                Быть в возрасте от 16 до 30 лет
-              </label>
-              </li>
+              <div class="how-to-go__conditions-item-wrapper">
+                <button class="how-to-go__conditions-item-btn how-to-go__conditions-item-btn--age" type="button">
+                  <span class="visually-hidden">Условие №1</span>
+                </button>
+                <p class="how-to-go__conditions-item-description">Быть в возрасте от 16 до 30 лет</p>
+              </div>
+            </li>
+
             <li class="how-to-go__conditions-item">
-              <label>
-                <input class="visually-hidden">
-                Иметь оконченное среднее образование
-              </label>
-              </li>
+              <div class="how-to-go__conditions-item-wrapper">
+                <button class="how-to-go__conditions-item-btn how-to-go__conditions-item-btn--education" type="button">
+                  <span class="visually-hidden">Условие №2</span>
+                </button>
+                <p class="how-to-go__conditions-item-description">Иметь оконченное среднее образование</p>
+              </div>
+            </li>
+
             <li class="how-to-go__conditions-item">
-              <label>
-                <input class="visually-hidden">
-                Иметь документально подтверждённые еврейские корни и пройти консульскую проверку
-              </label>
-              </li>
+              <div class="how-to-go__conditions-item-wrapper">
+                <button class="how-to-go__conditions-item-btn how-to-go__conditions-item-btn--roots" type="button">
+                  <span class="visually-hidden">Условие №3</span>
+                </button>
+                <p class="how-to-go__conditions-item-description">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку</p>
+              </div>
+            </li>
+
             <li class="how-to-go__conditions-item">
-              <label>
-                <input class="visually-hidden">
-                За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.
-              </label>
-              </li>
+              <div class="how-to-go__conditions-item-wrapper">
+                <button class="how-to-go__conditions-item-btn how-to-go__conditions-item-btn--limit" type="button">
+                  <span class="visually-hidden">Условие №4</span>
+                </button>
+                <p class="how-to-go__conditions-item-description">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</p>
+              </div>
+            </li>
+
           </ul>
+
           <p class="how-to-go__conditions-exeption">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную стоимость.</p>
         </div>
       </section>
@@ -231,7 +249,7 @@
         <h2 class="reviews__header">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
-            <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.jpg" width="364" height="480" alt="Фото автора отзыва">
+            <img class="reviews__author-pic" src="#" width="364" height="480" alt="Фото автора отзыва">
 
             <p class="reviews__author-name">Ольга Михайлова</p>
 
