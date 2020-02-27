@@ -29,6 +29,17 @@
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
 }
 
+@mixin text-promo-mobile {
+  font-family: $font-main;
+  font-weight: $font-weight-bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
 @mixin modal-header {
   font-family: $font-headers;
   font-weight: $font-weight-bold;
@@ -50,25 +61,24 @@
   font-family: $font-main;
   font-weight: $font-weight-text;
   font-size: 17px;
-  color: $black;
+  color: $black-opacity;
   line-height: 170%;
-  opacity: 0.87;
 }
 
 @mixin text-big-mobile {
   font-family: $font-main;
   font-weight: $font-weight-text;
   font-size: 16px;
-  color: $black;
+  color: $black-opacity;
   line-height: 160%;
-  opacity: 0.87;
 }
 
 @mixin text-regular-mobile {
   font-family: $font-main;
   font-weight: $font-weight-text;
   font-size: 14px;
-  line-height: 160%;
+  line-height: 22px;
+  color: $black-opacity;
 }
 
 @mixin text-small {
@@ -77,6 +87,14 @@
   font-size: 13px;
   color: $black;
   line-height: 150%;
+}
+
+@mixin conditions-btn-number {
+  font-family: $font-main;
+  font-weight: $font-weight-bold;
+  font-size: 17px;
+  color: $yellow;
+  line-height: 170%;
 }
 
 @mixin logo-title {
@@ -88,7 +106,7 @@
   letter-spacing: 0.055em;
   text-transform: uppercase;
 
-  color: #000000;
+  color: $black-logo;
 }
 
 @mixin tab-label {
@@ -96,8 +114,7 @@
   font-weight: $font-weight-text;
   font-size: 15px;
   line-height: 18px;
-  color: $black;
-  opacity: 0.87;
+  color: $black-opacity;
 }
 
 @mixin tab-header-active {
@@ -176,25 +193,6 @@
   background-position: center;
 }
 
-@mixin play-btn {
-  background-color: transparent;
-  background-image: url("../img/icons/play-btn.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-
-  &:hover, 
-  &:focus {
-  background-image: url("../img/icons/play-btn-hover.svg");
-  }
-
-  &:active {
-  background-image: url("../img/icons/play-btn-active.svg");
-  }
-
-  border: none;
-}
-
 @mixin input-focus {
   border-color: $yellow;
 }
@@ -206,7 +204,7 @@
   font-family: $font-main;
   font-weight: $font-weight-medium;
   font-size: 17px;
-  color: #FFFFFF;
+  color: $white;
   line-height: 20px;
   text-align: center;
   text-transform: lowercase;
@@ -290,7 +288,6 @@
   cursor: pointer;
 }
 
-
 @mixin agreement-check-on {
   content: "";
   position: absolute;
@@ -323,4 +320,31 @@
   background-position: center;
 }
 
+@mixin condition-icon-number {
+  background-color: transparent;
+  background-image: url("../img/icons/number-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
+  border: none;
+}
+
+@mixin play-btn {
+  background-color: transparent;
+  background-image: url("../img/icons/play-btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &:hover, 
+  &:focus {
+  background-image: url("../img/icons/play-btn-hover.svg");
+  }
+
+  &:active {
+  background-image: url("../img/icons/play-btn-active.svg");
+  }
+
+  border: none;
+}
