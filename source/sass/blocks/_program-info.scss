@@ -20,6 +20,7 @@
   &__description {
     margin: 0;
     margin-bottom: 48px;
+    padding: 0 24%;
   
     @include text-big;
     text-align: center;
@@ -59,6 +60,16 @@
 @media (max-width: 1023px) {
   .program-info {
     margin: 0 auto 56px;
+
+    &__description {
+      margin: 0;
+      margin-bottom: 48px;
+      padding: 0 10%;
+    
+      @include text-big;
+      text-align: center;
+      opacity: 0.87;
+    }
 
     &__video-wrapper {
       position: relative;
