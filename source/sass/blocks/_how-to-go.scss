@@ -4,10 +4,10 @@
   padding-right: 9.6%;
   padding-bottom: 160px;
 
-  background-image: url("../img/bg/bg-watercolor-how-to-go.png");
-  background-repeat:  no-repeat;
-  background-size: 1366px 1208px;
-  background-position: left center;
+  background-image: url("../img/bg/bg-to-go-desktop.png"), url("../img/bg/stamp-desktop.png"), url("../img/bg/bg-watercolor-how-to-go.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 581px 707px, 216px 254px, 1366px 1208px;
+  background-position: 12px 120px, right center, left -75px;
 
   &__header {
     margin: 0;
@@ -29,32 +29,110 @@
   
     @include text-big;
     font-weight: $font-weight-medium;
-    opacity: 1;
+    color: $black;
+  }
+
+  &__border-icon-wrapper {
+    position: relative;
+  }
+
+  &__border-icon {
+    position: absolute;
+    top: 10px;
+
+    height: 215px;
   }
 
   &__conditions-list {
+    position: relative;
     margin: 0;
     margin-bottom: 8px;
     padding: 0;
-  
-    background-image: url("../img/icons/border-dashed.svg");
-    background-repeat: no-repeat;
-    background-position: left;
     
     list-style: none;
   }
 
-  &__conditions-item {
+  &__conditions-item-wrapper {
+    position: relative;
     margin-bottom: 40px;
-    padding-left: 48px;
+  }
+  
+  &__conditions-item-btn {
+    position: absolute;
+    top: 0;
+
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    margin-left: -18px;
+    padding: 0;
+
+    background-color: $white;
+    border: 1px solid $white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__conditions-item-btn:hover, 
+  &__conditions-item-btn:focus {
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  &__conditions-item-btn:active {
+    border-color: transparent;
+    box-shadow: none;
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), #FFFFFF;
+  }
+
+  &__conditions-item-btn--age {
+    top: -10px;
+  }
+
+  &__conditions-item-btn--education {
+    top: -8px;
+  }
+
+  &__conditions-item-btn--age::before {
+    content: "1";
+
+    @include conditions-btn-number;
+  }
+
+  &__conditions-item-btn--education::before {
+    content: "2";
+    
+    @include conditions-btn-number;
+  }
+
+  &__conditions-item-btn--roots::before {
+    content: "3";
+    
+    @include conditions-btn-number;
+  }
+
+  &__conditions-item-btn--limit::before {
+    content: "4";
+    
+    @include conditions-btn-number;
+  }
+
+  &__conditions-item-description {
+    margin: 0;
+    padding: 0;
+    padding-left: 42px;
   
     @include text-regular;
     line-height: 140%;
-    opacity: 0.87;
+    color: $black-opacity;
   }
 
   &__conditions-exeption {
     position: relative;
+    margin: 0;
     padding-left: 15px;
   
     @include text-regular;
@@ -65,13 +143,141 @@
       content: "";
   
       position: absolute;
-  
       left: 0;
   
       width: 2px;
       height: 42px;
   
       background-image: $yellow-gradient;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .how-to-go {
+    margin-bottom: 80px;
+    padding-top: 75px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+  
+    background-image: url("../img/bg/stamp-desktop.png"), url("../img/bg/bg-watercolor-how-to-go.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 216px 254px, 1366px 1208px;
+    background-position: right center, right -75px;
+
+    &__border-icon {
+      top: 25px;
+      left: 1px;
+
+      height: 200px;
+    }
+    
+    &__conditions-list {
+      margin: 0;
+      margin-bottom: 8px;
+      padding: 0;
+      padding-right: 30%;
+    
+      list-style: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .how-to-go {
+    padding: 0 16px 0 8px;
+    margin-bottom: 80px;
+  
+    background: none;
+    background-image: url("../img/bg/stamp-mobile.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 216px 199px;
+    background-position: right center;
+
+    &__header {
+      @include section-header-mobile;
+    }
+
+    &__intro {
+      margin-bottom: 24px;
+    
+      @include text-regular-mobile;
+    }
+
+    &__conditions-lead-in {    
+      @include text-big-mobile;
+      font-weight: $font-weight-medium;
+      opacity: 1;
+    }
+
+    &__border-icon {
+      position: absolute;
+      top: 35px;
+      left: 18px;
+  
+      height: 250px;
+    }
+
+    &__conditions-list {
+      display: flex;
+      flex-direction: column;
+      height: 327px;
+      justify-content: space-between;
+
+      margin-bottom: 24px;
+      padding-right: 0;
+
+      background-position: 18px top;
+    }
+
+    &__conditions-item-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__conditions-item {
+      margin: 0;
+      padding: 0;
+    
+      @include text-regular-mobile;
+    }
+
+    &__conditions-item-btn {
+      flex-shrink: 0;
+      position: relative;
+      top: 0;
+
+      margin: 0;
+      margin-right: 24px;
+      padding: 0;
+      width: 36px;
+    }
+
+    &__conditions-item-description {
+      margin: 0;
+      padding: 0;
+      @include text-regular-mobile;
+    }
+
+    &__conditions-exeption {
+      position: relative;
+      margin: 0;
+      padding-left: 15px;
+    
+      @include text-regular-mobile;
+    
+      &::before {
+        content: "";
+    
+        position: absolute;
+        left: 0;
+    
+        width: 2px;
+        height: 88px;
+    
+        background-image: $yellow-gradient;
+      }
     }
   }
 }

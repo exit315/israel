@@ -50,10 +50,11 @@
 @media (max-width: 767px) {
   .want-to-go {
     margin: 0;
+    margin-bottom: 80px;
     padding: 0 16px 308px;
 
   &::before {
-    top: 0;
+    top: -42px;
 
     width: 120px;
     height: 162px;
