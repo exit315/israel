@@ -1,0 +1,32 @@
+.curator {
+  width: 480px;
+
+  &__header {
+    margin: 0;
+    padding: 0;
+
+    @include text-regular;
+    line-height: 150%;
+    color: $blue;
+  }
+
+  &__name {
+    color: $black-less-opacity;
+  }
+
+  &__curator-adress {
+    @include text-small;
+    color: $black-less-opacity;
+  }
+
+  &__contacts-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__lead-in {
+    @include text-big;
+  }
+}
