@@ -206,13 +206,6 @@ modal.addEventListener('submit', function (evt) {
   modal.classList.add('hidden');
   modalSubmit.classList.remove('hidden');
   modal.reset();
-  
-  userNameModal.style = ("border-color: #FFC341");
-  contactNameInput.style = ("border-color: #FFC341");
-
-  userPhoneModal.style = ("border-color: #FFC341");
-  userPhoneInpit.style = ("border-color: #FFC341");
-  contactPhoneInput.style = ("border-color: #FFC341");
 
   document.addEventListener('click', onPopupOverlayClick);
   document.addEventListener('keydown', onPopupEscPress);
@@ -225,17 +218,21 @@ modalSubmitBtnClose.addEventListener('click', modalSubmitClose);
 
 callForm.addEventListener('submit', function (evt) {
   evt.preventDefault();
-  
+
   localStorage.setItem('userPhoneInpit', userPhoneInpit.value);
+
+  callForm.reset();
 });
 
 // Отправка формы из блока "Узнать подробности"
 
 contactUsForm.addEventListener('submit', function (evt) {
   evt.preventDefault();
-  
+
   localStorage.setItem('contactPhoneInput', contactPhoneInput.value);
   localStorage.setItem('contactNameInput', contactNameInput.value);
+
+  contactUsForm.reset();
 });
 
 // Плавный скролл от шапки к первому блоку "О программе"
