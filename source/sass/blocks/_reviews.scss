@@ -1,0 +1,57 @@
+.reviews {
+  position: relative;
+  margin: 0 0 11px 0;
+
+  padding: 0 13.45% 0 7.18%;
+
+  &__header {
+    margin: 0;
+    @include section-header-desktop;
+    text-align: center;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__pic-wrapper {
+    margin-right: 40px;
+  }
+
+  &__author-name {
+    @include review-name;
+  }
+
+  &__author-program-header {
+    @include text-regular;
+    line-height: 140%;
+    color: $blue;
+  }
+
+  &__author-program-info {
+    color: $black-less-opacity;
+  }
+
+  &__review-text {
+    @include text-big;
+  }
+
+  &__review-detail-link {
+    @include text-big;
+    line-height: 150%;
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  &__social {
+    width: 120px;
+    margin-left: auto;
+  }
+}
