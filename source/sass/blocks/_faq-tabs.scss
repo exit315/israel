@@ -1,0 +1,166 @@
+.faq-tabs {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 79px 47% 128px 8.05%;
+
+  background-image: url("../img/bg/bag.png"), url("../img/bg/bg-questions-desktop.png"), url("../img/bg/bg-fq-watercolor.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 153px 177px, 645px 803px, 100% 100%;
+  background-position: left bottom, right 50px, center 20px;
+  
+  &__header {
+    margin: 0;
+    margin-bottom: 32px;
+
+    @include section-header-desktop;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0;
+    padding:0;
+
+    border-bottom: 1px solid $border-grey;
+  }
+
+  &__item-tab-label {
+    display: block;
+    margin-bottom: 24px;
+    padding: 38px 131px 0 32px;
+
+    @include text-big;
+    line-height: 150%;
+    color: $black;
+
+    cursor: pointer;
+  }
+
+  &__item-tab-label--tab-1::before {
+    content: "1";
+
+    @include faq-btn-number;
+  }
+
+  &__item-tab-label--tab-2::before {
+    content: "2";
+
+    @include faq-btn-number;
+  }
+
+  &__item-tab-label--tab-3::before {
+    content: "3";
+
+    @include faq-btn-number;
+  }
+
+  &__item-tab-label--tab-4::before {
+    content: "4";
+
+    @include faq-btn-number;
+  }
+
+  &__item-tab-label--tab-5::before {
+    content: "5";
+
+    @include faq-btn-number;
+  }
+
+  &__item-tab-label--tab-6::before {
+    content: "6";
+
+    @include faq-btn-number;
+  }
+
+  &__tab-icon {
+    position: absolute;
+    top: 35px;
+    right: 0;
+  }
+
+  &__item-tab-description {
+    display: none;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+
+    @include text-regular;
+    line-height: 140%;
+    color: $black-less-opacity;
+  }
+}
+
+.faq-tabs__item :checked ~ .faq-tabs__item-tab-description {
+  display: block;
+}
+
+.faq-tabs__item :checked ~ .faq-tabs__item-tab-label .faq-tabs__tab-icon {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1023px) {
+  .faq-tabs {
+    padding: 79px 10% 128px;
+  
+    background: none;
+    background-image: url("../img/bg/bag.png");
+    background-repeat: no-repeat;
+    background-size: 153px 177px;
+    background-position: left 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq-tabs {
+    margin-bottom: 80px;
+    padding: 0 16px;
+  
+    background-position: left 87%;
+
+    &__header {
+      margin: 0;
+      margin-bottom: 24px;
+  
+      @include section-header-mobile;
+    }
+
+    &__item {
+      margin-bottom: 24px;
+    }
+    
+    &__item-tab-label {
+      display: block;
+      margin-bottom: 24px;
+      padding: 14px 31px 0 25px;
+  
+      @include text-big-mobile;
+      color: $black;
+    }
+
+    &__item-tab-label--tab-1::before,   
+    &__item-tab-label--tab-2::before, 
+    &__item-tab-label--tab-3::before, 
+    &__item-tab-label--tab-4::before, 
+    &__item-tab-label--tab-5::before, 
+    &__item-tab-label--tab-6::before {
+      top: 2px;
+    }
+
+    &__item-tab-description {
+      margin-bottom: 16px;
+    }
+
+    &__tab-icon {
+      width: 15px;
+      height: 8px;
+      top: 23px;
+
+    }
+  }
+}
