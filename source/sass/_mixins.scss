@@ -89,11 +89,36 @@
   line-height: 150%;
 }
 
+@mixin review-name {
+  font-family: $font-main;;
+  font-weight: $font-weight-medium;
+  font-size: 24px;
+  line-height: 150%;
+  color: $black-less-opacity;
+}
+
 @mixin conditions-btn-number {
   font-family: $font-main;
   font-weight: $font-weight-bold;
   font-size: 17px;
   color: $yellow;
+  line-height: 170%;
+}
+
+@mixin faq-btn-number {
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+  width: 15px;
+  height: 48px;
+
+  font-family: $font-main;
+  font-weight: $font-weight-bold;
+  font-size: 28px;
+  background: $yellow-gradient;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
   line-height: 170%;
 }
 
