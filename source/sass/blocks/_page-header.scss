@@ -2,11 +2,11 @@
   position: relative;
   padding-bottom: 100px;
 
-  background-image: url("../img/bg/bg-town-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: 1366px 879px;
-  background-position: top;
-
+  background-image: url("../img/bg/bg-israel-reserv-desktop.png"), url("../img/bg/bg-town-desktop.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 998px 147px, 1366px 879px;
+  background-position: center 240px, top;
+  
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,7 @@
     background-image: url("../img/bg/bg-girl-desktop.png");
     background-repeat: no-repeat;
     background-size: 1366px 906px;
-    background-position: center;
+    background-position: center -80px;
   }
 
   &__lead-in {
@@ -69,33 +69,40 @@
   }
 }
 
-/*
-.page-header__logo-title {
-  position: absolute;
-  top: 100px;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-  
-  background-image: url("../img/bg/bg-israel-desktop.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-
-  span {
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-
-    @include logo-title;
-    background: $white;
-    mix-blend-mode: lighten;
+@media (max-width: 1023px) {
+  .page-header {
+    background-size: contain, 1366px 879px;
   }
 }
-*/
 
 @media (max-width: 767px) {
   .page-header {
+    padding-bottom: 0;
+
+    background-size: contain, cover;
+    background-position: center 240px, center 30px;
+
+    &__lead-in-wrapper {
+      position: relative;
+      padding: 270px 0 200px;
+    
+      background-image: url("../img/bg/bg-girl-mobile.png");
+      background-repeat: no-repeat;
+      background-size: 320px 605px;
+      background-position: center -35px;
+    }
+
+    &__lead-in {
+      position: relative;
+      width: 288px;
+
+      @include text-promo-mobile;
+    }
+
+    &__anchor::before {
+      left: 106px;
+    }
+
     &__nav {
       flex-wrap: wrap;
       flex-direction: column;
@@ -117,13 +124,6 @@
       margin-left: auto;
   
       order: 2;
-    }
-
-    &__lead-in {
-      position: relative;
-      width: 350px;
-      margin: 0 auto;
-      @include text-promo-mobile;
     }
 
     &__logo-wrapper {
