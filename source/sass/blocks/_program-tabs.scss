@@ -3,7 +3,7 @@
   padding-top: 16px;
 }
 
-.program-tabs__tab-list {
+.program-tabs__tab-list-swiper-container {
   display: flex;
   flex-direction: column;
   width: 228px;
@@ -132,7 +132,7 @@
     padding-top: 0;
   }
 
-  .program-tabs__tab-list {
+  .program-tabs__tab-list-swiper-container {
     flex-direction: row;
     overflow: hidden;
     width: auto;
