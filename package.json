@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
+    "breakpoints.js": "^1.0.0",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "editorconfig": "^0.15.3",

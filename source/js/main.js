@@ -24,9 +24,26 @@ var contactUsForm = document.querySelector('.contact-us__form');
 var contactPhoneInput = document.querySelector('.contact-us__form-input-tel');
 var contactNameInput = document.querySelector('.contact-us__form-input-name');
 
+var maskOptions = {mask: '+{7}(000)000-00-00'};
+
 var tabSwipe = document.querySelector('.program-tabs__tab-list');
 
-var maskOptions = {mask: '+{7}(000)000-00-00'};
+// Свайпер
+
+var swiperOptions = {
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 'auto',
+  spaceBetween: 30
+};
+
+window.addEventListener('resize', function () {
+  if (document.body.clientWidth < 769) {
+    new window.Swiper(tabSwipe, swiperOptions);
+  } else {
+    return false;
+  }
+});
 
 // Открытие и закрытие модального окна, запрет скролла 
 
@@ -252,16 +269,3 @@ var scrollToBlockHandler = function (evt) {
 };
 
 anchor.addEventListener('click', scrollToBlockHandler);
-
-// Свайпер
-
-var swiperOptions = {
-  direction: 'horizontal',
-  loop: false,
-  slidesPerView: 'auto',
-  spaceBetween: 30
-};
-
-tabSwipe.addEventListener('mousedown', function () {
-  window.Swiper(tabSwipe, swiperOptions);
-});

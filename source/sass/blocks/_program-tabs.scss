@@ -3,7 +3,7 @@
   padding-top: 16px;
 }
 
-.program-tabs__tab-list-swiper-container {
+.program-tabs__tab-list-wrapper {
   display: flex;
   flex-direction: column;
   width: 228px;
@@ -114,6 +114,26 @@
   position: relative;
 }
 
+.program-tabs__tab-input--culture:checked ~ .program-tabs__tab-list .program-tabs__tab-label--culture::before {
+  @include program-tab-icon(url("../img/icons/culture-w.png"), 28px 33px);
+}
+
+.program-tabs__tab-input--study:checked ~ .program-tabs__tab-list .program-tabs__tab-label--study::before {
+  @include program-tab-icon(url("../img/icons/study-w.png"), 36px 35px);
+}
+
+.program-tabs__tab-input--business:checked ~ .program-tabs__tab-list .program-tabs__tab-label--business::before {
+  @include program-tab-icon(url("../img/icons/business-w.png"), 32px 25px);
+}
+
+.program-tabs__tab-input--volonteur:checked ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur::before {
+  @include program-tab-icon(url("../img/icons/volonteur-w.png"), 32px 29px);
+}
+
+.program-tabs__tab-input--religion:checked ~ .program-tabs__tab-list .program-tabs__tab-label--religion::before {
+  @include program-tab-icon(url("../img/icons/religion-w.png"), 23px 25px);
+}
+
 .program-tabs__content-header {
   margin: 0;
   @include modal-header;
@@ -132,9 +152,12 @@
     padding-top: 0;
   }
 
-  .program-tabs__tab-list-swiper-container {
-    flex-direction: row;
+  .program-tabs__tab-list {
     overflow: hidden;
+  }
+
+  .program-tabs__tab-list-wrapper {
+    flex-direction: row;
     width: auto;
     margin: 0;
     margin-bottom: 22px;
