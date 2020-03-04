@@ -37,13 +37,9 @@ var swiperOptions = {
   spaceBetween: 30
 };
 
-window.addEventListener('resize', function () {
-  if (document.body.clientWidth < 769) {
-    new window.Swiper(tabSwipe, swiperOptions);
-  } else {
-    return false;
-  }
-});
+if (document.body.clientWidth <= 768) {
+  new window.Swiper(tabSwipe, swiperOptions);
+};
 
 // Открытие и закрытие модального окна, запрет скролла 
 

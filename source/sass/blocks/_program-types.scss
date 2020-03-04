@@ -6,13 +6,19 @@
   background-repeat: no-repeat;
   background-size: 680px 426px;
   background-position: right top;
+
+  &__header {
+    margin: 0;
+    margin-bottom: 67px;
+    
+    @include section-header-desktop;
+  }
 }
 
-.program-types__header {
-  margin: 0;
-  margin-bottom: 67px;
-  
-  @include section-header-desktop;
+@media (max-width: 1023px) {
+  .program-types {
+    padding: 48px 5% 0 15.37%;
+  }
 }
 
 @media (max-width: 767px) {
