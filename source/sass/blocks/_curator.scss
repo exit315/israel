@@ -1,5 +1,8 @@
 .curator {
+  position: relative;
+  display: flex;
   width: 480px;
+  margin-bottom: 32px;
 
   &__header {
     margin: 0;
@@ -8,6 +11,10 @@
     @include text-regular;
     line-height: 150%;
     color: $blue;
+  }
+
+  &__pic {
+    margin-right: 20px;
   }
 
   &__name {
@@ -20,10 +27,18 @@
   }
 
   &__contacts-list {
+    display: flex;
     margin: 0;
     padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 127px;
 
     list-style: none;
+  }
+
+  &__contacts-item {
+    margin: 0 12px 0 0;
   }
 
   &__lead-in {

@@ -126,7 +126,7 @@
 
 @media (max-width: 767px) {
   .call-form-modal {
-    top: -805px;
+    top: -584px;
     
     width: 320px;
     min-height: 768px;
@@ -161,6 +161,20 @@
 
     &__agreement-label {
       padding-left: 23px;
+    }
+  
+    &__agreement-check {
+      @include agreement-check;
+      
+      cursor: pointer;
+    }
+  
+    &__agreement-label input[type="checkbox"]:checked + .call-form-modal__agreement-check::before {
+      @include agreement-check-on;
+    }
+  
+    input[type="checkbox"]:hover ~ .call-form-modal__agreement-check {
+      background: $yellow-gradient;
     }
   }
 }

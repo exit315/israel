@@ -122,16 +122,16 @@ var userNameHandler = function (evt) {
   var target = evt.target;
 
   if (target.validity.tooShort) {
-    target.style = "border-color: rgba(255,0,0,0.5)";
+    target.classList.add('input-invalid');
     target.setCustomValidity('Имя должно состоять минимум из 2-х символов');
   } else if (target.validity.tooLong) {
-    target.style = "border-color: rgba(255,0,0,0.5)";
+    target.classList.add('input-invalid');
     target.setCustomValidity('Имя не должно превышать 25-ти символов');
   } else if (target.validity.patternMismatch) {
-    target.style = "border-color: rgba(255,0,0,0.5)";
+    target.classList.add('input-invalid');
     target.setCustomValidity('Имя должно состоять из букв и начинаться с заглавной буквы');
   } else if (target.validity.valid) {
-    target.style = "border-color: #484848";
+    target.classList.add('input-valid');
   }
 };
 
@@ -150,13 +150,13 @@ var userPhoneHandler = function (evt) {
   var target = evt.target;
 
   if (target.validity.tooShort) {
-    target.style = "border-color: rgba(255,0,0,0.5)";
+    target.classList.add('input-invalid');
     target.setCustomValidity('Телефон должен состоять из 11 цифр, включая 7');
   } else if (target.validity.tooLong) {
-    target.style = "border-color: rgba(255,0,0,0.5)";
+    target.classList.add('input-invalid');
     target.setCustomValidity('Телефон должен состоять из 11 цифр, включая 7');
   } else if (target.validity.valid) {
-    target.style = "border-color: #484848";
+    target.classList.add('input-valid');
   }
 };
 

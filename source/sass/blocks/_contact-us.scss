@@ -1,0 +1,54 @@
+.contact-us {
+  display: flex;
+
+  &__lead-in-wrapper {
+    width: 364px;
+    margin: 0 14px 0 0;
+  }
+
+  &__lead-in {
+    margin: 0 0 12px 0;
+    padding-right: 35px;
+    @include text-big;
+    font-weight: $font-weight-medium;
+    line-height: 150%;
+  }
+
+  &__user-data-notice {
+    margin: 0;
+    @include text-small;
+    color: $black-half-opacity;
+  }
+
+  input[type='text'], 
+  input[type='tel'] {
+    width: 250px;
+    margin-right: 24px;
+    padding: 19px 40px 20px;
+
+    border: 2px solid $border-grey;
+    box-sizing: border-box;
+    border-radius: 80px;
+
+    @include form-input-text;
+
+    &::placeholder {
+      @include form-placeholder;
+    }
+
+    &:hover, 
+    &:focus {
+      @include input-focus;
+    }
+
+    outline: transparent;
+  }
+
+  button[type='submit'] {
+    @include call-btn;
+    margin-bottom: 16px;
+  
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}

@@ -12,3 +12,11 @@ body {
   overflow-y: scroll;
   position: fixed;
 }
+
+.input-invalid {
+  border-color: rgba(255,0,0,0.5);
+}
+
+.input-valid {
+  border-color: $black;
+}
