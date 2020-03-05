@@ -477,7 +477,12 @@
           </div>
   
           <div class="program-details__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.8454194271985!2d82.92543936668986!3d55.02840139497614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da569bf9d5%3A0x40382a0defb64c9c!2z0YPQuy4g0KnQtdGC0LjQvdC60LjQvdCwLCA2OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1581519543166!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.8454194271985!2d82.92543936668986!3d55.02840139497614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da569bf9d5%3A0x40382a0defb64c9c!2z0YPQuy4g0KnQtdGC0LjQvdC60LjQvdCwLCA2OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1581519543166!5m2!1sru!2sru" width="702px" height="448px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <picture>
+              <source media="(min-width: 1023px)" srcset="../img/map-desktop.png">
+              <source media="(min-width: 767px)" srcset="../img/map-mobile.png">
+              <img src="../img/map-desktop.png" width="702px" height="448px" alt="Адрес офиса в Новосибирске на карте">
+            </picture>
           </div>
         </div>
         
@@ -487,8 +492,8 @@
             <p class="contact-us__user-data-notice">Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
           </div>
           <form class="contact-us__form" method="POST" autocomplete="off" action="#">
-            <label><input class="contact-us__form-input-name" type="text" name="user-name" placeholder="Имя" minlength="2" maxlength="25" pattern="/^[A-ZА-Я]{1}[a-zа-я]{1,19}( [A-ZА-Я]{1})?([a-zа-я]{1,19})?$/" required></label>
-            <label><input class="contact-us__form-input-tel" type="tel" name="user-phone" placeholder="+7 (923) 41" minlength="16" maxlength="16" required></label>
+            <label class="contact-us__form-label-name"><input class="contact-us__form-input-name" type="text" name="user-name" placeholder="Имя" minlength="2" maxlength="25" pattern="/^[A-ZА-Я]{1}[a-zа-я]{1,19}( [A-ZА-Я]{1})?([a-zа-я]{1,19})?$/" required></label>
+            <label class="contact-us__form-label-tel"><input class="contact-us__form-input-tel" type="tel" name="user-phone" placeholder="+7 (923) 41" minlength="16" maxlength="16" required></label>
             <button class="contact-us__form-btn" type="submit">Перезвоните мне</button>
           </form>
         </div>

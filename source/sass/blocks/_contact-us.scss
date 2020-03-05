@@ -2,13 +2,14 @@
   display: flex;
 
   &__lead-in-wrapper {
-    width: 364px;
+    width: 365px;
     margin: 0 14px 0 0;
   }
 
   &__lead-in {
     margin: 0 0 12px 0;
     padding-right: 35px;
+
     @include text-big;
     font-weight: $font-weight-medium;
     line-height: 150%;
@@ -23,7 +24,7 @@
   input[type='text'], 
   input[type='tel'] {
     width: 250px;
-    margin-right: 24px;
+    margin: 0 24px 24px 0;
     padding: 19px 40px 20px;
 
     border: 2px solid $border-grey;
@@ -45,10 +46,80 @@
   }
 
   button[type='submit'] {
+    width: 216px;
+
     @include call-btn;
     margin-bottom: 16px;
   
     box-sizing: border-box;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contact-us {
+    flex-direction: column;
+
+    &__lead-in-wrapper {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
+
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    input[type='text'], 
+    input[type='tel'], 
+    button[type='submit'] {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-us {
+    flex-direction: column;
+
+    padding: 0 16px;
+
+    &__lead-in-wrapper {
+      margin: 0;
+    }
+
+    &__lead-in {
+      padding: 0;
+      
+      @include text-big-mobile;
+      font-weight: $font-weight-medium;
+      line-height: 150%;
+    }
+
+    &__user-data-notice {
+      margin: 0 0 32px 0;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input[type='text'] {
+      width: 288px;
+      margin: 0 0 8px 0;
+    }
+
+    input[type='tel'] {
+      width: 288px;
+      margin: 0 0 24px 0;
+    }
+
+    button[type='submit'] {
+      width: 264px;
+      margin: 0 auto 64px;
+    }
   }
 }
