@@ -89,6 +89,15 @@
   line-height: 150%;
 }
 
+@mixin feature-header {
+  font-family: $font-logo;
+  font-weight: $font-weight-sub-title;
+  font-size: 18px;
+  color: $white;
+  line-height: 21px;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
 @mixin review-name {
   font-family: $font-main;;
   font-weight: $font-weight-medium;

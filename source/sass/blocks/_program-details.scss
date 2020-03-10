@@ -1,6 +1,6 @@
 .program-details {
   margin: 0;
-  padding: 90px 0 72px 8.05%;
+  padding: 90px 1px 72px 8.05%;
 
   background-image: url("../img/bg/bg-details-watercolor.png");
   background-repeat: no-repeat;
@@ -14,15 +14,31 @@
   }
 
   &__city {
+    position: relative;
     margin: 0 0 39px 0;
     padding-left: 18px;
 
     @include text-regular;
     line-height: 150%;
     color: $black-less-opacity;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 18px;
+
+      background-image: url("../img/icons/marker.svg");
+      background-repeat: no-repeat;
+      background-size: 12px 18px;
+    }
   }
 
   &__user-city {
+    position: relative;
     margin-left: 18px;
 
     @include text-regular;
@@ -31,9 +47,24 @@
     color: $black-less-opacity;
     text-transform: uppercase;
     border-bottom: 1px dashed $blue;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: -25px;
+      width: 16px;
+      height: 15px;
+
+      background-image: url("../img/icons/gps.svg");
+      background-repeat: no-repeat;
+      background-size: 16px 15px;
+    }
   }
 
   &__info-wrapper {
+    max-width: 515px;
     margin-right: 39px;
     padding: 0;
   }
@@ -45,23 +76,41 @@
   }
 
   &__map {
+    position: relative;
     flex-shrink: 1;
     margin: 0;
     padding: 0;
 
     max-width: 702px;
-    max-height: 448px;
+    height: 448px;
 
     iframe {
       position: absolute;
-      z-index: 2;
+      z-index: 10;
     }
         
     img {
+      width: 702px;
+      height: 448px;
       margin: 0;
       padding: 0;
-
       z-index: 1;
+    }
+
+    &::before {
+      content: "";
+
+      z-index: 5;
+
+      position: absolute;
+      top: 229px;
+      right: 166px;
+      width: 18px;
+      height: 28px;
+
+      background-image: url("../img/icons/marker-map.svg");
+      background-repeat: no-repeat;
+      background-size: 18px 28px;
     }
   }
 }
@@ -72,6 +121,12 @@
     padding: 90px 16px 40px;
 
     background-image: none;
+
+    &__info-wrapper {
+      max-width: unset;
+      margin-right: 0;
+      padding: 0 5%;
+    }
 
     &__container {
       flex-direction: column;
@@ -90,6 +145,11 @@
 
       img {
         height: 320px;
+      }
+
+      &::before {
+        top: 155px;
+        right: 180px;
       }
     }
   }
@@ -137,6 +197,11 @@
         height: 420px;
         margin: 0;
         padding: 0;
+      }
+
+      &::before {
+        top: 215px;
+        right: 35px;
       }
     }
   }
