@@ -105,8 +105,8 @@
     
     background-image: url("../img/bg/bg-watercolor-video-mobile.png");
     background-repeat: no-repeat;
-    background-size: 420px 186px;
-    background-position: center 200px;
+    background-size: 100% 186px;
+    background-position: center 230px;
 
     &__header {
       @include section-header-mobile;

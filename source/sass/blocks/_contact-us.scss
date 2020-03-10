@@ -63,6 +63,11 @@
     &__lead-in-wrapper {
       width: 100%;
       margin: 0 auto 20px;
+      text-align: center;
+    }
+
+    &__lead-in {
+      padding-right: 0;
     }
 
     &__form {
