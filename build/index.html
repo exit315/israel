@@ -216,23 +216,44 @@
       <section class="page-main__features features">
         <h2 class="features__header">Жизнь в Израиле</h2>
         <p class="features__lead-in">Помимо учёбы, в рамках программы у вас будет возможность путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
-        <ul class="features__list">
-          <li class="features__item features__item--excursion">
-            <span>Экскурсии по Израилю и знакомство с его историей</span>
-          </li>
-          <li class="features__item features__item--study-lang">
-            <span>Изучение иврита</span>
-          </li>
-          <li class="features__item features__item--study">
-            <span>Обучение современным навыкам и профессиям</span>
-          </li>
-          <li class="features__item features__item--projects">
-            <span>Совместные творческие проекты с израильской молодёжью</span>
-          </li>
-          <li class="features__item features__item--leadership">
-            <span>Развитие лидерства</span>
-          </li>
-        </ul>
+
+        <input class="features__slider-input features__slider-input--excursion visually-hidden" id="slide-1" type="radio" name="slide" checked="">
+        <input class="features__slider-input features__slider-input--lang visually-hidden" id="slide-2" type="radio" name="slide">
+        <input class="features__slider-input features__slider-input--study visually-hidden" id="slide-3" type="radio" name="slide">
+        <input class="features__slider-input features__slider-input--projects visually-hidden" id="slide-4" type="radio" name="slide">
+        <input class="features__slider-input features__slider-input--leadership visually-hidden" id="slide-5" type="radio" name="slide">
+
+        <div class="features__container">
+          <div class="features__slider-controls">
+            <label class="features__slider-label features__slider-label--excursion" for="slide-1"></label>
+            <label class="features__slider-label features__slider-label--lang" for="slide-2"></label>
+            <label class="features__slider-label features__slider-label--study" for="slide-3"></label>
+            <label class="features__slider-label features__slider-label--projects" for="slide-4"></label>
+            <label class="features__slider-label features__slider-label--leadership" for="slide-5"></label>
+          </div>
+
+          <div class="features__item features__item--excursion">
+            <span class="features__item-description">Экскурсии по Израилю <br>и знакомство с его историей</span>
+          </div>
+
+          <div class="features__wrapper">
+            <div class="features__item features__item--lang">
+              <span class="features__item-description">Изучение иврита</span>
+            </div>
+            <div class="features__item features__item--study">
+              <span class="features__item-description">Обучение современным <br>навыкам и профессиям</span>
+            </div>
+          </div>
+
+          <div class="features__wrapper">
+            <div class="features__item features__item--projects">
+              <span class="features__item-description">Совместные творческие проекты с израильской молодёжью</span>
+            </div>
+            <div class="features__item features__item--leadership">
+              <span class="features__item-description">Развитие лидерства</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="page-main__members-photos members-photos">
@@ -496,10 +517,10 @@
   
           <div class="program-details__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.8454194271985!2d82.92543936668986!3d55.02840139497614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da569bf9d5%3A0x40382a0defb64c9c!2z0YPQuy4g0KnQtdGC0LjQvdC60LjQvdCwLCA2OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1581519543166!5m2!1sru!2sru" width="702px" height="448px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            
             <picture>
-              <source media="(min-width: 1023px)" srcset="../img/map-desktop.png">
-              <source media="(min-width: 767px)" srcset="../img/map-mobile.png">
-              <img src="../img/map-desktop.png" width="702px" height="448px" alt="Адрес офиса в Новосибирске на карте">
+              <source media="(min-width: 768px)" srcset="../img/map-desktop.png">
+              <img src="../img/map-mobile.png" width="320px" height="272px" alt="Адрес офиса в Новосибирске на карте">
             </picture>
           </div>
         </div>
