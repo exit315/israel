@@ -53,10 +53,10 @@
     padding: 0 12px;
     margin-bottom: 80px;
 
-    background-image: url("../img/bg/bg-masa-program-mobile.png");
+    background-image: url("../img/bg/bg-masa-program-desktop.png");
     background-repeat: no-repeat;
-    background-size: auto 272px;
-    background-position: center 44px;
+    background-size: cover;
+    background-position: center bottom;
 
     &__header {
       margin-bottom: 96px;
@@ -65,9 +65,10 @@
   
     &__lead-in {
       margin: 0;
-      margin-bottom: 57px;
-      padding: 0 25px;
-      @include text-big;
+      margin-bottom: 20px;
+      padding: 37px 25px 0;
+
+      @include text-big-mobile;
       color: $white-opacity;
       text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
     }
@@ -80,6 +81,22 @@
     
     &__link-icon {
       left: 57px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .members-photos {
+    padding: 0 12px;
+
+    background-image: url("../img/bg/bg-masa-program-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 320px 272px;
+    background-position: center 44px;
+
+    &__lead-in {
+      margin-bottom: 57px;
+      padding: 0 25px;
     }
   }
 }
