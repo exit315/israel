@@ -90,7 +90,7 @@
           <input class="program-tabs__tab-input program-tabs__tab-input--volonteur visually-hidden" id="volonteur" type="radio" name="tab-head">
           <input class="program-tabs__tab-input program-tabs__tab-input--religion visually-hidden" id="religion" type="radio" name="tab-head">
 
-          <div class="program-tabs__tab-list swiper-container">
+          <div class="program-tabs__tab-list swiper-container slider1">
             <div class="program-tabs__tab-list-wrapper swiper-wrapper">
               <label class="program-tabs__tab-label program-tabs__tab-label--culture swiper-slide" for="culture">Общие</label>
               <label class="program-tabs__tab-label program-tabs__tab-label--study swiper-slide" for="study">Академические</label>
@@ -309,152 +309,164 @@
 
       <section class="page-main__reviews reviews">
         <h2 class="reviews__header">Отзывы</h2>
-
-        <div class="reviews__tab-controls">
-          <input class="reviews__tab-input visually-hidden" id="control-1" type="radio" name="tab-input">
-          <input class="reviews__tab-input visually-hidden" id="control-2" type="radio" name="tab-input">
-          <input class="reviews__tab-input visually-hidden" id="control-3" type="radio" name="tab-input" checked>
-          <input class="reviews__tab-input visually-hidden" id="control-4" type="radio" name="tab-input">
-          <input class="reviews__tab-input visually-hidden" id="control-5" type="radio" name="tab-input">
-          <input class="reviews__tab-input visually-hidden" id="control-6" type="radio" name="tab-input">
-
-          <div class="reviews__tab-list">
-            <label class="reviews__tab-label" for="control-1"></label>
-            <label class="reviews__tab-label" for="control-2"></label>
-            <label class="reviews__tab-label" for="control-3"></label>
-            <label class="reviews__tab-label" for="control-4"></label>
-            <label class="reviews__tab-label" for="control-5"></label>
-            <label class="reviews__tab-label" for="control-6"></label>
-          </div>
-        </div>
         
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <div class="reviews__pic-wrapper">
-              <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
-            </div>
-
-            <div class="reviews__content-wrapper">
-              <p class="reviews__author-name">Ольга Михайлова</p>
-              <div class="reviews__author-program">
-                <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
+        <div class="reviews__list-wrapper swiper-container slider2">
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__pic-wrapper">
+                <picture>
+                  <source media="(min-width: 767px)" srcset="../img/reviews-photo-1-mobile.png">
+                  <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
+                  </picture>
               </div>
-              <div class="reviews__review-wrapper">
-                <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
-                <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+  
+              <div class="reviews__content-wrapper">
+                <p class="reviews__author-name">Ольга Михайлова</p>
+                <div class="reviews__author-program">
+                  <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
+                </div>
+                <div class="reviews__review-wrapper">
+                  <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+                  <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+                </div>
+                <a class="reviews__review-detail-link">Читать подробнее</a>
               </div>
-              <a class="reviews__review-detail-link">Читать подробнее</a>
-            </div>
-          </li>
-
-          <li class="reviews__item">
-            <div class="reviews__pic-wrapper">
-              <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
-            </div>
-            <div class="reviews__content-wrapper">
-              <p class="reviews__author-name">Ольга Михайлова</p>
-              <div class="reviews__author-program">
-                <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
-              </div>
-              <div class="reviews__review-wrapper">
-                <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
-                <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-              </div>
-              <a class="reviews__review-detail-link">Читать подробнее</a>
-            </div>
-          </li>
-
-          <li class="reviews__item">
-            <div class="reviews__pic-wrapper">
-              <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
-            </div>
-            <div class="reviews__content-wrapper">
-              <p class="reviews__author-name">Ольга Михайлова</p>
-              <div class="reviews__author-program">
-                <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
-              </div>
-              <div class="reviews__review-wrapper">
-                <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
-                <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-              </div>
-              <a class="reviews__review-detail-link">Читать подробнее</a>
-            </div>
-          </li>
-
-          <li class="reviews__item">
-            <div class="reviews__pic-wrapper">
-              <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
-            </div>
-            <div class="reviews__content-wrapper">
-              <p class="reviews__author-name">Ольга Михайлова</p>
-              <div class="reviews__author-program">
-                <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
-              </div>
-              <div class="reviews__review-wrapper">
-                <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
-                <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-              </div>
-              <a class="reviews__review-detail-link">Читать подробнее</a>
-            </div>
-          </li>
-
-          <li class="reviews__item">
-            <div class="reviews__pic-wrapper">
-              <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
-            </div>
-            <div class="reviews__content-wrapper">
-              <p class="reviews__author-name">Ольга Михайлова</p>
-              <div class="reviews__author-program">
-                <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
-              </div>
-              <div class="reviews__review-wrapper">
-                <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
-                <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-              </div>
-              <a class="reviews__review-detail-link">Читать подробнее</a>
-            </div>
-          </li>
-
-          <li class="reviews__item">
-            <div class="reviews__pic-wrapper">
-              <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
-            </div>
-            <div class="reviews__content-wrapper">
-              <p class="reviews__author-name">Ольга Михайлова</p>
-              <div class="reviews__author-program">
-                <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
-              </div>
-              <div class="reviews__review-wrapper">
-                <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
-                <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-              </div>
-              <a class="reviews__review-detail-link">Читать подробнее</a>
-            </div>
-          </li>
-        </ul>
-
-        <div class="reviews__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="#">
-                <span class="visually-hidden">Masa Israel в Facebook</span>
-                <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
-              </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--twit" href="#">
-                <span class="visually-hidden">Masa Israel в Twitter</span>
-                <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
-              </a>
+  
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__pic-wrapper">
+                <picture>
+                  <source media="(min-width: 767px)" srcset="../img/reviews-photo-1-mobile.png">
+                  <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
+                  </picture>
+              </div>
+              <div class="reviews__content-wrapper">
+                <p class="reviews__author-name">Ольга Михайлова</p>
+                <div class="reviews__author-program">
+                  <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
+                </div>
+                <div class="reviews__review-wrapper">
+                  <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+                  <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+                </div>
+                <a class="reviews__review-detail-link">Читать подробнее</a>
+              </div>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <span class="visually-hidden">Masa Israel в Instagram</span>
-                <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
-              </a>
+  
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__pic-wrapper">
+                <picture>
+                  <source media="(min-width: 767px)" srcset="../img/reviews-photo-1-mobile.png">
+                  <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
+                  </picture>
+              </div>
+              <div class="reviews__content-wrapper">
+                <p class="reviews__author-name">Ольга Михайлова</p>
+                <div class="reviews__author-program">
+                  <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
+                </div>
+                <div class="reviews__review-wrapper">
+                  <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+                  <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+                </div>
+                <a class="reviews__review-detail-link">Читать подробнее</a>
+              </div>
+            </li>
+  
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__pic-wrapper">
+                <picture>
+                  <source media="(min-width: 767px)" srcset="../img/reviews-photo-1-mobile.png">
+                  <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
+                  </picture>
+              </div>
+              <div class="reviews__content-wrapper">
+                <p class="reviews__author-name">Ольга Михайлова</p>
+                <div class="reviews__author-program">
+                  <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
+                </div>
+                <div class="reviews__review-wrapper">
+                  <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+                  <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+                </div>
+                <a class="reviews__review-detail-link">Читать подробнее</a>
+              </div>
+            </li>
+  
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__pic-wrapper">
+                <picture>
+                  <source media="(min-width: 767px)" srcset="../img/reviews-photo-1-mobile.png">
+                  <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
+                  </picture>
+              </div>
+              <div class="reviews__content-wrapper">
+                <p class="reviews__author-name">Ольга Михайлова</p>
+                <div class="reviews__author-program">
+                  <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
+                </div>
+                <div class="reviews__review-wrapper">
+                  <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+                  <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+                </div>
+                <a class="reviews__review-detail-link">Читать подробнее</a>
+              </div>
+            </li>
+  
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__pic-wrapper">
+                <picture>
+                  <source media="(min-width: 767px)" srcset="../img/reviews-photo-1-mobile.png">
+                  <img class="reviews__author-pic" src="../img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
+                  </picture>
+              </div>
+              <div class="reviews__content-wrapper">
+                <p class="reviews__author-name">Ольга Михайлова</p>
+                <div class="reviews__author-program">
+                  <p class="reviews__author-program-header">Программа: <span class="reviews__author-program-info">Арт-Тель, февраль-сентябрь 2017</span></p>
+                </div>
+                <div class="reviews__review-wrapper">
+                  <p class="reviews__review-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+                  <p class="reviews__review-text">С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+                </div>
+                <a class="reviews__review-detail-link">Читать подробнее</a>
+              </div>
             </li>
           </ul>
+
+          <div class="reviews__swiper-controls">
+            <div class="reviews__swiper-pagination swiper-pagination"></div>
+  
+            <span class="reviews__swiper-button-prev swiper-button-prev"><svg class="reviews__swiper-icon-prev" width="11" height="18"><use xlink:href="img/sprite.svg#icon-slide-arrow"></use></svg></span>
+            <span class="reviews__swiper-button-next swiper-button-next"><svg class="reviews__swiper-icon-next" width="11" height="18"><use xlink:href="img/sprite.svg#icon-slide-arrow"></use></svg></span>
+          </div>
+  
+          <div class="reviews__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="#">
+                  <span class="visually-hidden">Masa Israel в Facebook</span>
+                  <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twit" href="#">
+                  <span class="visually-hidden">Masa Israel в Twitter</span>
+                  <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">
+                  <span class="visually-hidden">Masa Israel в Instagram</span>
+                  <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
+
+
       </section>
 
       <section class="page-main__program-details program-details">
