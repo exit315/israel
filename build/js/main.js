@@ -26,20 +26,36 @@ var contactNameInput = document.querySelector('.contact-us__form-input-name');
 
 var maskOptions = {mask: '+{7}(000)000-00-00'};
 
-var tabSwipe = document.querySelector('.program-tabs__tab-list');
+// Свайпер блок Программы
 
-// Свайпер
-
-var swiperOptions = {
-  direction: 'horizontal',
-  loop: false,
-  slidesPerView: 'auto',
-  spaceBetween: 30
-};
+var tabSwipe = document.querySelector('.slider1');
 
 if (document.body.clientWidth <= 768) {
-  new window.Swiper(tabSwipe, swiperOptions);
+  var swiper = new window.Swiper(tabSwipe, {
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 30
+  });
 };
+
+// Свайпер блок Отзывы
+
+var reviewSlider = document.querySelector('.slider2');
+
+var slider = new window.Swiper(reviewSlider, {
+  direction: 'horizontal',
+  spaceBetween: 100,
+  loop: false,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 // Открытие и закрытие модального окна, запрет скролла 
 
