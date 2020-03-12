@@ -40,28 +40,11 @@
   &__contacts-item {
     margin: 0 12px 0 0;
   }
-
-  &__lead-in {
-    margin: 0;
-    @include text-big;
-  }
-}
-
-@media (max-width: 1023px) {
-  .curator {
-    &__lead-in {
-      margin-bottom: 40px;
-    }
-  }
 }
 
 @media (max-width: 767px) {
   .curator {
     flex-direction: column;
-
-    &__lead-in {
-      margin-bottom: 40px;
-    }
 
     &__contacts-list {
       position: relative;

@@ -113,6 +113,11 @@
       background-size: 18px 28px;
     }
   }
+
+  &__curator-lead-in {
+    margin: 0;
+    @include text-big;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -151,6 +156,10 @@
         top: 155px;
         right: 180px;
       }
+    }
+
+    &__curator-lead-in {
+      margin-bottom: 40px;
     }
   }
 }
@@ -203,6 +212,10 @@
         top: 215px;
         right: 35px;
       }
+    }
+
+    &__curator-lead-in {
+      margin-bottom: 40px;
     }
   }
 }
