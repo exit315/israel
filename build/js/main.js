@@ -26,7 +26,7 @@ var contactNameInput = document.querySelector('.contact-us__form-input-name');
 
 var maskOptions = {mask: '+{7}(000)000-00-00'};
 
-// Свайпер блок Программы
+// Свайпер Программы
 
 var tabSwipe = document.querySelector('.slider1');
 
@@ -39,7 +39,7 @@ if (document.body.clientWidth <= 768) {
   });
 };
 
-// Свайпер блок Отзывы
+// Слайдер Отзывы
 
 var reviewSlider = document.querySelector('.slider2');
 
@@ -91,8 +91,8 @@ var closeModalCallForm = function (evt) {
   modal.classList.add('hidden');
 
   if (existVerticalScroll()) {
-    body.classList.remove('body-lock')
-    window.scrollTo(0,body.dataset.scrollY)    
+    body.classList.remove('body-lock');
+    window.scrollTo(0,body.dataset.scrollY);  
   };
 
   document.removeEventListener('click', onModalOverlayClick);
@@ -103,8 +103,8 @@ var onModalEscPress = function (evt) {
   if (evt.keyCode === ESC_BUTTON && existVerticalScroll()) {
     modalOverlay.classList.add('hidden');
     modal.classList.add('hidden');
-    body.classList.remove('body-lock')
-    window.scrollTo(0,body.dataset.scrollY)
+    body.classList.remove('body-lock');
+    window.scrollTo(0,body.dataset.scrollY);
   }
 };
 
@@ -113,14 +113,14 @@ var onModalOverlayClick = function (evt) {
     modalOverlay.classList.add('hidden');
     modal.classList.add('hidden');
     body.classList.remove('body-lock');
-    window.scrollTo(0,body.dataset.scrollY)
+    window.scrollTo(0,body.dataset.scrollY);
   };
 };
 
 openModalBtn.addEventListener('click', openModalCallForm);
 closeModalBtn.addEventListener('click', closeModalCallForm);
 
-// Маска на телефон и валидация
+// Маска на телефон
 
 userPhoneModal.addEventListener('input', function () {
   window.iMaskJS(userPhoneModal, maskOptions);
@@ -133,6 +133,8 @@ userPhoneInpit.addEventListener('input', function () {
 contactPhoneInput.addEventListener('input', function () {
   window.iMaskJS(contactPhoneInput, maskOptions);
 });
+
+// Валидация полей имени
 
 var userNameHandler = function (evt) {
   var target = evt.target;
@@ -147,6 +149,7 @@ var userNameHandler = function (evt) {
     target.classList.add('input-invalid');
     target.setCustomValidity('Имя должно состоять из букв и начинаться с заглавной буквы');
   } else if (target.validity.valid) {
+    target.classList.remove('input-invalid');
     target.classList.add('input-valid');
   }
 };
@@ -162,6 +165,8 @@ contactNameInput.addEventListener('input', function () {
   contactNameInput.setCustomValidity('');
 });
 
+// Валидация полей телефона
+
 var userPhoneHandler = function (evt) {
   var target = evt.target;
 
@@ -172,6 +177,7 @@ var userPhoneHandler = function (evt) {
     target.classList.add('input-invalid');
     target.setCustomValidity('Телефон должен состоять из 11 цифр, включая 7');
   } else if (target.validity.valid) {
+    target.classList.remove('input-invalid');
     target.classList.add('input-valid');
   }
 };
@@ -233,8 +239,11 @@ modal.addEventListener('submit', function (evt) {
   localStorage.setItem('userPhoneModal', userPhoneModal.value);
   localStorage.setItem('userNameModal', userNameModal.value);
 
+  userPhoneModal.classList.remove('input-valid');
+  userNameModal.classList.remove('input-valid');
   modal.classList.add('hidden');
   modalSubmit.classList.remove('hidden');
+
   modal.reset();
 
   document.addEventListener('click', onPopupOverlayClick);
@@ -251,6 +260,8 @@ callForm.addEventListener('submit', function (evt) {
 
   localStorage.setItem('userPhoneInpit', userPhoneInpit.value);
 
+  userPhoneInpit.classList.remove('input-valid');
+
   callForm.reset();
 });
 
@@ -261,6 +272,9 @@ contactUsForm.addEventListener('submit', function (evt) {
 
   localStorage.setItem('contactPhoneInput', contactPhoneInput.value);
   localStorage.setItem('contactNameInput', contactNameInput.value);
+
+  contactPhoneInput.classList.remove('input-valid');
+  contactNameInput.classList.remove('input-valid');
 
   contactUsForm.reset();
 });
