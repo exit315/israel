@@ -22,7 +22,9 @@
     &:hover, 
     &:focus {
       opacity: 0.6;
-    }
+    };
+
+    outline: none;
   }
 
   &__header {
@@ -50,7 +52,9 @@
     @include call-btn;
   
     box-sizing: border-box;
-  }
+  };
+
+  outline: none;
 }
 
 @media (max-width: 767px) {
