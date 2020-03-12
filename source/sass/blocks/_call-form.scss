@@ -24,6 +24,14 @@
       @include input-focus;
     }
   }
+ 
+  input[type='tel'].input-invalid {
+    border-color: rgba(255,0,0,0.5);
+  }
+
+  input[type='tel'].input-valid {
+    border-color: $black;
+  }
 
   button[type='submit'] {
     position: absolute;

@@ -34,7 +34,9 @@
     &:hover, 
     &:focus {
       opacity: 0.6;
-    }
+    };
+    
+    outline: none;
   }
 
   &__header {
@@ -77,11 +79,21 @@
       @include input-focus;
     }
 
-    outline: transparent;
+    outline: none;
   }
 
   input[type='text'] {
     margin-bottom: 8px;
+  }
+
+  input[type='text'].input-invalid, 
+  input[type='tel'].input-invalid {
+    border-color: rgba(255,0,0,0.5);
+  }
+
+  input[type='text'].input-valid, 
+  input[type='tel'].input-valid {
+    border-color: $black;
   }
 
   &__btn-wrapper {
@@ -97,6 +109,7 @@
   
     box-sizing: border-box;
     cursor: pointer;
+    outline: none;
   }
 
   &__agreement-label {
@@ -110,6 +123,7 @@
   }
 
   &__agreement-check {
+    position: relative;
     @include agreement-check;
     
     cursor: pointer;
@@ -117,6 +131,12 @@
 
   &__agreement-label [type="checkbox"]:checked + .call-form-modal__agreement-check::before {
     @include agreement-check-on;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    bottom: 10px;
+    left: 9px;
   }
 
   input[type="checkbox"]:hover ~ .call-form-modal__agreement-check {
