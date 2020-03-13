@@ -104,6 +104,8 @@
   &__swiper-button-prev, 
   &__swiper-button-next {
     position: relative;
+    
+    cursor: pointer;
   }
 
   &__swiper-icon-prev, 
@@ -222,7 +224,5 @@
       line-height: 150%;
       color: $blue;
     }
-  
-
   }
 }

@@ -28,12 +28,12 @@
 
     background-size: 320px 201px;
     background-position: right center;
-  }
-
-  .program-types__header {
-    margin-bottom: 16px;
-    padding: 0 16px;
     
-    @include section-header-mobile;
+    &__header {
+      margin-bottom: 16px;
+      padding: 0 16px;
+    
+      @include section-header-mobile;
+    }
   }
 }

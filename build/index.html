@@ -59,8 +59,8 @@
         <p class="call-form-modal__lead-in">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
             
         <div class="call-form-modal__user-info">
-          <input class="call-form-modal__input-name" type="text" name="user-name" placeholder="Имя" minlength="2" maxlength="25" pattern="^[A-ZА-Я]{1}[a-zа-я]{1,19}( [A-ZА-Я]{1})?([a-zа-я]{1,19})?$" required="">
-          <input class="call-form-modal__input-tel" type="tel" name="user-phone" placeholder="Телефон" minlength="16" maxlength="16" required="">
+          <input class="call-form-modal__input-name" type="text" name="user-name" autocomplete="off" placeholder="Имя" minlength="2" maxlength="25" pattern="^[A-ZА-Я]{1}[a-zа-я]{1,19}( [A-ZА-Я]{1})?([a-zа-я]{1,19})?$" required="">
+          <input class="call-form-modal__input-tel" type="tel" name="user-phone" autocomplete="off" placeholder="Телефон" minlength="16" maxlength="16" required="">
         </div>
         <div class="call-form-modal__btn-wrapper">
           <button class="call-form-modal__order-call-btn" type="submit">перезвоните мне</button>
@@ -156,7 +156,7 @@
         <p class="want-to-go__description">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
         <form class="want-to-go__form call-form" method="POST" autocomplete="off" action="#">
           <div class="call-form__wrapper">
-            <label class="call-form__label"><input class="call-form__input-tel" type="tel" name="user-phone" placeholder="Телефон" minlength="16" maxlength="16" required=""></label>
+            <label class="call-form__label"><input class="call-form__input-tel" type="tel" autocomplete="off" name="user-phone" placeholder="Телефон" minlength="16" maxlength="16" required=""></label>
             <button class="call-form__btn" type="submit">Перезвоните мне</button>
           </div>
         </form>
@@ -544,7 +544,7 @@
           </div>
           <form class="contact-us__form" method="POST" autocomplete="off" action="#">
             <label class="contact-us__form-label-name"><input class="contact-us__form-input-name" type="text" name="user-name" placeholder="Имя" minlength="2" maxlength="25" pattern="^[A-ZА-Я]{1}[a-zа-я]{1,19}( [A-ZА-Я]{1})?([a-zа-я]{1,19})?$" required=""></label>
-            <label class="contact-us__form-label-tel"><input class="contact-us__form-input-tel" type="tel" name="user-phone" placeholder="+7 (923) 41" minlength="16" maxlength="16" required=""></label>
+            <label class="contact-us__form-label-tel"><input class="contact-us__form-input-tel" autocomplete="off" type="tel" name="user-phone" placeholder="+7 (923) 41" minlength="16" maxlength="16" required=""></label>
             <button class="contact-us__form-btn" type="submit">Перезвоните мне</button>
           </form>
         </div>
