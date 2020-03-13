@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "acorn": "^7.1.1",
+    "core-js": "^3.6.4",
     "save-dev": "0.0.1-security"
   },
   "devDependencies": {
@@ -37,6 +38,7 @@
     "gulp-wait": "0.0.2",
     "gulp-webp": "^4.0.1",
     "imask": "^6.0.3",
+    "jquery": "^3.4.1",
     "lodash.template": "^4.5.0",
     "node-sass": "^4.13.1",
     "posthtml-include": "^1.4.0",
