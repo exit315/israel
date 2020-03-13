@@ -127,7 +127,7 @@ openModalBtn.addEventListener('click', openModalCallForm);
 closeModalBtn.addEventListener('click', closeModalCallForm);
 
 // Маска на телефон
-
+/*
 userPhoneModal.addEventListener('input', function () {
   window.iMaskJS(userPhoneModal, maskOptions);
 });
@@ -139,7 +139,7 @@ userPhoneInpit.addEventListener('input', function () {
 contactPhoneInput.addEventListener('input', function () {
   window.iMaskJS(contactPhoneInput, maskOptions);
 });
-
+*/
 // Валидация полей имени
 
 var userNameHandler = function (evt) {
