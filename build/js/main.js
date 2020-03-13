@@ -86,6 +86,12 @@ var openModalCallForm = function () {
 
 var closeModalCallForm = function (evt) {
   evt.preventDefault();
+
+  userPhoneModal.classList.remove('input-valid');
+  userNameModal.classList.remove('input-valid');
+  userPhoneModal.classList.remove('input-invalid');
+  userNameModal.classList.remove('input-invalid');
+
   modal.reset();
   modalOverlay.classList.add('hidden');
   modal.classList.add('hidden');
@@ -140,16 +146,27 @@ var userNameHandler = function (evt) {
   var target = evt.target;
 
   if (target.validity.tooShort) {
+    if (target.classList.contains('input-valid')) {
+      target.classList.remove('input-valid');
+    };
     target.classList.add('input-invalid');
     target.setCustomValidity('Имя должно состоять минимум из 2-х символов');
   } else if (target.validity.tooLong) {
+    if (target.classList.contains('input-valid')) {
+      target.classList.remove('input-valid');
+    };
     target.classList.add('input-invalid');
     target.setCustomValidity('Имя не должно превышать 25-ти символов');
   } else if (target.validity.patternMismatch) {
+    if (target.classList.contains('input-valid')) {
+      target.classList.remove('input-valid');
+    };
     target.classList.add('input-invalid');
     target.setCustomValidity('Имя должно состоять из букв и начинаться с заглавной буквы');
   } else if (target.validity.valid) {
-    target.classList.remove('input-invalid');
+    if (target.classList.contains('input-invalid')) {
+      target.classList.remove('input-invalid');
+    };
     target.classList.add('input-valid');
   }
 };
@@ -171,13 +188,21 @@ var userPhoneHandler = function (evt) {
   var target = evt.target;
 
   if (target.validity.tooShort) {
+    if (target.classList.contains('input-valid')) {
+      target.classList.remove('input-valid');
+    };
     target.classList.add('input-invalid');
     target.setCustomValidity('Телефон должен состоять из 11 цифр, включая 7');
   } else if (target.validity.tooLong) {
+    if (target.classList.contains('input-valid')) {
+      target.classList.remove('input-valid');
+    };
     target.classList.add('input-invalid');
     target.setCustomValidity('Телефон должен состоять из 11 цифр, включая 7');
   } else if (target.validity.valid) {
-    target.classList.remove('input-invalid');
+    if (target.classList.contains('input-invalid')) {
+      target.classList.remove('input-invalid');
+    };
     target.classList.add('input-valid');
   }
 };
