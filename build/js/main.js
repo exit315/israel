@@ -127,7 +127,7 @@ openModalBtn.addEventListener('click', openModalCallForm);
 closeModalBtn.addEventListener('click', closeModalCallForm);
 
 // Маска на телефон
-/*
+
 userPhoneModal.addEventListener('input', function () {
   window.iMaskJS(userPhoneModal, maskOptions);
 });
@@ -139,7 +139,7 @@ userPhoneInpit.addEventListener('input', function () {
 contactPhoneInput.addEventListener('input', function () {
   window.iMaskJS(contactPhoneInput, maskOptions);
 });
-*/
+
 // Валидация полей имени
 
 var userNameHandler = function (evt) {
@@ -186,7 +186,7 @@ contactNameInput.addEventListener('input', function () {
 
 var userPhoneHandler = function (evt) {
   var target = evt.target;
-
+  
   if (target.validity.tooShort) {
     if (target.classList.contains('input-valid')) {
       target.classList.remove('input-valid');
@@ -199,6 +199,12 @@ var userPhoneHandler = function (evt) {
     };
     target.classList.add('input-invalid');
     target.setCustomValidity('Телефон должен состоять из 11 цифр, включая 7');
+  } else if (target.validity.patternMismatch) {
+    if (target.classList.contains('input-valid')) {
+      target.classList.remove('input-valid');
+    };
+    target.classList.add('input-invalid');
+    target.setCustomValidity('Введите телефон в формате "+7(123)4567890"');
   } else if (target.validity.valid) {
     if (target.classList.contains('input-invalid')) {
       target.classList.remove('input-invalid');
