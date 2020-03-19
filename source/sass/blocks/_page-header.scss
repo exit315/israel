@@ -29,7 +29,10 @@
   }
 
   &__call-order-open-btn {
-    text-transform: uppercase;
+    @include text-regular;
+    font-weight: $font-weight-medium;
+    line-height: 18px;
+    font-variant: small-caps;
     
     border-bottom: 1px dashed $black;
   }
@@ -121,8 +124,19 @@
     }
 
     &__call-order-open-btn {
+      @include text-regular;
+      font-weight: $font-weight-medium;
+      line-height: 18px;
+      font-variant: small-caps;
+      
+      border-bottom: 1px dashed $black;
+    }
+
+    &__call-order-open-btn {
       margin-left: auto;
-  
+
+      font-size: 14px;
+      line-height: 17px;
       order: 2;
     }
 
