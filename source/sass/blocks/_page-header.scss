@@ -1,18 +1,18 @@
 .page-header {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 
   background-image: url("../img/bg/bg-israel-reserv-desktop.png"), url("../img/bg/bg-town-desktop.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 998px 147px, 1366px 879px;
-  background-position: center 240px, top;
+  background-position: center 255px, top;
   
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    padding: 30px 8% 0;
+    padding: 32px 8% 0;
   
     font-family: $font-main;
     font-weight: $font-weight-medium;
@@ -28,10 +28,18 @@
     }
   }
 
+  &__logo-wrapper {
+    margin-left: -25px;
+  }
+
   &__call-order-open-btn {
-    @include text-regular;
-    font-weight: $font-weight-medium;
-    line-height: 18px;
+    margin-right: 5px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;    
     font-variant: small-caps;
     
     border-bottom: 1px dashed $black;
@@ -44,11 +52,12 @@
     background-image: url("../img/bg/bg-girl-desktop.png");
     background-repeat: no-repeat;
     background-size: 1366px 906px;
-    background-position: center -80px;
+    background-position: center -85px;
   }
 
   &__lead-in {
     position: relative;
+    top: 25px;
     width: 350px;
     margin: 0 auto;
     @include text-promo;
@@ -58,8 +67,8 @@
     content: "";
   
     position: absolute;
-    bottom: -163px;
-    left: 134px;
+    top: 88px;
+    left: 138px;
   
     width: 76px;
     height: 132px;

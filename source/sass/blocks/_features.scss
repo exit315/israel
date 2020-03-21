@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 96px;
+  margin-bottom: 92px;
   padding: 0 8% 34px 7.6%;
 
   background-image: url("../img/bg/watch.png"), url("../img/bg/bg-watercolor-features-desktop.png");
@@ -47,7 +47,7 @@
     span {
       position: absolute;
       bottom: 0;
-      padding: 0 50px 35px 35px;
+      padding: 0 0 35px 35px;
   
       @include feature-description;
       z-index: 2;

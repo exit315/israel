@@ -2,12 +2,12 @@
   padding-top: 180px;
   padding-left: 51.17%;
   padding-right: 9.6%;
-  padding-bottom: 160px;
+  padding-bottom: 212px;
 
   background-image: url("../img/bg/bg-to-go-desktop.png"), url("../img/bg/stamp-desktop.png"), url("../img/bg/bg-watercolor-how-to-go.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 581px 707px, 216px 254px, 1366px 1208px;
-  background-position: 12px 120px, right center, left -75px;
+  background-position: 12px 145px, right 360px, left -55px;
 
   &__header {
     margin: 0;
@@ -18,14 +18,16 @@
 
   &__intro {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
+    padding-right: 50px;
   
     @include text-regular;
   }
 
   &__conditions-lead-in {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    padding-right: 80px;
   
     @include text-big;
     font-weight: $font-weight-medium;
@@ -46,17 +48,29 @@
   &__conditions-list {
     position: relative;
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 50px;
     padding: 0;
+    padding-right: 80px;
     
     list-style: none;
   }
 
   &__conditions-item-wrapper {
     position: relative;
-    margin-bottom: 40px;
   }
-  
+
+  &__conditions-item--age {
+    margin-bottom: 55px;
+  }
+
+  &__conditions-item--education {
+    margin-bottom: 48px;
+  }
+
+  &__conditions-item--roots {
+    margin-bottom: 38px;
+  }
+
   &__conditions-item-btn {
     position: absolute;
     top: 0;

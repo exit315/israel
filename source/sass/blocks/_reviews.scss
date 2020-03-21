@@ -6,10 +6,11 @@
   background-image: url("../img/bg/bg-sketch-review-desktop.png"), url("../img/bg/bg-review-watercolor.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 523px 318px, cover;
-  background-position: right 40px, top;
+  background-position: right 50px, top;
 
   &__header {
-    margin: 0;
+    margin: 0 0 5px 77px;
+
     @include section-header-desktop;
     text-align: center;
   }
@@ -46,10 +47,15 @@
   }
 
   &__author-name {
+    margin: 0 0 10px;
+    padding-top: 40px;
+
     @include review-name;
   }
 
   &__author-program-header {
+    margin: 0 0 30px;
+
     @include text-regular;
     line-height: 140%;
     color: $blue;
@@ -60,6 +66,8 @@
   }
 
   &__review-text {
+    margin: 0 0 20px;
+
     @include text-big;
   }
 
@@ -78,20 +86,24 @@
   &__social {
     position: absolute;
     bottom: 0;
-    width: 120px;
+
     left: 100%;
-    margin-left: -120px;
+    margin-left: -100px;
+
+    ul {
+      width: 100px;
+    }
   }
 
   &__swiper-controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 96px;
+    width: 88px;
     height: 26px;
 
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 405px;
   }
 
@@ -111,7 +123,7 @@
   &__swiper-icon-prev, 
   &__swiper-icon-next {
     position: absolute;
-    top:  -10px;
+    top: -10px;
   }
 
   &__swiper-icon-next {

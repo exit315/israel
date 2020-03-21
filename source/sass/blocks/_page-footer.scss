@@ -18,6 +18,10 @@
     color: $black;
     opacity: 0.5;
   }
+
+  &__social {
+    padding-right: 5px;
+  }
 }
 
 @media (max-width: 767px) {

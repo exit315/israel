@@ -8,7 +8,7 @@
 
   &__lead-in {
     margin: 0 0 12px 0;
-    padding-right: 35px;
+    padding: 10px 35px 0 0;
 
     @include text-big;
     font-weight: $font-weight-medium;
@@ -24,8 +24,8 @@
   input[type='text'], 
   input[type='tel'] {
     width: 250px;
-    margin: 0 24px 24px 0;
-    padding: 19px 40px 20px;
+    margin: 0 20px 24px 0;
+    padding: 18px 40px 19px;
 
     border: 2px solid $border-grey;
     box-sizing: border-box;
@@ -56,9 +56,9 @@
   }
 
   button[type='submit'] {
-    width: 216px;
-
     @include call-btn;
+    width: 216px;
+    padding: 19px 40px 16px;
     margin-bottom: 16px;
   
     box-sizing: border-box;

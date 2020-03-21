@@ -1,7 +1,7 @@
 .faq-tabs {
   margin: 0;
-  margin-bottom: 27px;
-  padding: 79px 47% 128px 8.05%;
+  margin-bottom: 20px;
+  padding: 55px 51% 128px 8.05%;
 
   background-image: url("../img/bg/bag.png"), url("../img/bg/bg-questions-desktop.png"), url("../img/bg/bg-fq-watercolor.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -10,7 +10,7 @@
   
   &__header {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 5px;
 
     @include section-header-desktop;
   }
@@ -25,14 +25,14 @@
   &__item {
     position: relative;
     margin: 0;
-    padding:0;
+    padding: 0;
 
     border-bottom: 1px solid $border-grey;
   }
 
   &__item-tab-label {
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     padding: 38px 131px 0 32px;
 
     @include text-big;

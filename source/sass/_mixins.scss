@@ -165,7 +165,7 @@
   background-image: url("../img/icons/tab-active.png");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 228px 66px;
+  background-size: 228px 70px;
 }
 
 @mixin tab-header-active-mobile {
@@ -200,7 +200,7 @@
   content: "";
 
   position: absolute;
-  top: 16px;
+  top: 18px;
   left: 20px;
 
   width: 36px;
@@ -238,11 +238,11 @@
 
   font-family: $font-main;
   font-weight: $font-weight-medium;
-  font-size: 17px;
+  font-size: 14px;
   color: $white;
-  line-height: 20px;
+  line-height: 22px;
   text-align: center;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-variant: small-caps;
   
   border: 2px solid transparent;

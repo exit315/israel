@@ -17,8 +17,8 @@
     position: relative;
     width: 228px;
     margin: 0;
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 26px;
+    padding-bottom: 26px;
     padding-left: 72px;
   
     box-sizing: border-box;
@@ -61,6 +61,7 @@
 
   &__content-header {
   margin: 0;
+  margin-bottom: 25px;
   @include modal-header;
   }
 
