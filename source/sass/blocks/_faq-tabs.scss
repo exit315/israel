@@ -136,7 +136,7 @@
     
     &__item-tab-label {
       display: block;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       padding: 14px 31px 0 25px;
   
       @include text-big-mobile;
@@ -154,6 +154,10 @@
 
     &__item-tab-description {
       margin-bottom: 16px;
+  
+      @include text-regular;
+      line-height: 22px;
+      color: $black-less-opacity;
     }
 
     &__tab-icon {

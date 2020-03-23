@@ -138,11 +138,29 @@
       margin-bottom: 40px;
     }
 
+    &__city {
+      padding-left: 24px;
+  
+      &::before {
+        left: 7px;
+      }
+    }
+
+    &__user-city {
+      padding-bottom: 3px;
+      font-size: 12px;
+      line-height: 20px;
+  
+      &::before {
+        right: -30px;
+      }
+    }
+
     &__map {
-      width: 769px;
+      width: 736px;
       height: 320px;
       margin: 0 auto;
-      padding: 0 16px;
+      padding: 0;
 
       iframe {
         height: 320px;
@@ -180,7 +198,7 @@
     }
 
     &__info {
-      padding: 0 16px 0 12px;
+      padding: 0 16px 0 16px;
     }
 
     &__container {
@@ -213,9 +231,11 @@
         right: 35px;
       }
     }
-
+    
     &__curator-lead-in {
       margin-bottom: 40px;
+      
+      line-height: 26px;
     }
   }
 }

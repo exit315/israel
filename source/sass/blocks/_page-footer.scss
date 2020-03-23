@@ -32,7 +32,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    &__logo-wrapper, 
+    &__logo-wrapper {
+      margin-bottom: 21px;
+    }
+
     &__copyright {
       margin-bottom: 24px;
     }
@@ -40,6 +43,15 @@
     &__logo {
       width: 99px;
       height: 31px;
+    }
+
+    &__social .social__list {
+      width: 136px;
+    }
+
+    &__social .social__link-icon {
+      width: 32px;
+      height: 32px;
     }
   }
 }

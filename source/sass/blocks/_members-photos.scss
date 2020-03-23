@@ -50,13 +50,13 @@
 
 @media (max-width: 767px) {
   .members-photos {
-    padding: 0 12px;
+    padding: 0;
     margin-bottom: 80px;
 
-    background-image: url("../img/bg/bg-masa-program-desktop.png");
+    background-image: url("../img/bg/bg-masa-program-mobile.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
+    background-size: contain;
+    background-position: center 40px;
 
     &__header {
       margin-bottom: 96px;
@@ -65,8 +65,8 @@
   
     &__lead-in {
       margin: 0;
-      margin-bottom: 20px;
-      padding: 37px 25px 0;
+      margin-bottom: 60px;
+      padding: 0 25px;
 
       @include text-big-mobile;
       color: $white-opacity;
@@ -76,7 +76,7 @@
     &__link-instagram {
       width: 264px;
       margin: 0 auto;
-      padding: 20px 57px 19px 89px;
+      padding: 22px 57px 14px 89px;
     }
     
     &__link-icon {
@@ -92,11 +92,6 @@
     background-image: url("../img/bg/bg-masa-program-mobile.png");
     background-repeat: no-repeat;
     background-size: 320px 272px;
-    background-position: center 44px;
-
-    &__lead-in {
-      margin-bottom: 57px;
-      padding: 0 25px;
-    }
+    background-position: center 40px;
   }
 }

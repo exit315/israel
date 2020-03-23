@@ -147,7 +147,7 @@
 
 @media (max-width: 767px) {
   .features {
-    margin-bottom: 96px;
+    margin-bottom: 109px;
     padding: 0 16px;
   
     background-image: none;
@@ -181,8 +181,8 @@
     &__slider-controls {
       display: inline-block;
       position: absolute;
-      margin-left: -36px;
-      bottom: -28px;
+      margin-left: -32px;
+      bottom: -30px;
       left: 50%;
     }
 
@@ -208,9 +208,10 @@
       span {
         position: absolute;
         bottom: 0;
-        padding: 0 20px 35px 35px;
+        padding: 0 20px 20px;
     
         @include feature-header;
+        text-align: center;
         z-index: 2;
       }
     }

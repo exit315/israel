@@ -47,28 +47,28 @@
   }
  
   &__content-list {
-  margin: 0;
-  padding: 0;
-  padding-top: 16px;
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
 
-  list-style: none;
+    list-style: none;
   }
 
   &__content-item {
-  display: none;
-  position: relative;
+    display: none;
+    position: relative;
   }
 
   &__content-header {
-  margin: 0;
-  margin-bottom: 25px;
-  @include modal-header;
+    margin: 0;
+    margin-bottom: 25px;
+    @include modal-header;
   }
 
   &__content-description {
-  @include text-regular;
+    @include text-regular;
 
-  opacity: 0.87;
+    opacity: 0.87;
   }
   
   &__tab-input--culture:hover ~ .program-tabs__tab-list .program-tabs__tab-label--culture,
@@ -160,13 +160,13 @@
       flex-direction: row;
       width: auto;
       margin: 0;
-      margin-bottom: 22px;
+      margin-bottom: 30px;
     }
   
     &__tab-label {
       display: block;
       width: 181px;
-      padding: 15px 12px 14px 52px;
+      padding: 15px 15px 13px 60px;
       line-height: 20px;
       border: 1px solid transparent;
       box-sizing: border-box;
@@ -196,8 +196,13 @@
     padding: 0 16px;
     }
 
+    &__content-header {
+      margin-bottom: 20px;
+      @include modal-header-mobile;
+    }
+
     &__content-description {
-    @include text-regular-mobile;
+      @include text-regular-mobile;
     }
     
     &__tab-input--culture:checked ~ .program-tabs__tab-list .program-tabs__tab-label--culture,

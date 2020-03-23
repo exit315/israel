@@ -91,7 +91,7 @@
     margin-left: -100px;
 
     ul {
-      width: 100px;
+      width: 104px;
     }
   }
 
@@ -160,7 +160,7 @@
 @media (max-width: 767px) {
   .reviews {
     position: relative;
-    margin: 0 0 78px 0;
+    margin: 0 0 70px;
     padding: 0 16px;
 
     background-image: url("../img/bg/bg-sketch-review-mobile.png"), url("../img/bg/bg-review-watercolor.png");
@@ -169,7 +169,7 @@
     background-position: right 465px, top;
   
     &__header {
-      margin-bottom: 24px;
+      margin: 0 0 24px 0;
       @include section-header-mobile;
       text-align: center;
     }
@@ -184,7 +184,7 @@
       width: 240px;
       height: 320px;
 
-      margin: 0 auto 58px;
+      margin: 0 auto 20px;
 
       img {
         width: 100%;
@@ -192,12 +192,21 @@
       }
     }
 
+    &__review-wrapper {
+      margin-bottom: 30px;
+    }
+
     &__social {
       position: absolute;
-      bottom: 0;
-      width: 120px;
+      bottom: 5px;
+      width: 100px;
       left: 0;
-      margin-left: -10px;
+      margin-left: 0;
+
+      &__link-icon {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &__swiper-controls {
@@ -217,6 +226,8 @@
     }
   
     &__author-program-header {
+      margin: 0 0 25px;
+
       @include text-regular-mobile;
       line-height: 160%;
       color: $blue;
@@ -228,12 +239,15 @@
     }
   
     &__review-text {
+      margin: 0 0 20px;
+      
       @include text-big-mobile;
+      line-height: 26px;
     }
   
     &__review-detail-link {
       @include text-big-mobile;
-      line-height: 150%;
+      line-height: 24px;
       color: $blue;
     }
   }

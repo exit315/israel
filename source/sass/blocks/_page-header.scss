@@ -35,9 +35,8 @@
   &__call-order-open-btn {
     margin-right: 5px;
 
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: 500;
+    font-family: $font-main;
+    font-weight: $font-weight-medium;
     font-size: 18px;
     line-height: 18px;    
     font-variant: small-caps;
@@ -89,10 +88,11 @@
 
 @media (max-width: 767px) {
   .page-header {
+    margin-bottom: 13px;
     padding-bottom: 0;
 
     background-size: contain, cover;
-    background-position: center 240px, center 30px;
+    background-position: center 230px, center 33px;
 
     &__lead-in-wrapper {
       position: relative;
@@ -107,11 +107,13 @@
     &__lead-in {
       position: relative;
       width: 288px;
+      top: 0;
 
       @include text-promo-mobile;
     }
 
     &__anchor::before {
+      top: 75px;
       left: 106px;
     }
 
@@ -119,7 +121,7 @@
       flex-wrap: wrap;
       flex-direction: column;
   
-      padding: 20px 8% 0;
+      padding: 20px 7px 0 0;
   
       font-size: 14px;
       line-height: 17px;
@@ -133,25 +135,24 @@
     }
 
     &__call-order-open-btn {
-      @include text-regular;
+      margin-left: auto;
+      font-family: $font-main;
       font-weight: $font-weight-medium;
-      line-height: 18px;
+
+      color: $black;
+      font-size: 12px;
+      line-height: 18px;    
       font-variant: small-caps;
+      text-transform: uppercase;
       
       border-bottom: 1px dashed $black;
-    }
-
-    &__call-order-open-btn {
-      margin-left: auto;
-
-      font-size: 14px;
-      line-height: 17px;
       order: 2;
     }
 
     &__logo-wrapper {
       position: relative;
       margin-right: auto;
+      margin-left: 16px;
     }
 
     &__logo {

@@ -49,6 +49,15 @@
   letter-spacing: -0.02em;
 }
 
+@mixin modal-header-mobile {
+  font-family: $font-headers;
+  font-weight: $font-weight-bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: $blue;
+  letter-spacing: -0.02em;
+}
+
 @mixin text-regular {
   font-family: $font-main;
   font-weight: $font-weight-text;
@@ -171,11 +180,11 @@
 @mixin tab-header-active-mobile {
   font-family: $font-main;
   font-weight: $font-weight-medium;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 20px;
   color: $white;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-variant: small-caps;
 
   background-image: $yellow-gradient;
@@ -224,7 +233,7 @@
 
   background-image: $src;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 95%;
   background-position: center;
 }
 
@@ -234,13 +243,13 @@
 
 @mixin call-btn {
   width: 264px;
-  padding: 19px 61px 20px;
+  padding: 20px 61px 18px;
 
   font-family: $font-main;
   font-weight: $font-weight-medium;
   font-size: 14px;
   color: $white;
-  line-height: 22px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   font-variant: small-caps;
@@ -287,9 +296,9 @@
 @mixin form-placeholder {
   font-family: $font-main;
   font-weight: $font-weight-medium;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 20px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-variant: small-caps;
 
   color: $black;
@@ -298,7 +307,7 @@
 @mixin form-input-text {
   font-family: $font-main;
   font-weight: $font-weight-medium;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 20px;
 
   color: $black;
