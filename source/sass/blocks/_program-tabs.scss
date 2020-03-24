@@ -253,15 +253,15 @@
     &__tab-input--volonteur:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur::before,
     &__tab-input--volonteur:focus:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur::before {
       @include program-tab-icon-mobile(url("../img/icons/volonteur-g.png"));
-      top: 7px;
-      left: 11px;
+      top: 8px;
+      left: 12px;
     }
   
     &__tab-input--religion:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--religion::before,
     &__tab-input--religion:focus:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--religion::before {
       @include program-tab-icon-mobile(url("../img/icons/religion-g.png"));
-      top: 7px;
-      left: 13px;
+      top: 8px;
+      left: 12px;
     }
 
     &__tab-input--culture:not(:checked):not(:hover):not(:focus) ~ .program-tabs__tab-list .program-tabs__tab-label--culture, 
