@@ -7,7 +7,7 @@ var body = document.querySelector('body');
 var openModalBtn = document.querySelector('.page-header__call-order-open-btn');
 
 var modal = document.querySelector('.call-form-modal');
-var modalOverlay = document.querySelector('.call-form-modal__overlay');
+var modalOverlay = document.querySelector('.page-header__overlay');
 var userPhoneModal = document.querySelector('.call-form-modal__input-tel');
 var userNameModal = document.querySelector('.call-form-modal__input-name');
 var closeModalBtn = document.querySelector('.call-form-modal__btn-close');
