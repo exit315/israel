@@ -129,7 +129,6 @@
     }
   }
 
-
   &__conditions-item--limit {
     position: relative;
 
@@ -145,7 +144,6 @@
       @include condition-icon(-3px, -15px);
     }
   }
-
 
   &__conditions-item-description {
     margin: 0;
@@ -244,20 +242,18 @@
 
     &__border-icon {
       position: absolute;
-      top: 30px;
+      top: 5px;
       left: 18px;
   
-      height: 270px;
+      height: 200px;
     }
 
     &__conditions-list {
       display: flex;
       flex-direction: column;
-      height: 327px;
-      justify-content: space-between;
 
-      margin-bottom: 27px;
-      padding-right: 0;
+      margin-bottom: 45px;
+      padding: 0;
 
       background-position: 18px top;
     }
@@ -275,31 +271,68 @@
     }
 
     &__conditions-item--age {
-      margin-bottom: 55px;
+      margin-bottom: 40px;
     }
   
     &__conditions-item--education {
-      margin-bottom: 38px;
+      margin-bottom: 40px;
     }
   
     &__conditions-item--roots {
-      margin-bottom: 27px;
+      margin-bottom: 40px;
     }
 
-    &__conditions-item-btn {
-      flex-shrink: 0;
+    &__conditions-item--age {
       position: relative;
-      top: 0;
-
-      margin: 0;
-      margin-right: 17px;
-      padding: 0;
-      width: 36px;
+  
+      &::before {
+        @include conditions-number(-5px, 15px);
+      }
+  
+      &::after {  
+        @include condition-icon(-8px, 1px);
+      }
+    }
+  
+    &__conditions-item--education {
+      position: relative;
+  
+      &::before {  
+        @include conditions-number(0, 15px);
+      }
+  
+      &::after {  
+        @include condition-icon(-3px, 1px);
+      }
+    }
+  
+    &__conditions-item--roots {
+      position: relative;
+  
+      &::before {  
+        @include conditions-number(4px, 15px);
+      }
+  
+      &::after {  
+        @include condition-icon(-1px, 1px);
+      }
+    }
+  
+    &__conditions-item--limit {
+      position: relative;
+  
+      &::before {  
+        @include conditions-number(0, 15px);
+      }
+  
+      &::after {  
+        @include condition-icon(-3px, 1px);
+      }
     }
 
     &__conditions-item-description {
       margin: 0;
-      padding: 0;
+      padding: 0 0 0 52px;
       @include text-regular-mobile;
     }
 
@@ -315,12 +348,71 @@
     
         position: absolute;
         left: 0;
-        top: -2px;
+        top: 0;
     
         width: 5px;
-        height: 88px;
+        height: 40px;
     
         background-image: $yellow-gradient;
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .how-to-go {
+    &__border-icon {
+      position: absolute;
+      top: 0;
+      left: 18px;
+  
+      height: 245px;
+    }
+
+    &__conditions-exeption {    
+      &::before {
+        height: 66px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .how-to-go {
+    &__conditions-list {
+      display: flex;
+      flex-direction: column;
+      height: 327px;
+
+      margin-bottom: 27px;
+      padding: 0;
+
+      background-position: 18px top;
+    }
+
+    &__border-icon {
+      position: absolute;
+      top: 5px;
+      left: 18px;
+  
+      height: 260px;
+    }
+
+    &__conditions-item--age {
+      margin-bottom: 55px;
+    }
+  
+    &__conditions-item--education {
+      margin-bottom: 38px;
+    }
+  
+    &__conditions-item--roots {
+      margin-bottom: 27px;
+    }
+
+    &__conditions-exeption {    
+      &::before {
+        height: 88px;
       }
     }
   }
