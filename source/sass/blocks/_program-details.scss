@@ -1,6 +1,6 @@
 .program-details {
   margin: 0;
-  padding: 90px 1px 75px 8.05%;
+  padding: 92px 1px 75px 8.3%;
 
   background-image: url("../img/bg/bg-details-watercolor.png");
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   &__city {
     position: relative;
     margin: 0 0 39px 0;
-    padding-left: 18px;
+    padding-left: 22px;
 
     @include text-regular;
     line-height: 150%;
@@ -27,7 +27,7 @@
 
       position: absolute;
       top: 0;
-      left: 0;
+      left: 2px;
       width: 12px;
       height: 18px;
 
@@ -40,9 +40,11 @@
   &__user-city {
     position: relative;
     margin-left: 18px;
+    padding-bottom: 3px;
 
-    @include text-regular;
+    font-family: $font-main;
     font-weight: $font-weight-medium;
+    font-size: 13px;
     line-height: 150%;
     color: $black-less-opacity;
     text-transform: uppercase;

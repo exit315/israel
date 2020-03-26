@@ -7,7 +7,7 @@
     flex-direction: column;
     width: 228px;
     margin: 0;
-    margin-right: 64px;
+    margin-right: 66px;
     padding: 0;
   
     list-style: none;
@@ -16,9 +16,9 @@
   &__tab-label {
     position: relative;
     width: 228px;
-    margin: 0;
+    margin: 0 0 3px 0;
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
     padding-left: 72px;
   
     box-sizing: border-box;
@@ -27,23 +27,23 @@
   }
   
   &__tab-label--culture::before {
-    @include program-tab-icon(url("../img/icons/culture-b.png"), 28px 33px);
+    @include program-tab-icon(url("../img/icons/culture-b.png"), 28px, 33px, 18px, 25px);
   }
   
   &__tab-label--study::before {
-    @include program-tab-icon(url("../img/icons/study-b.png"), 36px 35px);
+    @include program-tab-icon(url("../img/icons/study-b.png"), 36px, 35px, 16px, 22px);
   }
   
   &__tab-label--business::before {
-    @include program-tab-icon(url("../img/icons/business-b.png"), 32px 25px);
+    @include program-tab-icon(url("../img/icons/business-b.png"), 32px, 25px, 20px, 23px);
   }
   
   &__tab-label--volonteur::before {
-    @include program-tab-icon(url("../img/icons/volonteur-b.png"), 32px 29px);
+    @include program-tab-icon(url("../img/icons/volonteur-b.png"), 32px, 29px, 19px, 23px);
   }
   
   &__tab-label--religion::before {
-    @include program-tab-icon(url("../img/icons/religion-b.png"), 23px 25px);
+    @include program-tab-icon(url("../img/icons/religion-b.png"), 23px, 25px, 20px, 28px);
   }
  
   &__content-list {
@@ -86,27 +86,27 @@
 
   &__tab-input--culture:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--culture::before,
   &__tab-input--culture:focus:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--culture::before {
-    @include program-tab-icon(url("../img/icons/culture-g.png"), 28px 33px);
+    @include program-tab-icon(url("../img/icons/culture-g.png"), 28px, 33px, 18px, 25px);
   }
 
   &__tab-input--study:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--study::before,
   &__tab-input--study:focus:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--study::before {
-    @include program-tab-icon(url("../img/icons/study-g.png"), 36px 35px);
+    @include program-tab-icon(url("../img/icons/study-g.png"), 36px, 35px, 16px, 22px);
   }
 
   &__tab-input--business:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--business::before,
   &__tab-input--business:focus:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--business::before {
-    @include program-tab-icon(url("../img/icons/business-g.png"), 32px 25px);
+    @include program-tab-icon(url("../img/icons/business-g.png"), 32px, 25px, 20px, 23px);
   }
 
   &__tab-input--volonteur:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur::before,
   &__tab-input--volonteur:focus:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur::before {
-    @include program-tab-icon(url("../img/icons/volonteur-g.png"), 32px 29px);
+    @include program-tab-icon(url("../img/icons/volonteur-g.png"), 32px, 29px, 19px, 23px);
   }
 
   &__tab-input--religion:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--religion::before,
   &__tab-input--religion:focus:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--religion::before {
-    @include program-tab-icon(url("../img/icons/religion-g.png"), 23px 25px);
+    @include program-tab-icon(url("../img/icons/religion-g.png"), 23px, 25px, 20px, 28px);
   }
 
   &__tab-input--culture:checked ~ .program-tabs__tab-list .program-tabs__tab-label--culture,
@@ -126,23 +126,23 @@
   }
 
   &__tab-input--culture:checked ~ .program-tabs__tab-list .program-tabs__tab-label--culture::before {
-    @include program-tab-icon(url("../img/icons/culture-w.png"), 28px 33px);
+    @include program-tab-icon(url("../img/icons/culture-w.png"), 28px, 33px, 18px, 25px);
   }
 
   &__tab-input--study:checked ~ .program-tabs__tab-list .program-tabs__tab-label--study::before {
-    @include program-tab-icon(url("../img/icons/study-w.png"), 36px 35px);
+    @include program-tab-icon(url("../img/icons/study-w.png"), 36px, 35px, 16px, 22px);
   }
 
   &__tab-input--business:checked ~ .program-tabs__tab-list .program-tabs__tab-label--business::before {
-    @include program-tab-icon(url("../img/icons/business-w.png"), 32px 25px);
+    @include program-tab-icon(url("../img/icons/business-w.png"), 32px, 25px, 20px, 23px);
   }
 
   &__tab-input--volonteur:checked ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur::before {
-    @include program-tab-icon(url("../img/icons/volonteur-w.png"), 32px 29px);
+    @include program-tab-icon(url("../img/icons/volonteur-w.png"), 32px, 29px, 19px, 23px);
   }
 
   &__tab-input--religion:checked ~ .program-tabs__tab-list .program-tabs__tab-label--religion::before {
-    @include program-tab-icon(url("../img/icons/religion-w.png"), 23px 25px);
+    @include program-tab-icon(url("../img/icons/religion-w.png"), 23px, 25px, 20px, 28px);
   }
 }
 

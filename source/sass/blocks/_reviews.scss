@@ -73,7 +73,7 @@
 
   &__review-detail-link {
     display: block;
-    margin-bottom: 57px;
+    margin-bottom: 59px;
 
     @include text-big;
     line-height: 150%;
@@ -91,7 +91,7 @@
     margin-left: -100px;
 
     ul {
-      width: 104px;
+      width: 100px;
     }
   }
 
@@ -124,6 +124,11 @@
   &__swiper-icon-next {
     position: absolute;
     top: -10px;
+    
+    &:hover, 
+    &:focus {
+      opacity: 0.6;
+    }
   }
 
   &__swiper-icon-next {

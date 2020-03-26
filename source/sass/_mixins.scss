@@ -115,14 +115,6 @@
   color: $black-less-opacity;
 }
 
-@mixin conditions-btn-number {
-  font-family: $font-main;
-  font-weight: $font-weight-bold;
-  font-size: 17px;
-  color: $yellow;
-  line-height: 170%;
-}
-
 @mixin faq-btn-number {
   position: absolute;
   top: 25px;
@@ -164,7 +156,7 @@
   width: 228px;
   font-family: $font-main;
   font-weight: $font-weight-medium;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 18px;
   color: $white;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
@@ -174,7 +166,7 @@
   background-image: url("../img/icons/tab-active.png");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 228px 70px;
+  background-size: 228px 69px;
 }
 
 @mixin tab-header-active-mobile {
@@ -195,29 +187,19 @@
   border-radius: 54px;
 }
 
-@mixin feature-description {
-  font-family: $font-logo;
-  font-weight: $font-weight-sub-title;
-  font-size: 21px;
-  line-height: 25px;
-
-  color: $white;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
-}
-
-@mixin program-tab-icon($src, $size) {
+@mixin program-tab-icon($src, $width, $height, $top, $left) {
   content: "";
 
   position: absolute;
-  top: 18px;
-  left: 20px;
+  top: $top;
+  left: $left;
 
-  width: 36px;
-  height: 36px;
+  width: $width;
+  height: $height;
 
   background-image: $src;
   background-repeat: no-repeat;
-  background-size: $size;
+  background-size: $width $height;
   background-position: center;
 }
 
@@ -235,6 +217,16 @@
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: center;
+}
+
+@mixin feature-description {
+  font-family: $font-logo;
+  font-weight: $font-weight-sub-title;
+  font-size: 21px;
+  line-height: 25px;
+
+  color: $white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 @mixin input-focus {
@@ -363,14 +355,35 @@
   background-position: center;
 }
 
-@mixin condition-icon-number {
-  background-color: transparent;
-  background-image: url("../img/icons/number-icon.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+@mixin condition-icon($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
 
-  border: none;
+  width: 36px;
+  height: 36px;
+  
+  background-color: $white;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  
+  z-index: 1;
+}
+
+@mixin conditions-number($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+
+  font-family: $font-main;
+  font-weight: $font-weight-bold;
+  font-size: 17px;
+  color: $yellow;
+  line-height: 170%;
+
+  z-index: 10;
 }
 
 @mixin play-btn {

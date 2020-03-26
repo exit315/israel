@@ -41,6 +41,7 @@
   &__border-icon {
     position: absolute;
     top: 10px;
+    left: 3px;
 
     height: 215px;
   }
@@ -71,37 +72,6 @@
     margin-bottom: 38px;
   }
 
-  &__conditions-item-btn {
-    position: absolute;
-    top: 0;
-
-    width: 36px;
-    height: 36px;
-    margin: 0;
-    margin-left: -18px;
-    padding: 0;
-
-    background-color: $white;
-    border: 1px solid $white;
-    border-radius: 50%;
-    box-sizing: border-box;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
-
-    cursor: pointer;
-    outline: none;
-  }
-
-  &__conditions-item-btn:hover, 
-  &__conditions-item-btn:focus {
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.05);
-  }
-
-  &__conditions-item-btn:active {
-    border-color: transparent;
-    box-shadow: none;
-    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), #FFFFFF;
-  }
-
   &__conditions-item-btn--age {
     top: -10px;
   }
@@ -110,34 +80,77 @@
     top: -8px;
   }
 
-  &__conditions-item-btn--age::before {
-    content: "1";
+  &__conditions-item--age {
+    position: relative;
 
-    @include conditions-btn-number;
+    &::before {
+      content: "1";
+
+      @include conditions-number(-5px, 0);
+    }
+
+    &::after {
+      content: "";
+
+      @include condition-icon(-8px, -15px);
+    }
   }
 
-  &__conditions-item-btn--education::before {
-    content: "2";
-    
-    @include conditions-btn-number;
+  &__conditions-item--education {
+    position: relative;
+
+    &::before {
+      content: "2";
+
+      @include conditions-number(-5px, 0);
+    }
+
+    &::after {
+      content: "";
+
+      @include condition-icon(-8px, -15px);
+    }
   }
 
-  &__conditions-item-btn--roots::before {
-    content: "3";
-    
-    @include conditions-btn-number;
+
+  &__conditions-item--roots {
+    position: relative;
+
+    &::before {
+      content: "3";
+
+      @include conditions-number(4px, 0);
+    }
+
+    &::after {
+      content: "";
+
+      @include condition-icon(-1px, -15px);
+    }
   }
 
-  &__conditions-item-btn--limit::before {
-    content: "4";
-    
-    @include conditions-btn-number;
+
+  &__conditions-item--limit {
+    position: relative;
+
+    &::before {
+      content: "4";
+
+      @include conditions-number(0, 0);
+    }
+
+    &::after {
+      content: "";
+
+      @include condition-icon(-3px, -15px);
+    }
   }
+
 
   &__conditions-item-description {
     margin: 0;
     padding: 0;
-    padding-left: 42px;
+    padding-left: 45px;
   
     @include text-regular;
     line-height: 140%;

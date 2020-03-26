@@ -9,7 +9,7 @@
 
   input[type='tel'] {
     margin: 0;
-    padding: 20px 68px 18px 40px;
+    padding: 20px 100px 16px 40px;
     box-sizing: border-box;
   
     @include form-placeholder;
@@ -39,7 +39,7 @@
     @include call-btn;
     width: 216px;
     margin-left: -30px;
-    padding: 20px 40px 18px 40px;
+    padding: 20px 40px 16px 40px;
   
     cursor: pointer;
     outline: none;

@@ -67,7 +67,7 @@
     height: 732px;
   
     &::before {
-      @include feature-item-img(url("../../img/img-excursion-desktop.png"), 482px, 732px, 0, 0);
+      @include feature-item-img(url("../img/img-excursion-desktop.png"), 482px, 732px, 0, 0);
     }
   }
   
@@ -77,7 +77,7 @@
     margin-right: 2.2%;
   
     &::before {
-      @include feature-item-img(url("../../img/img-study-lang-desktop.png"), 211px, 318px, 0, 0);
+      @include feature-item-img(url("../img/img-study-lang-desktop.png"), 211px, 318px, 0, 0);
     }  
   }
   
@@ -86,7 +86,7 @@
     height: 318px;
   
     &::before {
-      @include feature-item-img(url("../../img/img-study-desktop.png"), 411px, 318px, 0, 0);
+      @include feature-item-img(url("../img/img-study-desktop.png"), 411px, 318px, 0, 0);
     }
   }
   
@@ -96,7 +96,7 @@
     margin-right: 2.2%;
   
     &::before {
-      @include feature-item-img(url("../../img/img-projects-desktop.png"), 411px, 318px, 0, 0);
+      @include feature-item-img(url("../img/img-projects-desktop.png"), 411px, 318px, 0, 0);
     }
   }
   
@@ -105,7 +105,7 @@
     height: 318px;
   
     &::before {
-      @include feature-item-img(url("../../img/img-leadership-desktop.png"), 214px, 318px, 0, 0);
+      @include feature-item-img(url("../img/img-leadership-desktop.png"), 214px, 318px, 0, 0);
     }
   }
 }
@@ -245,7 +245,7 @@
       height: 400px;
   
       &::before {
-        @include feature-item-img(url("../../img/img-excursion-mobile.png"), 288px, 400px, 0, 0);
+        @include feature-item-img(url("../img/img-excursion-mobile.png"), 288px, 400px, 0, 0);
       }
     }
   
@@ -255,7 +255,7 @@
       margin: 0 auto;
   
       &::before {
-        @include feature-item-img(url("../../img/img-study-lang-mobile.png"), 288px, 400px, 0, 0);
+        @include feature-item-img(url("../img/img-study-lang-mobile.png"), 288px, 400px, 0, 0);
       }  
     }
   
@@ -264,7 +264,7 @@
       height: 400px;
   
       &::before {
-        @include feature-item-img(url("../../img/img-study-mobile.png"), 288px, 400px, 0, 0);
+        @include feature-item-img(url("../img/img-study-mobile.png"), 288px, 400px, 0, 0);
       }
     }
   
@@ -274,7 +274,7 @@
       margin: 0 auto;
   
       &::before {
-        @include feature-item-img(url("../../img/img-projects-mobile.png"), 288px, 400px, 0, 0);
+        @include feature-item-img(url("../img/img-projects-mobile.png"), 288px, 400px, 0, 0);
       }
     }
   
@@ -283,7 +283,7 @@
       height: 400px;
   
       &::before {
-        @include feature-item-img(url("../../img/img-leadership-mobile.png"), 288px, 400px, 0, 0);
+        @include feature-item-img(url("../img/img-leadership-mobile.png"), 288px, 400px, 0, 0);
       }
     }
   }
