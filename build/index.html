@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div class="wrapper">
+      <div class="content">
 
-    <div style="display: none;">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow" viewBox="0 0 17 11">
+        <div style="display: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow" viewBox="0 0 17 11">
 <path d="M1 1L8.5 9L16 1" stroke="#1FC0FC" stroke-width="2" fill="none"></path>
 </symbol><symbol id="icon-border-dashed" viewBox="0 0 2 250">
 <path opacity="0.2" d="M1 0L0.999989 250" stroke="#484848" stroke-dasharray="4 4"></path>
@@ -30,64 +32,62 @@
 </symbol><symbol id="icon-whatsapp" viewBox="0 0 24 24">
 <path fill-opacity="0.16" d="M12.0025 2H11.9975C6.48375 2 2 6.485 2 12C2 14.1875 2.705 16.215 3.90375 17.8612L2.6575 21.5763L6.50125 20.3475C8.0825 21.395 9.96875 22 12.0025 22C17.5162 22 22 17.5138 22 12C22 6.48625 17.5162 2 12.0025 2ZM17.8212 16.1213C17.58 16.8025 16.6225 17.3675 15.8587 17.5325C15.3363 17.6437 14.6537 17.7325 12.3562 16.78C9.4175 15.5625 7.525 12.5763 7.3775 12.3825C7.23625 12.1887 6.19 10.8013 6.19 9.36625C6.19 7.93125 6.91875 7.2325 7.2125 6.9325C7.45375 6.68625 7.8525 6.57375 8.235 6.57375C8.35875 6.57375 8.47 6.58 8.57 6.585C8.86375 6.5975 9.01125 6.615 9.205 7.07875C9.44625 7.66 10.0337 9.095 10.1038 9.2425C10.175 9.39 10.2463 9.59 10.1462 9.78375C10.0525 9.98375 9.97 10.0725 9.8225 10.2425C9.675 10.4125 9.535 10.5425 9.3875 10.725C9.2525 10.8837 9.1 11.0538 9.27 11.3475C9.44 11.635 10.0275 12.5937 10.8925 13.3637C12.0087 14.3575 12.9137 14.675 13.2375 14.81C13.4787 14.91 13.7662 14.8863 13.9425 14.6988C14.1663 14.4575 14.4425 14.0575 14.7238 13.6638C14.9237 13.3813 15.1763 13.3462 15.4412 13.4462C15.7113 13.54 17.14 14.2462 17.4338 14.3925C17.7275 14.54 17.9212 14.61 17.9925 14.7338C18.0625 14.8575 18.0625 15.4388 17.8212 16.1213Z" fill="black"></path>
 </symbol></svg>
-    </div>
-
-    <header class="page-header">
-      <nav class="page-header__nav">
-        <div class="page-header__contact-tel">
-          <a href="tel:+(972)2–621–6581">+ (972) 2 – 621 – 6581</a>
         </div>
-        <div class="page-header__logo-wrapper">
-          <img class="page-header__logo" src="img/logo/logo-cf.png" width="137" height="48" alt="Masa-Israel">
-        </div>
-        <div class="page-header__call-order-open-btn">
-          <a href="#">заказать звонок</a>
-        </div>
-      </nav>
-
-      <div class="page-header__lead-in-wrapper">
-        <p class="page-header__lead-in">Учёба, путешествие и карьера<br> для еврейской молодёжи
-          <a class="page-header__anchor" href="#program-info"><span class="visually-hidden">Перейти к разделу с программе Masa-Israel</span></a>
-        </p>
-      </div>
-
-      <div class="page-header__overlay hidden"></div>
+    
+        <header class="page-header">
+          <nav class="page-header__nav">
+            <div class="page-header__contact-tel">
+              <a href="tel:+(972)2–621–6581">+ (972) 2 – 621 – 6581</a>
+            </div>
+            <div class="page-header__logo-wrapper">
+              <img class="page-header__logo" src="img/logo/logo-cf.png" width="137" height="48" alt="Masa-Israel">
+            </div>
+            <div class="page-header__call-order-open-btn">
+              <a href="#">заказать звонок</a>
+            </div>
+          </nav>
+    
+          <div class="page-header__lead-in-wrapper">
+            <p class="page-header__lead-in">Учёба, путешествие и карьера<br> для еврейской молодёжи
+              <a class="page-header__anchor" href="#program-info"><span class="visually-hidden">Перейти к разделу с программе Masa-Israel</span></a>
+            </p>
+          </div>
+    
+          <div class="page-header__overlay hidden"></div>
+          
+          <form class="page-header__call-form call-form-modal hidden" method="POST" autocomplete="off" action="#">
+            <button class="call-form-modal__btn-close" id="call-form-close" type="reset"><span class="visually-hidden">Закрыть окно</span></button>
       
-      <form class="page-header__call-form call-form-modal hidden" method="POST" autocomplete="off" action="#">
-        <button class="call-form-modal__btn-close" id="call-form-close" type="reset"><span class="visually-hidden">Закрыть окно</span></button>
-  
-        <h2 class="call-form-modal__header">Заказать звонок</h2>
-        <p class="call-form-modal__lead-in">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
-            
-        <div class="call-form-modal__user-info">
-          <input class="call-form-modal__input-name" type="text" name="user-name" autocomplete="off" placeholder="Имя" minlength="2" maxlength="25" pattern="^[A-ZА-Я]{1}[a-zа-я]{1,19}( [A-ZА-Я]{1})?([a-zа-я]{1,19})?$" required="">
-          <input class="call-form-modal__input-tel" type="tel" name="user-phone" autocomplete="off" placeholder="Телефон" minlength="16" maxlength="16" pattern="^[+]{1}[0-9]{1}[(]{1}[0-9]{3}[)]{1}[0-9]{3}[-]{1}[0-9]{2}[-]{1}[0-9]{2}$" required="">
-        </div>
-        <div class="call-form-modal__btn-wrapper">
-          <button class="call-form-modal__order-call-btn" type="submit">перезвоните мне</button>
-          <label class="call-form-modal__agreement-label" for="agreement">
-            <input class="visually-hidden" id="agreement" type="checkbox" name="agreement-check" required="">
-            <span class="call-form-modal__agreement-check"></span>
-            Нажимая на кнопку, вы даёте согласие на обработку персональных данных
-          </label>
-        </div>
-      </form>
+            <h2 class="call-form-modal__header">Заказать звонок</h2>
+            <p class="call-form-modal__lead-in">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
+                
+            <div class="call-form-modal__user-info">
+              <input class="call-form-modal__input-name" type="text" name="user-name" autocomplete="off" placeholder="Имя" minlength="2" maxlength="25" pattern="^[A-ZА-Я]{1}[a-zа-я]{1,19}( [A-ZА-Я]{1})?([a-zа-я]{1,19})?$" required="">
+              <input class="call-form-modal__input-tel" type="tel" name="user-phone" autocomplete="off" placeholder="Телефон" minlength="16" maxlength="16" pattern="^[+]{1}[0-9]{1}[(]{1}[0-9]{3}[)]{1}[0-9]{3}[-]{1}[0-9]{2}[-]{1}[0-9]{2}$" required="">
+            </div>
+            <div class="call-form-modal__btn-wrapper">
+              <button class="call-form-modal__order-call-btn" type="submit">перезвоните мне</button>
+              <label class="call-form-modal__agreement-label" for="agreement">
+                <input class="visually-hidden" id="agreement" type="checkbox" name="agreement-check" required="">
+                <span class="call-form-modal__agreement-check"></span>
+                Нажимая на кнопку, вы даёте согласие на обработку персональных данных
+              </label>
+            </div>
+          </form>
+    
+          <div class="page-header__call-ok-popup call-ok-popup hidden">
+            <button class="call-ok-popup__btn-close" id="ok-popup-close" type="reset"><span class="visually-hidden">Закрыть окно</span></button>
+            <h2 class="call-ok-popup__header">Заявка принята</h2>
+            <p class="call-ok-popup__note">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+            <div class="call-ok-popup__btn-wrapper">
+              <button class="call-ok-popup__popup-close" type="button">понятно</button>
+            </div>
+          </div>
+        </header>
 
-      <div class="page-header__call-ok-popup call-ok-popup hidden">
-        <button class="call-ok-popup__btn-close" id="ok-popup-close" type="reset"><span class="visually-hidden">Закрыть окно</span></button>
-        <h2 class="call-ok-popup__header">Заявка принята</h2>
-        <p class="call-ok-popup__note">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
-        <div class="call-ok-popup__btn-wrapper">
-          <button class="call-ok-popup__popup-close" type="button">понятно</button>
-        </div>
-      </div>
-    </header>
-
-    <div class="wrapper">
-      <div class="content">
         <main class="page-main">
           <h1 class="visually-hidden">Masa-Israel - сайт о программах учёбы и стажировки в Израиле</h1>
-    
+
           <section class="page-main__program-info program-info" id="program-info">
             <h2 class="program-info__header">О программе</h2>
     
@@ -102,17 +102,17 @@
               </video>
             </div>
           </section>
-    
+
           <section class="page-main__program-types program-types">
             <h2 class="program-types__header">Программы</h2>
-    
+
             <div class="program-types__tabs program-tabs">
               <input class="program-tabs__tab-input program-tabs__tab-input--culture visually-hidden" id="culture" type="radio" name="tab-head">
               <input class="program-tabs__tab-input program-tabs__tab-input--study visually-hidden" id="study" type="radio" name="tab-head" checked="">
               <input class="program-tabs__tab-input program-tabs__tab-input--business visually-hidden" id="business" type="radio" name="tab-head">
               <input class="program-tabs__tab-input program-tabs__tab-input--volonteur visually-hidden" id="volonteur" type="radio" name="tab-head">
               <input class="program-tabs__tab-input program-tabs__tab-input--religion visually-hidden" id="religion" type="radio" name="tab-head">
-    
+
               <div class="program-tabs__tab-list swiper-container slider1">
                 <div class="program-tabs__tab-list-wrapper swiper-wrapper">
                   <label class="program-tabs__tab-label program-tabs__tab-label--culture swiper-slide" for="culture">Общие</label>
@@ -122,7 +122,7 @@
                   <label class="program-tabs__tab-label program-tabs__tab-label--religion swiper-slide" for="religion">Религиозные</label>
                 </div>
               </div>
-    
+
               <ul class="program-tabs__content-list"> 
                 <li class="program-tabs__content-item program-tabs__content-item--culture">
                   <h3 class="program-tabs__content-header">Общие</h3>
@@ -152,7 +152,7 @@
               </ul>
             </div>
           </section>
-    
+
           <section class="page-main__want-to-go want-to-go">
             <h2 class="visually-hidden">Оставить телефон для связи</h2>
             <p class="want-to-go__header">Хочу поехать!</p>
@@ -164,12 +164,12 @@
               </div>
             </form>
           </section>
-    
+
           <section class="page-main__how-to-go how-to-go">
             <h2 class="visually-hidden">Условия для поездки и получения гранта на обучение</h2>
             <p class="how-to-go__header">Как поехать</p>
             <p class="how-to-go__intro">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
-            
+
             <div class="how-to-go__description">
               <p class="how-to-go__conditions-lead-in">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</p>
               <div class="how-to-go__border-icon-wrapper">
@@ -183,21 +183,21 @@
                     <p class="how-to-go__conditions-item-description">Быть в возрасте от 16 до 30 лет</p>
                   </div>
                 </li>
-    
+
                 <li class="how-to-go__conditions-item how-to-go__conditions-item--education">
                   <div class="how-to-go__conditions-item-wrapper">
                     <span class="visually-hidden">Условие №2</span>
                     <p class="how-to-go__conditions-item-description">Иметь оконченное среднее образование</p>
                   </div>
                 </li>
-    
+
                 <li class="how-to-go__conditions-item how-to-go__conditions-item--roots">
                   <div class="how-to-go__conditions-item-wrapper">
                     <span class="visually-hidden">Условие №3</span>
                     <p class="how-to-go__conditions-item-description">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку</p>
                   </div>
                 </li>
-    
+
                 <li class="how-to-go__conditions-item how-to-go__conditions-item--limit">
                   <div class="how-to-go__conditions-item-wrapper">
                     <span class="visually-hidden">Условие №4</span>
@@ -205,21 +205,21 @@
                   </div>
                 </li>
               </ul>
-    
+
               <p class="how-to-go__conditions-exeption">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную стоимость.</p>
             </div>
           </section>
-    
+
           <section class="page-main__features features">
             <h2 class="features__header">Жизнь в Израиле</h2>
             <p class="features__lead-in">Помимо учёбы, в рамках программы у вас будет возможность путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
-    
+
             <input class="features__slider-input features__slider-input--excursion visually-hidden" id="slide-1" type="radio" name="slide" checked="">
             <input class="features__slider-input features__slider-input--lang visually-hidden" id="slide-2" type="radio" name="slide">
             <input class="features__slider-input features__slider-input--study visually-hidden" id="slide-3" type="radio" name="slide">
             <input class="features__slider-input features__slider-input--projects visually-hidden" id="slide-4" type="radio" name="slide">
             <input class="features__slider-input features__slider-input--leadership visually-hidden" id="slide-5" type="radio" name="slide">
-    
+
             <div class="features__container">
               <div class="features__slider-controls">
                 <label class="features__slider-label features__slider-label--excursion" for="slide-1"></label>
@@ -228,11 +228,11 @@
                 <label class="features__slider-label features__slider-label--projects" for="slide-4"></label>
                 <label class="features__slider-label features__slider-label--leadership" for="slide-5"></label>
               </div>
-    
+
               <div class="features__item features__item--excursion">
                 <span class="features__item-description">Экскурсии по Израилю <br>и знакомство с его историей</span>
               </div>
-    
+
               <div class="features__wrapper">
                 <div class="features__item features__item--lang">
                   <span class="features__item-description">Изучение иврита</span>
@@ -241,7 +241,7 @@
                   <span class="features__item-description">Обучение современным <br>навыкам и профессиям</span>
                 </div>
               </div>
-    
+
               <div class="features__wrapper">
                 <div class="features__item features__item--projects">
                   <span class="features__item-description">Совместные творческие проекты с израильской молодёжью</span>
@@ -252,7 +252,7 @@
               </div>
             </div>
           </section>
-    
+
           <section class="page-main__members-photos members-photos">
             <h2 class="visually-hidden">Фото жизни, учебы и путешествий участников программы</h2>
             <p class="members-photos__header">#MasaIsrael</p>
@@ -263,9 +263,8 @@
                 Смотреть фото
               </a>
             </div>
-    
           </section>
-    
+
           <section class="page-main__faq faq-tabs">
             <h2 class="faq-tabs__header">Частые вопросы</h2>
             <ul class="faq-tabs__list">
@@ -275,7 +274,7 @@
                   Кто организатор? Какие сроки у программы?
                   <svg class="faq-tabs__tab-icon" width="17" height="11"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
                 </label>
-    
+
                 <p class="faq-tabs__item-tab-description">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
               </li>
               <li class="faq-tabs__item">
@@ -284,7 +283,6 @@
                   Что такое грант на обучение?
                   <svg class="faq-tabs__tab-icon" width="17" height="11"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
                 </label>
-    
                 <p class="faq-tabs__item-tab-description">Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
               </li>
               <li class="faq-tabs__item">
@@ -321,10 +319,10 @@
               </li>
             </ul>
           </section>
-    
+
           <section class="page-main__reviews reviews">
             <h2 class="reviews__header">Отзывы</h2>
-            
+
             <div class="reviews__list-wrapper swiper-container slider2">
               <ul class="reviews__list swiper-wrapper">
                 <li class="reviews__item swiper-slide">
@@ -334,7 +332,7 @@
                       <img class="reviews__author-pic" src="img/reviews-photo-1-desktop.png" width="364" height="480" alt="Фото автора отзыва">
                       </picture>
                   </div>
-      
+
                   <div class="reviews__content-wrapper">
                     <p class="reviews__author-name">Ольга Михайлова</p>
                     <div class="reviews__author-program">
@@ -347,7 +345,7 @@
                     <a class="reviews__review-detail-link">Читать подробнее</a>
                   </div>
                 </li>
-      
+
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__pic-wrapper">
                     <picture>
@@ -367,7 +365,7 @@
                     <a class="reviews__review-detail-link">Читать подробнее</a>
                   </div>
                 </li>
-      
+
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__pic-wrapper">
                     <picture>
@@ -387,7 +385,7 @@
                     <a class="reviews__review-detail-link">Читать подробнее</a>
                   </div>
                 </li>
-      
+
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__pic-wrapper">
                     <picture>
@@ -407,7 +405,7 @@
                     <a class="reviews__review-detail-link">Читать подробнее</a>
                   </div>
                 </li>
-      
+
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__pic-wrapper">
                     <picture>
@@ -427,7 +425,7 @@
                     <a class="reviews__review-detail-link">Читать подробнее</a>
                   </div>
                 </li>
-      
+
                 <li class="reviews__item swiper-slide">
                   <div class="reviews__pic-wrapper">
                     <picture>
@@ -448,14 +446,14 @@
                   </div>
                 </li>
               </ul>
-    
+
               <div class="reviews__swiper-controls">
                 <div class="reviews__swiper-pagination swiper-pagination"></div>
-      
+
                 <span class="reviews__swiper-button-prev swiper-button-prev"><svg class="reviews__swiper-icon-prev" width="11" height="18"><use xlink:href="img/sprite.svg#icon-slide-arrow"></use></svg></span>
                 <span class="reviews__swiper-button-next swiper-button-next"><svg class="reviews__swiper-icon-next" width="11" height="18"><use xlink:href="img/sprite.svg#icon-slide-arrow"></use></svg></span>
               </div>
-      
+
               <div class="reviews__social social">
                 <ul class="social__list">
                   <li class="social__item">
@@ -480,12 +478,12 @@
               </div>
             </div>
           </section>
-    
+
           <section class="page-main__program-details program-details">
             <div class="program-details__container">
               <div class="program-details__info-wrapper">
                 <h2 class="program-details__header">Узнать подробности</h2>
-      
+
                 <div class="program-details__info">
                   <div class="program-details__user-location">
                     <p class="program-details__city">Ваш город: <span class="program-details__user-city">новосибирск</span></p>
@@ -500,19 +498,19 @@
                       <li class="curator__contacts-item">
                         <a class="curator__contacts-link curator__contacts-link--fb" href="#">
                           <span class="visually-hidden">Связаться с куратором в Facebook</span>
-                          <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                          <svg class="curator__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
                         </a>
                       </li>
                       <li class="curator__contacts-item">
                         <a class="curator__contacts-link curator__contacts-link--whatsapp" href="#">
                           <span class="visually-hidden">Связаться с куратором в WhatsApp</span>
-                          <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-whatsapp"></use></svg>
+                          <svg class="curator__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-whatsapp"></use></svg>
                         </a>
                       </li>
                       <li class="curator__contacts-item">
                         <a class="curator__contacts-link curator__contacts-link--tg" href="#">
                           <span class="visually-hidden">Связаться с куратором в Telegram</span>
-                          <svg class="social__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
+                          <svg class="curator__link-icon" width="24" height="24"><use xlink:href="img/sprite.svg#icon-telegram"></use></svg>
                         </a>
                       </li>
                     </ul>
@@ -520,17 +518,17 @@
                   <p class="program-details__curator-lead-in">Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с куратором, узнайте подробнее о программах и выберите свою!</p>
                 </div>
               </div>
-      
+
               <div class="program-details__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.8454194271985!2d82.92543936668986!3d55.02840139497614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da569bf9d5%3A0x40382a0defb64c9c!2z0YPQuy4g0KnQtdGC0LjQvdC60LjQvdCwLCA2OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDk5!5e0!3m2!1sru!2sru!4v1581519543166!5m2!1sru!2sru" width="702" height="448" style="border:0;" allowfullscreen=""></iframe>
-                
+
                 <picture>
-                  <source media="(min-width: 768px)" srcset="../img/map-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/map-desktop.png">
                   <img src="img/map-mobile.png" width="320" height="272" alt="Адрес офиса в Новосибирске на карте">
                 </picture>
               </div>
             </div>
-            
+
             <div class="program-details__contact-us contact-us">
               <div class="contact-us__lead-in-wrapper">
                 <p class="contact-us__lead-in">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
