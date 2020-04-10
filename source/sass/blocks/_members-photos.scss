@@ -1,7 +1,7 @@
 .members-photos {
   margin: 0;
   margin-bottom: 85px;
-  padding: 125px 12.23% 196px 58%;
+  padding: 125px 12.23% 196px 58.15%;
 
   background-image: url("../img/bg/bg-masa-program-desktop.png");
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
   &__lead-in {
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
     padding: 0 5px;
     @include text-big;
     color: $white-opacity;
@@ -28,7 +28,7 @@
     display: block;
     position: relative;
     width: 230px;
-    padding: 19px 40px 14px 70px;
+    padding: 19px 30px 16px 70px;
     box-sizing: border-box;
 
     text-decoration: none;
@@ -76,7 +76,7 @@
     &__link-instagram {
       width: 264px;
       margin: 0 auto;
-      padding: 22px 57px 14px 89px;
+      padding: 19px 57px 16px 89px;
     }
     
     &__link-icon {

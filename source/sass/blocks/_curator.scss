@@ -4,19 +4,20 @@
   margin-bottom: 32px;
 
   &__header {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 12px 0;
+    padding: 2px 0 0;
 
     @include text-regular;
-    line-height: 150%;
+    line-height: 22px;
     color: $blue;
   }
 
   &__pic {
-    margin-right: 20px;
+    margin-right: 22px;
   }
 
   &__name {
+    margin-left: 5px;
     color: $black-less-opacity;
   }
 
@@ -40,6 +41,13 @@
   &__contacts-item {
     margin: 0 12px 0 0;
   }
+
+  &__contacts-link {
+    &:hover, 
+    &:focus {
+      opacity: 0.6;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -54,6 +62,10 @@
 
     &__pic {
       margin-bottom: 18px;
+    }
+
+    &__curator-adress {
+      margin-bottom: 12px;
     }
     
     &__name {

@@ -8,9 +8,10 @@
 
   &__lead-in {
     margin: 0 0 12px 0;
-    padding: 10px 35px 0 0;
+    padding: 8px 35px 0 0;
 
     @include text-big;
+    color: $black-opacity;
     font-weight: $font-weight-medium;
     line-height: 150%;
   }
@@ -19,6 +20,10 @@
     margin: 0;
     @include text-small;
     color: $black-half-opacity;
+  }
+
+  &__form {
+    padding-top: 2px;
   }
 
   input[type='text'], 
@@ -66,10 +71,9 @@
 
   button[type='submit'] {
     @include call-btn;
-    line-height: 20px;
     
     width: 216px;
-    padding: 22px 40px 14px;
+    padding: 19px 35px 17px;
     margin-bottom: 16px;
   
     box-sizing: border-box;

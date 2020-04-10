@@ -1,6 +1,6 @@
 .program-details {
   margin: 0;
-  padding: 92px 1px 75px 8.3%;
+  padding: 92px 1px 80px 8.25%;
 
   background-image: url("../img/bg/bg-details-watercolor.png");
   background-repeat: no-repeat;
@@ -16,10 +16,12 @@
   &__city {
     position: relative;
     margin: 0 0 39px 0;
-    padding-left: 22px;
+    padding-left: 20px;
 
-    @include text-regular;
-    line-height: 150%;
+    font-family: $font-main;
+    font-weight: $font-weight-text;
+    font-size: 15px;
+    line-height: 22px;
     color: $black-less-opacity;
 
     &::before {
@@ -39,13 +41,15 @@
 
   &__user-city {
     position: relative;
-    margin-left: 18px;
+    margin-left: 15px;
     padding-bottom: 3px;
 
     font-family: $font-main;
     font-weight: $font-weight-medium;
     font-size: 13px;
-    line-height: 150%;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+
     color: $black-less-opacity;
     text-transform: uppercase;
     border-bottom: 1px dashed $blue;
@@ -72,7 +76,7 @@
   }
 
   &__header {
-    margin: 0 0 48px 0;
+    margin: 0 0 46px 0;
     padding: 0;
     @include section-header-desktop;
   }
@@ -119,6 +123,7 @@
   &__curator-lead-in {
     margin: 0;
     @include text-big;
+    color: $black-opacity;
   }
 }
 

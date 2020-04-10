@@ -32,8 +32,8 @@
 
   &__item-tab-label {
     display: block;
-    margin-bottom: 30px;
-    padding: 38px 131px 0 32px;
+    margin-bottom: 28px;
+    padding: 40px 131px 0 30px;
 
     @include text-big;
     line-height: 150%;
@@ -81,17 +81,17 @@
   &__tab-icon {
     position: absolute;
     top: 48px;
-    right: 30px;
+    right: 34px;
   }
 
   &__item-tab-description {
     display: none;
     margin: 0;
     margin-bottom: 32px;
-    padding: 0;
+    padding: 0 40px 0 0;
 
     @include text-regular;
-    line-height: 140%;
+    line-height: 21px;
     color: $black-less-opacity;
   }
 

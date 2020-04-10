@@ -1,7 +1,8 @@
 body {
 	height: 100vh;
-  min-width: 320px;
-  margin: 0;
+	min-width: 320px;
+	max-width: 1366px;
+  margin: 0 auto;
 }
 
 .hidden {
@@ -19,16 +20,17 @@ body {
 	padding: 0;
 }
 
-
 .wrapper {
 	height: 100%;
 }
+
 .content {
 	box-sizing: border-box;
 	min-height: 100%;
-	padding-bottom: 90px;
+	padding-bottom: 75px;
 }
+
 .footer {
-	height: 80px;
-	margin-top: -80px;
+	height: 75px;
+	margin-top: -75px;
 }
