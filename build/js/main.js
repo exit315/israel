@@ -35,7 +35,7 @@ if (document.body.clientWidth <= 768) {
     direction: 'horizontal',
     loop: false,
     slidesPerView: 'auto',
-    spaceBetween: 30
+    spaceBetween: 0
   });
 };
 
