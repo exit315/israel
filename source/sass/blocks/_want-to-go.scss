@@ -2,7 +2,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 12px;
-  padding: 200px 46.7% 131px 15.4%;
+  padding: 198px 46.7% 131px 15.4%;
 
   &::before {
     content: "";
@@ -14,7 +14,7 @@
     width: 147px;
     height: 262px;
 
-    background-image: url("../img/bg/backpack.png");
+    background-image: url("../img/bg/backpack-desktop.png");
     background-repeat: no-repeat;
     background-size: 147px 262px;
     background-position: center top;
@@ -29,7 +29,7 @@
 
   &__header {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   
     @include section-header-desktop;
   }
@@ -40,6 +40,14 @@
     padding-right: 80px;
   
     @include text-big;
+    color: $black-opacity;
+  }
+}
+
+@media (max-width: 1300px) {
+  .want-to-go {
+    background-size: 60%;
+    background-position: right center;
   }
 }
 
@@ -47,6 +55,9 @@
   .want-to-go {
     padding-top: 90px;
     padding-bottom: 240px;
+
+    background-size: 818px 594px;
+    background-position: right -15px;
   }
 }
 
@@ -59,8 +70,13 @@
   &::before {
     top: -42px;
 
-    width: 120px;
-    height: 162px;
+    width: 103px;
+    height: 188px;
+
+    background-image: url("../img/bg/backpack-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 103px 188px;
+    background-position: -5px -10px;
   }
 
     background-image: url("../img/bg/bg-girl-flag-mobile.png");

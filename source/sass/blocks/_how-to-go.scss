@@ -1,17 +1,14 @@
 .how-to-go {
-  padding-top: 180px;
-  padding-left: 51.17%;
-  padding-right: 9.6%;
-  padding-bottom: 212px;
+  padding: 182px 9.6% 210px 51.17%;
 
   background-image: url("../img/bg/bg-to-go-desktop.png"), url("../img/bg/stamp-desktop.png"), url("../img/bg/bg-watercolor-how-to-go.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 581px 707px, 216px 254px, 1366px 1208px;
-  background-position: 12px 145px, right 360px, left -55px;
+  background-position: 12px 147px, right 360px, left -55px;
 
   &__header {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     
     @include section-header-desktop;
   }
@@ -22,16 +19,16 @@
     padding-right: 50px;
   
     @include text-regular;
+    color: $black-opacity;
   }
 
   &__conditions-lead-in {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
     padding-right: 80px;
   
     @include text-big;
     font-weight: $font-weight-medium;
-    color: $black;
   }
 
   &__border-icon-wrapper {
@@ -65,7 +62,7 @@
   }
 
   &__conditions-item--education {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 
   &__conditions-item--roots {
@@ -162,7 +159,7 @@
   
     @include text-regular;
     line-height: 140%;
-    opacity: 0.5;
+    color: $black-half-opacity;
   
     &::before {
       content: "";

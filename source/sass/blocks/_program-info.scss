@@ -23,8 +23,8 @@
     padding: 0 24%;
   
     @include text-big;
+    color: $black;
     text-align: center;
-    opacity: 0.87;
   }
 
   &__video-wrapper {
@@ -68,7 +68,6 @@
     
       @include text-big;
       text-align: center;
-      opacity: 0.87;
     }
 
     &__video-wrapper {
@@ -106,7 +105,7 @@
     background-image: url("../img/bg/bg-watercolor-video-mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 186px;
-    background-position: center 230px;
+    background-position: center 235px;
 
     &__header {
       @include section-header-mobile;
@@ -114,7 +113,7 @@
 
     &__description {
       padding: 0 5%;
-      margin-bottom: 52px;
+      margin-bottom: 50px;
   
       @include text-big-mobile;
       text-align: left;

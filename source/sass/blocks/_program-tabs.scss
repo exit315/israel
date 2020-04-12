@@ -1,13 +1,14 @@
 .program-tabs {
   display: flex;
-  padding-top: 16px;
+  margin: 0;
+  padding: 16px 0 0 0;
 
   &__tab-list-wrapper {
     display: flex;
     flex-direction: column;
     width: 228px;
     margin: 0;
-    margin-right: 66px;
+    margin-right: 65px;
     padding: 0;
   
     list-style: none;
@@ -16,10 +17,8 @@
   &__tab-label {
     position: relative;
     width: 228px;
-    margin: 0 0 3px 0;
-    padding-top: 26px;
-    padding-bottom: 25px;
-    padding-left: 72px;
+    margin: 0 0 5px 0;
+    padding: 24px 0 22px 75px;
   
     box-sizing: border-box;
     cursor: pointer;
@@ -61,14 +60,17 @@
 
   &__content-header {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
+    padding-top: 3px;
+
     @include modal-header;
   }
 
   &__content-description {
-    @include text-regular;
+    margin-bottom: 15px;
 
-    opacity: 0.87;
+    @include text-regular;
+    color: $black-opacity;
   }
   
   &__tab-input--culture:hover ~ .program-tabs__tab-list .program-tabs__tab-label--culture,
@@ -114,7 +116,9 @@
   &__tab-input--business:checked ~ .program-tabs__tab-list .program-tabs__tab-label--business,
   &__tab-input--volonteur:checked ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur,
   &__tab-input--religion:checked ~ .program-tabs__tab-list .program-tabs__tab-label--religion {
-    @include tab-header-active;
+    padding: 24px 0 26px 72px;
+
+    @include tab-header-active;    
   }
 
   &__tab-input--culture:checked ~ .program-tabs__content-list .program-tabs__content-item--culture,
@@ -166,7 +170,7 @@
     &__tab-label {
       display: block;
       width: 181px;
-      padding: 15px 15px 13px 60px;
+      padding: 16px 15px 10px 55px;
       line-height: 20px;
       border: 1px solid transparent;
       box-sizing: border-box;
@@ -197,7 +201,7 @@
     }
 
     &__content-header {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       @include modal-header-mobile;
     }
 
@@ -210,7 +214,18 @@
     &__tab-input--business:checked ~ .program-tabs__tab-list .program-tabs__tab-label--business,
     &__tab-input--volonteur:checked ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur,
     &__tab-input--religion:checked ~ .program-tabs__tab-list .program-tabs__tab-label--religion {
+      padding-right: 14px;
+      padding-left: 54px;
       @include tab-header-active-mobile;
+    }
+
+    &__tab-input--culture:checked ~ .program-tabs__tab-list .program-tabs__tab-label--culture {
+      padding-left: 56.5px;
+    }
+    
+    &__tab-label--business,
+    &__tab-label--volonteur {
+      padding-right: 17px;
     }
 
     &__tab-input--culture:checked ~ .program-tabs__tab-list .program-tabs__tab-label--culture::before {
@@ -233,10 +248,18 @@
       @include program-tab-icon-mobile(url("../img/icons/religion-w.png"));
     }
 
+    &__tab-input--culture:checked ~ .program-tabs__tab-list .program-tabs__tab-label--culture::before,
+    &__tab-input--study:checked ~ .program-tabs__tab-list .program-tabs__tab-label--study::before,
+    &__tab-input--business:checked ~ .program-tabs__tab-list .program-tabs__tab-label--business::before,
+    &__tab-input--volonteur:checked ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur::before,
+    &__tab-input--religion:checked ~ .program-tabs__tab-list .program-tabs__tab-label--religion::before {
+      left: 12px;
+    }
+
     &__tab-input--culture:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--culture::before,
     &__tab-input--culture:focus:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--culture::before {
       @include program-tab-icon-mobile(url("../img/icons/culture-g.png"));
-      left: 13px;
+      left: 12px;
     }
   
     &__tab-input--study:hover:not(:checked) ~ .program-tabs__tab-list .program-tabs__tab-label--study::before,

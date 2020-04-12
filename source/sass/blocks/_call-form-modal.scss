@@ -46,7 +46,7 @@
 
   input[type='text'], 
   input[type='tel'] {
-    padding: 19px 40px 20px;
+    padding: 20px 40px 19px;
 
     border: 2px solid $border-grey;
     box-sizing: border-box;
@@ -115,7 +115,7 @@
   }
 
   &__agreement-label [type="checkbox"]:checked + .call-form-modal__agreement-check::before {
-    @include agreement-check-on;
+    @include agreement-check-on(-0.5px, -1px);
   }
 
   input[type="checkbox"] {
@@ -175,7 +175,7 @@
     }
   
     &__agreement-label input[type="checkbox"]:checked + .call-form-modal__agreement-check::before {
-      @include agreement-check-on;
+      @include agreement-check-on(-0.5px, -1px);
     }
   
     input[type="checkbox"]:hover ~ .call-form-modal__agreement-check {

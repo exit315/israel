@@ -69,14 +69,14 @@ function getBodyScrollTop() {
 
 var openModalCallForm = function () {
   event.preventDefault();
-  body.dataset.scrollY = getBodyScrollTop();
+  body.dataset.scrollY = getBodyScrollTop()
 
   modalOverlay.classList.remove('hidden');
   modal.classList.remove('hidden');
   userNameModal.focus();
 
-  if (existVerticalScroll()) {
-    body.classList.add('body-lock');
+  if(existVerticalScroll()) {
+    body.classList.add('body-lock')
     body.style.top = `-${body.dataset.scrollY}px`
   };
 
