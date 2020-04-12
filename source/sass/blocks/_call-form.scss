@@ -46,7 +46,6 @@
     margin-left: -30px;
     padding: 19px 35px 17px;
 
-    letter-spacing: 0.04em;
     cursor: pointer;
     outline: none;
   }
@@ -66,7 +65,7 @@
     input[type='tel'] {
       width: 287px;
       margin-bottom: 8px;
-      padding: 21px 64px 15px 40px;
+      padding: 19px 64px 16px 40px;
   
       border-right: 2px solid $border-grey;
       border-radius: 80px;
@@ -76,7 +75,7 @@
       position: relative;
       width: 264px;
       margin: 0 auto;
-      padding: 19px 64px 15px 64px;
+      padding: 19px 64px 16px 64px;
     }
   }
 }

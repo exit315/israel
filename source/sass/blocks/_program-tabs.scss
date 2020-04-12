@@ -116,8 +116,6 @@
   &__tab-input--business:checked ~ .program-tabs__tab-list .program-tabs__tab-label--business,
   &__tab-input--volonteur:checked ~ .program-tabs__tab-list .program-tabs__tab-label--volonteur,
   &__tab-input--religion:checked ~ .program-tabs__tab-list .program-tabs__tab-label--religion {
-    padding: 24px 0 26px 72px;
-
     @include tab-header-active;    
   }
 
@@ -164,12 +162,12 @@
       flex-direction: row;
       width: auto;
       margin: 0;
-      margin-bottom: 30px;
+      margin-bottom: 27px;
     }
   
     &__tab-label {
       display: block;
-      width: 181px;
+
       padding: 16px 15px 10px 55px;
       line-height: 20px;
       border: 1px solid transparent;
@@ -201,11 +199,12 @@
     }
 
     &__content-header {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       @include modal-header-mobile;
     }
 
     &__content-description {
+      margin-bottom: 20px;
       @include text-regular-mobile;
     }
     
