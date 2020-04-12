@@ -236,7 +236,7 @@
 
 @mixin call-btn {
   width: 264px;
-  padding: 20px 61px 18px;
+  padding: 22px 61px 16px;
 
   font-family: $font-main;
   font-weight: $font-weight-medium;
@@ -303,11 +303,9 @@
 @mixin form-input-text {
   font-family: $font-main;
   font-weight: $font-weight-medium;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 20px;
   letter-spacing: 0.01em;
-  text-transform: uppercase;
-  font-variant: small-caps;
 
   color: $black-opacity;
 }
@@ -321,19 +319,17 @@
   height: 16px;
 
   background-color: transparent;
-  border: none;
-  background-image: url("../img/icons/checkbox.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  border: 2px solid $yellow;
 
+  box-sizing: border-box;
   cursor: pointer;
 }
 
 @mixin agreement-check-on {
   content: "";
   position: absolute;
-  top: 1px;
-  left: 1px;
+  top: -1px;
+  left: -1px;
 
   width: 14px;
   height: 14px;

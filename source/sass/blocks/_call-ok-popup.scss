@@ -50,8 +50,9 @@
 
   button[type='button'] {
     @include call-btn;
-  
+    outline: none;
     box-sizing: border-box;
+    cursor: pointer;
   };
 
   outline: none;
