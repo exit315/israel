@@ -12,7 +12,10 @@ body {
 .body-lock {
   width: 100%;
   overflow-y: scroll;
-  position: fixed;
+	position: fixed;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
 }
 
 * {
