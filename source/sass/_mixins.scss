@@ -320,16 +320,17 @@
 
   background-color: transparent;
   border: 2px solid $yellow;
+  border-radius: 2px;
 
   box-sizing: border-box;
   cursor: pointer;
 }
 
-@mixin agreement-check-on {
+@mixin agreement-check-on($top, $left) {
   content: "";
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: $top;
+  left: $left;
 
   width: 14px;
   height: 14px;

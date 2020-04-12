@@ -115,7 +115,7 @@
   }
 
   &__agreement-label [type="checkbox"]:checked + .call-form-modal__agreement-check::before {
-    @include agreement-check-on;
+    @include agreement-check-on(-0.5px, -0.5px);
   }
 
   input[type="checkbox"] {
@@ -175,7 +175,7 @@
     }
   
     &__agreement-label input[type="checkbox"]:checked + .call-form-modal__agreement-check::before {
-      @include agreement-check-on;
+      @include agreement-check-on(-0.5px, -1px);
     }
   
     input[type="checkbox"]:hover ~ .call-form-modal__agreement-check {
