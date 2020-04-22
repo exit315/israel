@@ -28,7 +28,7 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 
     position: relative;
     margin: 0;
@@ -37,7 +37,7 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     margin-bottom: 33px;
   }
@@ -120,22 +120,162 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .features {
+    &__container {
+      padding: 0 0 0 490px;
+    }
+
+    &__item--excursion {
+      margin-right: 20px;
+    }
+  }
+}
+
 @media (max-width: 1260px) {
   .features {
     padding: 0 4%;
 
     &__container {
-      padding: 0 0 0 450px;
+      padding: 0 0 0 470px;
+    }
+
+    &__wrapper {
+      margin-bottom: 25px;
+    }
+
+    &__item--excursion {
+      position: absolute;
+      top: -65px;
+      left: 0;
+    
+      width: calc(482px - (482px*0.05));
+      height: calc(732px - (732px*0.05));
+    
+      &::before {
+        @include feature-item-img(url("../img/img-excursion-desktop.png"), calc(482px - (482px*0.05)), calc(732px - (732px*0.05)), 0, 0);
+      }
+  
+      span {
+        padding-left: 40px;
+      }
+    }
+
+    &__item--lang {
+      width: calc(211px - (211px*0.05));
+      height: calc(318px - (318px*0.05));
+      margin-right: 1%;
+    
+      &::before {
+        @include feature-item-img(url("../img/img-study-lang-desktop.png"), calc(211px - (211px*0.05)), calc(318px - (318px*0.05)), 0, 0);
+      }  
+    }
+    
+    &__item--study {
+      width: calc(411px - (211px*0.05));
+      height: calc(318px - (318px*0.05));
+    
+      &::before {
+        @include feature-item-img(url("../img/img-study-desktop.png"), calc(411px - (211px*0.05)), calc(318px - (318px*0.05)), 0, 0);
+      }
+    }
+    
+    &__item--projects {
+      width: calc(411px - (211px*0.05));
+      height: calc(318px - (318px*0.05));
+      margin-right: 1%;
+  
+      span {
+        padding-right: 10px;
+      }
+    
+      &::before {
+        @include feature-item-img(url("../img/img-projects-desktop.png"), calc(411px - (211px*0.05)), calc(318px - (318px*0.05)), 0, 0);
+      }
+    }
+    
+    &__item--leadership {
+      width: calc(214px - (211px*0.05));
+      height: calc(318px - (318px*0.05));
+      margin-right: -1%;
+    
+      &::before {
+        @include feature-item-img(url("../img/img-leadership-desktop.png"), calc(214px - (211px*0.05)), calc(318px - (318px*0.05)), 0, 0);
+      }
     }
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1110px) {
   .features {
-    padding: 0 2%;
+    padding: 0 1% 0 2%;
 
     &__container {
-      padding: 0 0 0 380px;
+      padding: 0 0 0 420px;
+    }
+
+    &__wrapper {
+      margin-bottom: 25px;
+    }
+
+    &__item--excursion {
+      position: absolute;
+      top: -65px;
+      left: 0;
+    
+      width: calc(482px - (482px*0.1));
+      height: calc(732px - (732px*0.1));
+    
+      &::before {
+        @include feature-item-img(url("../img/img-excursion-desktop.png"), calc(482px - (482px*0.1)), calc(732px - (732px*0.1)), 0, 0);
+      }
+  
+      span {
+        padding-left: 40px;
+      }
+    }
+
+    &__item--lang {
+      width: calc(211px - (211px*0.1));
+      height: calc(318px - (318px*0.1));
+      margin-right: 1%;
+    
+      &::before {
+        @include feature-item-img(url("../img/img-study-lang-desktop.png"), calc(211px - (211px*0.1)), calc(318px - (318px*0.1)), 0, 0);
+      }  
+    }
+    
+    &__item--study {
+      width: calc(411px - (211px*0.1));
+      height: calc(318px - (318px*0.1));
+    
+      &::before {
+        @include feature-item-img(url("../img/img-study-desktop.png"), calc(411px - (211px*0.1)), calc(318px - (318px*0.1)), 0, 0);
+      }
+    }
+    
+    &__item--projects {
+      width: calc(411px - (211px*0.1));
+      height: calc(318px - (318px*0.1));
+      margin-right: 1%;
+  
+      span {
+        padding-right: 10px;
+      }
+    
+      &::before {
+        @include feature-item-img(url("../img/img-projects-desktop.png"), calc(411px - (211px*0.1)), calc(318px - (318px*0.1)), 0, 0);
+      }
+    }
+    
+    &__item--leadership {
+      width: calc(214px - (211px*0.1));
+      height: calc(318px - (318px*0.1));
+      margin-right: -1%;
+    
+      &::before {
+        @include feature-item-img(url("../img/img-leadership-desktop.png"), calc(214px - (211px*0.1)), calc(318px - (318px*0.1)), 0, 0);
+      }
     }
   }
 }
@@ -279,6 +419,10 @@
 
       &::before {
         @include feature-item-img(url("../img/img-study-mobile.png"), 288px, 400px, 0, 0);
+      }
+
+      span {
+        padding: 0 20px 30px 25px;
       }
     }
   

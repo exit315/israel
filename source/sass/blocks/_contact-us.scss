@@ -74,11 +74,30 @@
 
     width: 216px;
     padding: 19px 35px 17px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   
     box-sizing: border-box;
     outline: none;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1250px) {
+  .contact-us {
+    flex-direction: column;
+
+    &__lead-in-wrapper {
+      width: 100%;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+    }
   }
 }
 

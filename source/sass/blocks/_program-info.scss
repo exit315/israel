@@ -38,6 +38,10 @@
     margin: 0 auto;
   }
 
+  &__video-tablet {
+    display: none;
+  }
+
   &__video-mobile {
     display: none;
   }
@@ -72,24 +76,25 @@
 
     &__video-wrapper {
       position: relative;
-      width: 320px;
-      height: 224px;
+      width: calc(100% - 100px);
+      height: auto;
       margin: 0 auto;
+      padding: 0 5%;
     }
 
     &__video-desktop {
       display: none;
     }
   
-    &__video-mobile {
+    &__video-tablet {
       display: block;
       margin: 0 auto;
     }
 
     &__video-icon-play {
       position: absolute;
-      top: 80px;
-      left: 120px;
+      top: calc(50% - 40px);
+      left: calc(50% - 40px);
   
       width: 80px;
       height: 80px;
@@ -117,6 +122,27 @@
   
       @include text-big-mobile;
       text-align: left;
+    }
+  }
+}
+
+@media (max-width: 474px) {
+  .program-info {
+    &__video-tablet {
+      display: none;
+    }
+
+    &__video-mobile {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__video-wrapper {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
     }
   }
 }

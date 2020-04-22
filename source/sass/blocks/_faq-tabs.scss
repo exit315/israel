@@ -5,8 +5,8 @@
 
   background-image: url("../img/bg/bag.png"), url("../img/bg/bg-questions-desktop.png"), url("../img/bg/bg-fq-watercolor.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 153px 177px, 645px 803px, 100% 100%;
-  background-position: left bottom, right 50px, right 20px;
+  background-size: 153px 177px, 50%, 100%;
+  background-position: left bottom, right 35%, right 20px;
   
   &__header {
     margin: 0;
